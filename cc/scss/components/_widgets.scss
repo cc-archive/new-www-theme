@@ -259,7 +259,26 @@
   .cc-footer-float-from {
     position: absolute;
     visibility: hidden;
-    margin-top: 25em;
+    margin-top: 2 * 50%;
+    width: 100%;
+
+    /* Margin matches column sizes for .resource-list .resource-tile */
+
+    @include breakpoint($tablet-sm-layout) {
+      margin-top: 2 * 33.3%;
+    }
+
+    @include breakpoint($desktop-sm-layout) {
+      margin-top:  2 * 25%;
+    }
+
+    @include breakpoint($desktop-lg-layout) {
+      margin-top:  2 * 16.6%;
+    }
+
+    @include breakpoint($desktop-xl-layout) {
+      margin-top:  2 * 12.5%;
+    }
   }
 
   h2 {

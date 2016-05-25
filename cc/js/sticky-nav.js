@@ -51,8 +51,8 @@
 
     var onScrollCb = function(e, params) {
         // Show header if scrolling up past bottom of site-header, or initial page load.
-        var headerFloatTop = headerSpacerElem.offset().top + headerSpacerElem.height();
-        var headerFloatOffset = headerElem.hasClass('detached') ? -headerElem.height() : 0;
+        var headerFloatTop = headerSpacerElem.offset().top + headerSpacerElem.height(),
+            headerFloatOffset = headerElem.hasClass('detached') ? -headerElem.height() : 0;
         updateSticky(headerElem, headerSpacerElem, {
             detached: params['top'] > headerFloatTop + headerFloatOffset,
             reveal: params['delta'] < 0 || params['delta'] == undefined
@@ -61,11 +61,12 @@
         if (footerFloatFromElem.length > 0) {
             // Show footer if scrolling past cc-footer-float-from.
             // The footer element is detached if the document is taller than the window.
-            var footerFloatTop = footerFloatFromElem.offset().top;
-            var footerBottom = footerSpacerElem.offset().top + footerSpacerElem.outerHeight();
+            var footerHeight = footerSpacerElem.outerHeight(),
+                footerFloatTop = footerFloatFromElem.offset().top + footerHeight,
+                footerBottom = footerSpacerElem.offset().top + footerHeight;
             updateSticky(footerElem, footerSpacerElem, {
                 detached: footerBottom > $(window).height(),
-                reveal: params['bottom'] >= footerFloatTop,
+                reveal: params['bottom'] >= footerFloatTop || params['bumpBottom']
             });
         }
     }

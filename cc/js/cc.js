@@ -8,6 +8,7 @@
         if (initial && lastScrollTop !== undefined) return;
 
         var scrollTop = $(window).scrollTop();
+        var scrollBottom = scrollTop + $(window).height();
         var scrollDelta = undefined;
 
         if (lastScrollTop !== undefined) {
@@ -16,8 +17,10 @@
 
         var eventParams = {
             'top': scrollTop,
-            'bottom': scrollTop + $(window).height(),
-            'delta': scrollDelta
+            'bottom': scrollBottom,
+            'delta': scrollDelta,
+            'bumpTop': scrollTop == 0,
+            'bumpBottom': scrollBottom == $(document).height()
         }
 
         if (scrollDelta < 0) {
