@@ -1,0 +1,31 @@
+/**
+ * Remove the unit of a length
+ * @param {Number} $number - Number to remove unit from
+ * @return {Number} - Unitless number
+ */
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+/**
+ * Convert pixels to rem
+ */
+@function px2rem($value) {
+  $value: strip-unit($value);
+  // We set html font size to 10px html { font-size: 62.5%; }
+  $font-size-base: 10;
+  // Use this option instead if html font size is unchanged (16px)
+  // $font-size-base: strip-unit($fz-base);
+
+  @if type-of($value) == 'number' {
+    $value: $value / $font-size-base;
+
+    @return $value * 1rem;
+  }
+
+  @return 1rem;
+}

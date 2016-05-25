@@ -1,0 +1,40 @@
+// Import variables, abstractions, base styles and components.
+// Uncomment the next lines and adjust them to your needs.
+
+@import "_breakpoint.scss";
+
+@import "variables/_colours.scss";
+@import "variables/_grid.scss";
+@import "variables/_typography.scss";
+
+@import "abstraction/_functions.scss";
+@import "abstraction/_mixins.scss";
+
+@import "base/_elements.scss";
+// @import "base/_fonts.scss";
+@import "base/_layout.scss";
+@import "base/_utils.scss";
+
+@import "components/_navigation.scss";
+@import "components/_pages.scss";
+@import "components/_shortcodes.scss";
+@import "components/_widgets.scss";
+
+/*
+@import "colours";
+@import "page";
+@import "page-author";
+@import "page_program";
+@import "menus";
+@import "shortcode-team";
+@import "widget-author-news";
+@import "widget-donation-bar";
+@import "widget-homepage-resources";
+@import "widget-homepage-sharing";
+@import "widget-homepage-donate";
+@import "widget-homepage-whatshappening";
+@import "widget-homepage-supporters";
+@import "widget-ip-supporters";
+@import "widget-news-features";
+@import "widget-related-news";
+*/

@@ -1,0 +1,23 @@
+/* -- CC license inside heart -- */
+.love-cc {
+  margin-right: 0.2em;
+  overflow: hidden;
+  position: relative;
+
+  .cc-icon-heart-empty::before { margin: 0; }
+
+  .license {
+    @include full-center(absolute);
+    font-size: 0.4em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-58%, -58%);
+  }
+}
+
+.hide-on-mobile {
+  @include breakpoint (max-width $tablet-sm-layout - 0.001em) {
+    display: none;
+  }
+}

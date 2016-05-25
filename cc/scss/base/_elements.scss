@@ -1,0 +1,407 @@
+/**
+ * @file
+ * Style for HTML elements.
+ */
+
+html { font-size: 62.5%; /* Sets up the Base 10 stuff */ }
+body {
+  background: $white;
+  color: $colour-font;
+  font-family: $ff-source-sans-pro;
+  font-size: px2rem($fz-base - 3);
+  line-height: $line-height-base;
+
+  @include breakpoint ($tablet-sm-layout) {
+    font-size: px2rem($fz-base);
+    line-height: $line-height-base;
+  }
+}
+
+//
+// Links
+// ============================================================================
+a {
+  &,
+  &:visited {
+    color: $colour-link;
+  }
+
+  &:hover,
+  &:focus {
+    color: $colour-link-hover;
+  }
+}
+
+.entry-content a { box-shadow: none; }
+
+//
+// Typography
+// ============================================================================
+h1, .h1 {
+  color: $grey-dark;
+  font-size: px2rem(38);
+  line-height: 0.8em;
+
+  @include breakpoint ($tablet-sm-layout) {
+    font-size: px2rem($fz-h1);
+    line-height: 1em;
+  }
+}
+
+h2, .h2 {
+  font-size: px2rem($fz-h2);
+  line-height: 1.1667em;
+}
+
+h3, .h3 {
+  font-size: px2rem($fz-h3);
+  line-height: 1.4444em;
+}
+
+h4 { font-size: px2rem($fz-h4); }
+
+h5 { font-size: px2rem($fz-h5); }
+
+h6 { font-size: px2rem($fz-h6); }
+
+small { font-size: px2rem($fz-sm); }
+
+strong { @include font-weight($fw-bold); }
+
+.txt-hero {
+  font-family: $ff-roboto-condensed;
+  font-size: px2rem($fz-big);
+  @include font-weight($fw-normal);
+  line-height: 1em;
+
+  @include breakpoint ($tablet-sm-layout) {
+    font-size: px2rem($fz-hero);
+  }
+}
+
+.txt-big {
+  font-family: $ff-roboto-condensed;
+  font-size: px2rem($fz-h1);
+  @include font-weight($fw-normal);
+  line-height: 1em;
+
+  @include breakpoint ($tablet-sm-layout) {
+    font-size: px2rem($fz-big);
+  }
+}
+
+//
+// Forms
+// ============================================================================
+select,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  background: #F3F3F3;
+  background-image: none;
+  border: 1px solid #F3F3F3;
+  border-radius: 0px;
+  color: $grey-medium;
+  font-family: $ff-source-sans-pro;
+  font-size: px2rem($fz-xsm);
+}
+
+//
+// Btns
+// ============================================================================
+button,
+input[type="submit"] {
+  color: $grey-medium;
+  font-family: $ff-source-sans-pro;
+}
+
+/* -- Search form -- */
+.search-form {
+  display: flex;
+
+  label {
+    flex-grow: 1;
+
+    .search-field {
+      border-radius: 0 !important;
+      width: 100% !important;
+      height: 31px;
+    }
+  }
+
+  .search-submit {
+    flex-grow: 0;
+
+    @include add-fontello-icon('\e805') {
+      font-size: 20px;
+      left: 0;
+      margin: 0;
+      position: relative;
+      top: -1px;
+    }
+
+    position: relative;
+    background: $blue-darker;
+    border-radius: 0;
+    color: $white;
+    height: 31px;
+    width: 32px;
+
+    &:hover,
+    &:focus {
+      background: $orange-dark;
+    }
+  }
+
+  .site-footer & {
+    input.search-field[type="search"] {
+      font-size: px2rem(12px);
+      background-color: #F2F2F2;
+      border-color: #F2F2F2;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  body.layout-mobile & {
+    .search-field {
+      display: none;
+    }
+
+    @include breakpoint ($tablet-sm-layout) {
+      .search-field {
+        display: block;
+      }
+    }
+  }
+}
+
+/* -- Gravity forms -- */
+.gform_wrapper {
+
+  .top_label {
+
+    .gfield_label { margin: 0 !important; }
+
+    .gfield_label + div.ginput_container { margin-top: 0 !important; }
+  }
+
+  .left_label {
+
+    .gfield_label {
+      text-align: right !important;
+      width: 20% !important;
+    }
+
+    li.gfield_html_formatted,
+    ul.gfield_checkbox,
+    ul.gfield_radio {
+      margin-left: 20% !important;
+      padding-left: 1em;
+
+      // This is stupid but I don't have time to properly enqueue the gform stylesheet
+      html body & { margin-left: 20% !important;}
+    }
+  }
+
+  .gfield_label { font-size: px2rem($fz-xsm); }
+
+  .gfield_html {
+    font-size: px2rem($fz-xsm);
+    line-height: 1.5em;
+  }
+
+  .gfield_list td.gfield_list_cell input:last-child { margin-bottom: 0; }
+
+  .gform_wrapper .gfield_time_hour i {
+    margin-right: 0.4em;
+    margin-top: 5%;
+  }
+
+  .gform_wrapper .gfield_time_hour label { display: none; }
+
+  input + label {
+    font-size: px2rem($fz-xxsm) !important;
+    margin-top: 0 !important;
+  }
+
+  select,
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="number"],
+  textarea {
+    font-size: px2rem($fz-xsm) !important;
+
+    &:not([placeholder='']) {
+      margin-bottom: 10px;
+
+      &+ label { display: none !important; }
+    }
+  }
+}
+.gform_button[type="submit"] {
+  @include button($style: 'primary');
+}
+
+//
+// Buttons
+// ============================================================================
+button,
+.button {
+  @include button();
+
+  /* -- default -- */
+  &.default {
+    @include button($style: 'default', $add-parent-style: true);
+  }
+
+  /* -- Primary -- */
+  &.primary {
+    @include button($style: 'primary', $add-parent-style: true, $border-radius: 0);
+    &.arrow {
+      @include button($style: 'primary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+    }
+  }
+
+  /* -- Secondary -- */
+  &.secondary {
+    @include button($style: 'secondary', $add-parent-style: true, $border-radius: 0);
+    &.arrow {
+      @include button($style: 'secondary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+    }
+  }
+
+  /* -- Tertiary -- */
+  &.tertiary {
+    @include button($style: 'tertiary', $add-parent-style: true, $border-radius: 0);
+    &.arrow {
+      @include button($style: 'tertiary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+    }
+  }
+
+  /* -- Donate -- */
+  &.donate {
+    @include button($style: 'donate', $add-parent-style: true, $border-radius: 0);
+    &.arrow {
+      @include button($style: 'donate', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+    }
+  }
+}
+
+//
+// Lists
+// ============================================================================
+ul {
+
+  &.unstyled {
+    padding-left: 0;
+
+    li { list-style: none outside none; }
+  }
+}
+li {
+	margin-bottom: 0.5em;
+	list-style-image:url('../images/bulletin.png');
+}
+
+//
+// Horizontal Rules
+// ============================================================================
+hr {
+  background: $colour-secondary;
+  height: 10px;
+
+  &.primary { background: $colour-primary; }
+  &.secondary { background: $colour-secondary; }
+  &.tertiary { background: $colour-tertiary; }
+  &.donate { background: $colour-donate; }
+}
+
+//
+//More Link
+// ============================================================================
+.more-link {
+  display: inline-block;
+	font-size: px2rem($fz-sm);
+  @include font-weight($fw-bold);
+	text-transform: uppercase;
+	@include add-fontello-icon('\e80a','after'){
+		color: $orange-medium;
+	}
+}
+//
+// Blockquote
+// ============================================================================
+blockquote {
+	border-left: 10px solid $blue-light;
+  color: $grey-medium;
+  font-size: px2rem($fz-quote);
+  font-style: normal;
+  @include font-weight($fw-semi-bold);
+  margin-left: 0px !important;
+}
+
+//
+// Gravity Form on User & mix page
+// ============================================================================
+.category-use-remix {
+	.gform_wrapper {
+		margin: 0px;
+		.gform_body {
+			.ginput_container.ginput_container_text {
+				margin:0px !important;
+			}
+			float:left;
+			width:55%;
+		  @include breakpoint ($tablet-sm-layout) {
+				width:50%;
+			}
+			clear:none !important;
+			margin: 0px !important;
+			padding: 0px !important;
+			ul {
+				li {
+					.gfield_label {
+						display: none;
+					}
+					.ginput_container {
+						input {
+							padding: 8px 4px;
+							width:100%;
+						}
+					}
+				}
+			}
+		}
+		.gform_footer {
+			width:45% !important;
+	    border-bottom-right-radius: 0px !important;
+	    border-top-right-radius: 0px  !important;
+		  @include breakpoint ($tablet-sm-layout) {
+				width:30% !important;
+			}
+			float:left;
+			border:0px !important;
+			border-radius: 0px;
+			clear:none !important;
+			margin: 0px !important;
+			padding: 0px !important;
+	    @include button($style: 'primary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+
+			input {
+				border:0px;
+				border-radius: 0px;
+				text-transform: none;
+			}
+		}
+	}
+}

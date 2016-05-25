@@ -1,0 +1,235 @@
+.cc-team-shortcode {
+  h2.cc-team-heading {
+    padding-top: 30px;
+    font-size: 2em;
+    border-top: 10px solid $blue-light;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  ul {
+		display: flex;
+		flex-wrap: wrap ;
+		justify-content: space-between;
+		flex-direction: row;
+    list-style: none;
+		align-content: stretch;
+		@include breakpoint($desktop-lg-layout){
+			&::after {
+		  	content: "";
+		  	flex: 0 1 30%;
+			}
+		}
+		li {
+			list-style-image: none ;
+	    flex: 0 1 100%;
+      padding-bottom: 50px;
+      position: relative;
+			@include breakpoint($tablet-sm-layout) {
+		    flex: 0 1 48%;
+			}
+			@include breakpoint($desktop-lg-layout){
+		    flex: 0 1 30%;
+			}
+      background-color: $grey-lighter;
+			margin-bottom: 25px;
+      .image {
+		    overflow: hidden;
+				position: relative;
+        img.avatar {
+			    width: 100%;
+					border-radius: 0;
+				}
+      }
+      .intro {
+        float: left;
+        background-color: $grey-lighter;
+		    padding: 20px;
+		    width: 100%;
+
+        .name {
+          color: $orange-light;
+          font-size: px2rem($fz-md);
+          font-weight: bold;
+        }
+        .position {
+          color: $grey-medium;
+          font-size: px2rem($fz-xsm);
+					@include font-weight(700);
+        }
+        .description{
+					border-top:2px solid $white;
+          font-size: px2rem($fz-xsm);
+          line-height: 1.3em;
+					padding-top:5px;
+          color: $black;
+					.more{
+						@include font-weight($fw-bold);
+						text-transform: uppercase;
+					}
+        }
+
+        .social-links{
+					position: absolute;
+			    bottom: 20px;
+			    height: 25px;
+			    margin-top: 10px;
+			    width: 200px;
+					a{
+						box-shadow: none;
+					}
+          .genericon {
+            color: $blue-light;
+            font-size: px2rem(25px);
+						&.genericon-linkedin {
+							@include add-fontello-icon('\e811') {
+								margin:0px;
+							}
+						}
+						&.genericon-facebook {
+							@include add-fontello-icon('\e80d') {
+								margin:0px;
+							}
+						}
+						&.genericon-twitter {
+							@include add-fontello-icon('\e80c') {
+								margin:0px;
+							}
+						}
+						&.genericon-mail {
+							@include add-fontello-icon('\e812') {
+								margin:0px;
+							}
+						}
+          }
+        }
+      }
+		}
+  }
+}
+
+//
+// Custom shortcode Generated Blockquote
+// ============================================================================
+blockquote.cc-short-block {
+  border: 0px;
+	margin-bottom: 70px !important;
+	.blockquote-image {
+		width: 100%;
+		@include breakpoint($tablet-md-layout) {
+			width: 30%;
+		}
+    display: block;
+    float: left;
+		img{
+			margin: 0 auto;
+		}
+	}
+	.clear-all {
+		clear: both;
+		@include breakpoint($tablet-md-layout) {
+			clear: none;
+		}
+	}
+	.blockquote-text {
+		.blockquote-text-inner {
+			margin: 0 40px;
+			width:auto;
+			margin-top: 20px;
+			text-align:center;
+			&::before {
+				text-align:center;
+			}
+			@include breakpoint($tablet-md-layout) {
+				width:70%;
+				margin: 0px;
+				text-align:left;
+				&::before {
+					text-align:left;
+				}
+			}
+	    font-size: px2rem(20px);
+	    float: left;
+	    font-style: normal;
+	    padding-bottom: 20px;
+			@include font-weight($fw-semi-bold);
+			@include add-fontello-icon('\e814', 'before') {
+				display:block;
+				font-size: px2rem(37px);
+				text-align: right;
+				color: $blue-light;
+				margin-left: 0px;
+				padding-left: 0px;
+				/* Safari */
+				-webkit-transform: rotate(-180deg);
+				/* Firefox */
+				-moz-transform: rotate(-180deg);
+				/* IE */
+				-ms-transform: rotate(-180deg);
+				/* Opera */
+				-o-transform: rotate(-180deg);
+				/* Internet Explorer */
+				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
+			}
+		}
+	}
+
+	.blockqoute-user-title {
+    font-size: px2rem($fz-xxsm);
+		@include font-weight($fw-semi-bold);
+    font-style: normal;
+    text-align: center;
+		@include breakpoint($tablet-md-layout) {
+	    float: left;
+		}
+		a {
+	 	 	@include link-colors($colour-link-hover, $colour-tertiary, $colour-link-hover, $colour-tertiary);
+		}
+	}
+
+}
+
+//
+// Choose license
+// ============================================================================
+.choose-license {
+	background: $blue-light;
+	margin-bottom: 60px;
+	padding: 60px 10px;
+	padding-bottom: 90px;
+	@include breakpoint($tablet-sm-layout) {
+		padding: 60px;
+		padding-bottom: 85px;
+	}
+  a {
+	 @include link-colors($colour-link-hover, $colour-tertiary, $colour-link-hover, $colour-tertiary);
+		text-decoration: underline;
+	}
+	h2 a {
+		text-decoration: none;
+	}
+
+  div.image {
+    border-bottom: 1px solid rgba($white, 0.43);
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+	.button{
+    font-size: px2rem(24px) !important;
+    padding: 12px 16px !important;
+		font-family: $ff-source-sans-pro;
+		float: right;
+		margin-right: 27px;
+    text-transform: capitalize !important;
+		@include breakpoint($tablet-sm-layout) {
+			margin-right: 0px;
+		}
+
+    &.arrow {
+      position: relative;
+      right: 0.6em;
+    }
+	}
+}

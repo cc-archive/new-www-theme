@@ -1,0 +1,352 @@
+//
+// Typography
+// ============================================================================
+
+@mixin font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
+
+  $need_smooth: (600, 'semi-bold', 700, 'bold');
+  @if index($need_smooth, $weight) {
+    @include font-smoothing();
+  }
+}
+
+
+@mixin link-colors($normal, $hover: false, $visited: false, $focus: false, $active: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+/**
+ * Create a pseudo element (::before or ::after) that will act as an horizontal divider
+ *
+ * @param string $icon: value for 'content' proprety
+ * @param string $location: 'before' for '::before'(default) or 'after' for '::after'
+ */
+@mixin add-fontello-icon($icon, $location: 'before') {
+  @if $location != 'after' {
+    $location: 'before';
+  }
+
+  &::#{$location} {
+    content: $icon;
+    font-family: "cc-fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    @content;
+  }
+}
+
+
+//
+// Layout
+// ============================================================================
+@mixin content-constrained {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: $container-max-width;
+
+  @include breakpoint($container-max-width + ($gutter * 3)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Clearfix Mixin */
+$clearfix-extend: false !default;
+
+@mixin clearfix($extend: $clearfix-extend) {
+  @if $extend {
+    @extend %singularity-clearfix;
+  }
+  @else {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+%singularity-clearfix {
+  @include clearfix(false);
+}
+/* End of: clearfix */
+
+/* Vertical aligment from:
+   http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+*/
+// Apply this to parent element to avoid blurry due to the element being placed on a “half pixel”.
+@mixin preserve-3d {
+  // -webkit-transform-style: preserve-3d;
+  // -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* End of: Vertical aligment */
+
+@mixin full-center($position: relative) {
+  left: 50%;
+  position: $position;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+//
+// Visibility
+// ============================================================================
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+/* -- To be applied in a "more link" section -- */
+@mixin more-with-right-arrow {
+  font-family: $ff-source-sans-pro;
+  // margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    @include link-colors($colour-link-sec, $colour-link-hover-sec, $colour-link-sec, $colour-link-hover-sec);
+    @include add-elegant-icon('\24', after) {
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 0.5em;
+      position: relative;
+      top: 0.25em;
+    }
+  }
+}
+
+@mixin bottom-divider ($style: dotted, $width: 1px, $color: #CCC, $margin-bottom: false, $padding-bottom: false) {
+  border-bottom: $width $style $color;
+  @if $margin-bottom {
+    margin-bottom: $margin-bottom;
+  }
+  @if $padding-bottom {
+    padding-bottom: $padding-bottom;
+  }
+}
+
+//
+// Buttons
+// ============================================================================
+@mixin button-basic-style($arrow-style, $border-radius) {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $ff-source-sans-pro;
+  font-size: px2rem($fz-base);
+  @include font-weight($fw-bold);
+  line-height: 1em;
+  margin-bottom: 0;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  user-select: none;
+
+  @if $arrow-style {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    // padding-right: 1.5em;
+    padding-top: 0.4em;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      border-color: transparent;
+      border-style: solid none solid solid;
+      border-width: 1em 0 1em 0.6em;
+      height: 0;
+      left: 100%;
+      position: absolute;
+      top: 0;
+      width: 0;
+    }
+  }
+
+  [class*="cc-icon-"]::before { line-height: 0.8em; }
+}
+
+/**
+ * Style an element as a button
+ *
+ * @param string $style: 'default', 'primary', 'secondary', 'tertiary', donate'
+ * @param boolean $add-basic-style: Flag used to avoid css code duplication, default to true;
+ * @param boolean $add-parent-style: Flag used to avoid css code duplication, default to true;
+ * @param string $style: 'small', 'large'
+ * @param boolean $arrow-style: default to false
+ * @param string $border-radius: value for css property 'border-radius'
+ */
+@mixin button($style: false, $add-basic-style: true, $add-parent-style: true, $size: false, $arrow-style: false, $border-radius: $border-radius-default) {
+  @if $add-basic-style {
+    @include button-basic-style($arrow-style, $border-radius);
+  }
+
+  // Styles
+  @if $style == 'default' {
+    @if $add-parent-style {
+      background-image: linear-gradient( 180deg, #FFFFFF, #D3D3D3 );
+      border-color: #d4d4d4;
+      box-shadow: 1px 1px 0px 1px rgba($black, 0.6);
+      color: $grey-dark;
+
+      &:hover {
+        background: linear-gradient( 0deg, #D2D2D2, #A1A1A1 );
+        border-color: #b2b2b2;
+      }
+    }
+  }
+  @if $style == 'primary' {
+    @if $add-parent-style {
+      background: $colour-button-primary;
+      border-color: $colour-button-primary;
+      color: $white;
+
+      &::after { border-left-color: $colour-button-primary; }
+
+      &:hover {
+        background: $colour-button-primary-hover;
+        border-color: $colour-button-primary-hover;
+        color: $white;
+
+        &::after { border-left-color: $colour-button-primary-hover; }
+      }
+    }
+  }
+  @else if $style == 'secondary' {
+    @if $add-parent-style {
+      background: $colour-button-secondary;
+      border-color: $colour-button-secondary;
+      color: $white;
+
+      &::after { border-left-color: $colour-button-secondary; }
+
+      &:hover {
+        background: $colour-button-secondary-hover;
+        border-color: $colour-button-secondary-hover;
+        color: $white;
+
+        &::after { border-left-color: $colour-button-secondary-hover; }
+      }
+    }
+  }
+  @else if $style == 'tertiary' {
+    @if $add-parent-style {
+      background: $colour-button-tertiary;
+      border-color: $colour-button-tertiary;
+      color: $white;
+
+      &::after { border-left-color: $colour-button-tertiary; }
+
+      &:hover {
+        background: $colour-button-tertiary-hover;
+        border-color: $colour-button-tertiary-hover;
+        color: $white;
+
+        &::after { border-left-color: $colour-button-tertiary-hover; }
+      }
+    }
+  }
+  @else if $style == 'donate' {
+    @if $add-parent-style {
+      background: $colour-button-donate;
+      border-color: $colour-button-donate;
+      color: $white;
+
+      &::after { border-left-color: $colour-button-donate; }
+
+      &:hover {
+        background: $colour-button-donate-hover;
+        border-color: $colour-button-donate-hover;
+        color: $white;
+
+        &::after { border-left-color: $colour-button-donate-hover; }
+      }
+    }
+  }
+}
+
+
+/**
+ * Stager a transition-delay within a large grid of elements.
+ */
+
+@mixin stagger-delay($cols, $time, $selector:'') {
+  @for $i from 1 through $cols {
+    &:nth-child(#{$cols}n+#{$i}) #{$selector} {
+      transition-delay: $time * $i;
+    }
+  }
+}
