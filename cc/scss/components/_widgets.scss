@@ -476,32 +476,46 @@
 
   .resource-details {
     color: $grey-lighter;
-    font-size: 13px;
+    font-size: 12px;
     line-height: $line-height-base;
     font-weight: $fw-semi-bold;
 
+    @include breakpoint ($tablet-sm-layout) {
+      font-size: 13px;
+    }
+
     .resource-type {
-      margin: 10px 0 10px 12px;
+      margin: 10px 0 5px 6px;
       min-height: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       span {
-        padding: 6px 68px 6px 8px;
+        padding: 6px 68px 6px 4px;
         color: $white;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.2em;
         font-weight: $fw-bold;
         text-transform: uppercase;
         background-color: rgba(#525252, 0.8);
       }
+
+      @include breakpoint ($tablet-sm-layout) {
+        margin-left: 12px;
+        margin-bottom: 10px;
+
+        span {
+          padding-left: 8px;
+          font-size: 13px;
+        }
+      }
     }
 
     .resource-caption {
       display: block;
-      margin: 12px 10px;
-      padding-left: 6px;
+      margin: 6px 5px;
+      padding-left: 3px;
 
       p {
         margin: 0;
@@ -518,15 +532,21 @@
         }
       }
 
-      .ccfic p:last-child {
-        margin-bottom: 0;
+      @include breakpoint ($tablet-sm-layout) {
+        margin: 12px 10px;
+        padding-left: 6px;
       }
     }
 
     .resource-logo {
       display: block;
-      margin: 15px 10px;
-      padding-left: 6px;
+      margin: 6px 5px;
+      padding-left: 3px;
+
+      @include breakpoint ($tablet-sm-layout) {
+        margin: 15px 10px;
+        padding-left: 6px;
+      }
     }
   }
 }
