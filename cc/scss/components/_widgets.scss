@@ -84,7 +84,7 @@
 /* Homepage
  --------------------------------- */
 /* -- Homepage Donate -- */
-#gform_widget-2 {
+#gform_widget-3 {
   background: $grey-lighter;
   @include clearfix();
   margin: 0 !important;
@@ -1242,8 +1242,9 @@
 
 
 /* Stay Tuned to the Commons
+ -- Sidebar widget
  --------------------------------- */
-#text-4 {
+#text-8 {
   padding-left:0px;
   .widget-title {
     font-family: $ff-roboto-condensed;
@@ -1300,7 +1301,10 @@
   }
 }
 
-#text-7 {
+/* Stay Tuned to the Commons
+ -- Homepage widget
+ --------------------------------- */
+#text-10 {
   background-image: linear-gradient(180deg, #E1B300, #EFBE00);
   padding: 40px 0;
 

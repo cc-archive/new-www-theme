@@ -3422,20 +3422,20 @@ blockquote.cc-short-block {
 /* Homepage
  --------------------------------- */
 /* -- Homepage Donate -- */
-#gform_widget-2 {
+#gform_widget-3 {
   background: #E9E9E9;
   margin: 0 !important;
   padding: 30px 0;
   position: relative; }
-  #gform_widget-2:after {
+  #gform_widget-3:after {
     content: "";
     display: table;
     clear: both; }
-  body.home #gform_widget-2 {
+  body.home #gform_widget-3 {
     background: #2B2B2B; }
-  #gform_widget-2 .gform_wrapper {
+  #gform_widget-3 .gform_wrapper {
     margin: 0; }
-  #gform_widget-2 .widget-inner {
+  #gform_widget-3 .widget-inner {
     margin-left: 20px;
     margin-right: 20px;
     max-width: 1120px;
@@ -3444,12 +3444,12 @@ blockquote.cc-short-block {
     padding: 20px;
     position: relative; }
     @media (min-width: 1192px) {
-      #gform_widget-2 .widget-inner {
+      #gform_widget-3 .widget-inner {
         margin-left: auto;
         margin-right: auto; } }
-  #gform_widget-2 .gform_fields > li {
+  #gform_widget-3 .gform_fields > li {
     margin: 0; }
-  #gform_widget-2 h2 {
+  #gform_widget-3 h2 {
     -ms-flex-align: center;
         align-items: center;
     background: url("../images/cc_heart.png") left center no-repeat;
@@ -3464,28 +3464,28 @@ blockquote.cc-short-block {
     margin-bottom: 20px;
     min-height: 60px;
     padding-left: 80px; }
-  #gform_widget-2 #field_2_1 > label {
+  #gform_widget-3 #field_2_1 > label {
     display: none; }
-  #gform_widget-2 .gfield_radio {
+  #gform_widget-3 .gfield_radio {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    #gform_widget-2 .gfield_radio > li {
+    #gform_widget-3 .gfield_radio > li {
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
       margin: 0 0 20px 0;
       overflow: visible; }
-      #gform_widget-2 .gfield_radio > li:last-child {
+      #gform_widget-3 .gfield_radio > li:last-child {
         border-color: #d4d4d4;
         border-radius: 3px;
         border-style: solid;
         border-width: 4px 4px 4px 40px;
         margin-bottom: 0;
         position: relative; }
-        #gform_widget-2 .gfield_radio > li:last-child::before {
+        #gform_widget-3 .gfield_radio > li:last-child::before {
           content: "";
           font-family: "cc-fontello";
           font-style: normal;
@@ -3516,15 +3516,15 @@ blockquote.cc-short-block {
           position: absolute;
           top: 50%;
           transform: translateY(-50%); }
-        #gform_widget-2 .gfield_radio > li:last-child input {
+        #gform_widget-3 .gfield_radio > li:last-child input {
           background: #F3F3F3;
           border: 0 none;
           font-size: 2rem !important;
           margin-bottom: 0;
           width: 90%; }
-    #gform_widget-2 .gfield_radio input[type="radio"] {
+    #gform_widget-3 .gfield_radio input[type="radio"] {
       display: none; }
-    #gform_widget-2 .gfield_radio label {
+    #gform_widget-3 .gfield_radio label {
       background-color: transparent;
       background-image: none;
       border: 1px solid transparent;
@@ -3557,22 +3557,22 @@ blockquote.cc-short-block {
       font-size: 2rem !important;
       margin-left: 0;
       width: 100%; }
-      #gform_widget-2 .gfield_radio label [class*="cc-icon-"]::before {
+      #gform_widget-3 .gfield_radio label [class*="cc-icon-"]::before {
         line-height: 0.8em; }
-      #gform_widget-2 .gfield_radio label:hover {
+      #gform_widget-3 .gfield_radio label:hover {
         background: linear-gradient(0deg, #D2D2D2, #A1A1A1);
         border-color: #b2b2b2; }
-    #gform_widget-2 .gfield_radio input[type="radio"]:checked + label {
+    #gform_widget-3 .gfield_radio input[type="radio"]:checked + label {
       background: linear-gradient(0deg, #D2D2D2, #A1A1A1);
       border-color: #b2b2b2; }
-  #gform_widget-2 .gform_footer {
+  #gform_widget-3 .gform_footer {
     bottom: 20px;
     left: 51%;
     margin: 0;
     padding: 0;
     position: absolute;
     width: 40%; }
-  #gform_widget-2 .gform_button[value="Next"] {
+  #gform_widget-3 .gform_button[value="Next"] {
     background: url("../images/donate-button-sprite.png") no-repeat right top;
     background-size: auto 94px;
     border: 0 none;
@@ -3582,36 +3582,36 @@ blockquote.cc-short-block {
     margin: 0 10px 0 0px !important;
     text-transform: none;
     width: 100%; }
-    #gform_widget-2 .gform_button[value="Next"]:hover, #gform_widget-2 .gform_button[value="Next"]:focus {
+    #gform_widget-3 .gform_button[value="Next"]:hover, #gform_widget-3 .gform_button[value="Next"]:focus {
       background-position: right bottom; }
   @media (min-width: 44.375em) {
-    #gform_widget-2 h2 {
+    #gform_widget-3 h2 {
       font-size: 2.8rem; }
-    #gform_widget-2 .gfield_radio {
+    #gform_widget-3 .gfield_radio {
       padding-right: 100px; }
-      #gform_widget-2 .gfield_radio > li {
+      #gform_widget-3 .gfield_radio > li {
         -ms-flex-preferred-size: 15%;
             flex-basis: 15%;
         margin-bottom: 0 !important; }
-        #gform_widget-2 .gfield_radio > li:last-child {
+        #gform_widget-3 .gfield_radio > li:last-child {
           -ms-flex-preferred-size: 25%;
               flex-basis: 25%; }
-          #gform_widget-2 .gfield_radio > li:last-child input {
+          #gform_widget-3 .gfield_radio > li:last-child input {
             padding: .2em 0; }
-    #gform_widget-2 .gform_footer {
+    #gform_widget-3 .gform_footer {
       left: auto;
       right: 20px;
       width: auto; }
-    #gform_widget-2 .gform_button[value="Next"] {
+    #gform_widget-3 .gform_button[value="Next"] {
       background-size: auto 86px;
       height: 43px;
       width: 94px; } }
   @media (min-width: 56.875em) {
-    #gform_widget-2 form {
+    #gform_widget-3 form {
       background: url("../images/cc_heart.png") left center no-repeat;
       background-size: 100px;
       padding-left: 15%; }
-    #gform_widget-2 h2 {
+    #gform_widget-3 h2 {
       background-image: none;
       font-size: 3.2rem;
       padding-left: 0; } }
@@ -4496,17 +4496,18 @@ blockquote.cc-short-block {
               width: 36px; } }
 
 /* Stay Tuned to the Commons
+ -- Sidebar widget
  --------------------------------- */
-#text-4 {
+#text-8 {
   padding-left: 0px; }
-  #text-4 .widget-title {
+  #text-8 .widget-title {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.9rem;
     text-transform: uppercase;
     position: relative;
     padding-left: 45px;
     font-size: 1.9rem; }
-    #text-4 .widget-title::before {
+    #text-8 .widget-title::before {
       content: "";
       font-family: "cc-fontello";
       font-style: normal;
@@ -4539,9 +4540,9 @@ blockquote.cc-short-block {
       top: -8px;
       font-size: 3.2rem; }
       @media (min-width: 56.875em) {
-        #text-4 .widget-title::before {
+        #text-8 .widget-title::before {
           top: -7px !important; } }
-  #text-4 .textwidget #email-Primary {
+  #text-8 .textwidget #email-Primary {
     border: 0px;
     font-size: 1.7rem;
     width: 52%;
@@ -4549,27 +4550,30 @@ blockquote.cc-short-block {
     line-height: 1.0em;
     margin-right: -5px; }
     @media (min-width: 56.875em) {
-      #text-4 .textwidget #email-Primary {
+      #text-8 .textwidget #email-Primary {
         width: 100%; } }
-    #text-4 .textwidget #email-Primary::-webkit-input-placeholder {
+    #text-8 .textwidget #email-Primary::-webkit-input-placeholder {
       font-size: 1.5rem;
       text-align: center; }
-  #text-4 .textwidget .input-group input {
+  #text-8 .textwidget .input-group input {
     vertical-align: top; }
-  #text-4 .textwidget .input-group input:focus {
+  #text-8 .textwidget .input-group input:focus {
     background: #F3F3F3 !important; }
   @media (min-width: 56.875em) {
-    #text-4 .textwidget .input-group-btn {
+    #text-8 .textwidget .input-group-btn {
       float: left;
       margin-top: 10px; } }
-  #text-4 .textwidget .input-group-btn button {
+  #text-8 .textwidget .input-group-btn button {
     padding: .5em 1.4em;
     vertical-align: top; }
 
-#text-7 {
+/* Stay Tuned to the Commons
+ -- Homepage widget
+ --------------------------------- */
+#text-10 {
   background-image: linear-gradient(180deg, #E1B300, #EFBE00);
   padding: 40px 0; }
-  #text-7 h2 {
+  #text-10 h2 {
     color: #333333;
     font-size: 2.8rem;
     line-height: 0.85em;
@@ -4580,43 +4584,43 @@ blockquote.cc-short-block {
     margin-bottom: 10px;
     margin-top: 0;
     text-transform: uppercase; }
-  #text-7 .textwidget {
+  #text-10 .textwidget {
     margin-left: 20px;
     margin-right: 20px;
     max-width: 1120px; }
     @media (min-width: 1192px) {
-      #text-7 .textwidget {
+      #text-10 .textwidget {
         margin-left: auto;
         margin-right: auto; } }
-  #text-7 .input-group {
+  #text-10 .input-group {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
     padding-right: 1em; }
-  #text-7 input[type="email"] {
+  #text-10 input[type="email"] {
     background: #fff url("../images/grey-envelope.png") no-repeat 15px center;
     padding-bottom: 0.8em;
     padding-left: 50px;
     padding-top: 0.8em; }
-  #text-7 .button.primary.arrow {
+  #text-10 .button.primary.arrow {
     padding-bottom: 0.8em;
     padding-top: 0.8em; }
-    #text-7 .button.primary.arrow::after {
+    #text-10 .button.primary.arrow::after {
       border-width: 1.4em 0 1.3em 0.8em; }
   @media (min-width: 44.375em) {
-    #text-7 .textwidget {
+    #text-10 .textwidget {
       margin-left: auto;
       margin-right: auto;
       max-width: 700px;
       padding-left: 20px;
       padding-right: 20px; }
-    #text-7 h2 {
+    #text-10 h2 {
       float: left;
       margin-right: 24px;
       padding-left: 60px;
       position: relative; }
-      #text-7 h2::before {
+      #text-10 h2::before {
         background: url("../images/email_signup.png") no-repeat left center;
         content: '';
         display: block;
@@ -4625,7 +4629,7 @@ blockquote.cc-short-block {
         position: absolute;
         top: -4px;
         width: 50px; }
-      #text-7 h2 span {
+      #text-10 h2 span {
         display: block; } }
 
 /* End of: Stay Tuned to the Commons
