@@ -53,14 +53,14 @@ if (!empty($wp_query->query['author_name'])){
 							}
 							?>
 	            <div class="social-links">
-	              <?php if ($author->cc_twitter): ?>
-	                <a href="https://twitter.com/<?php print $author->cc_twitter; ?>"><span class="genericon genericon-twitter"></span></a>
+	              <?php if ($author->twitter): ?>
+	                <a href="https://twitter.com/<?php print $author->twitter; ?>"><span class="genericon genericon-twitter"></span></a>
 	              <?php endif; ?>
 	              <?php if (filter_var($author->cc_linkedin, FILTER_VALIDATE_URL)): ?>
 	                <a href="<?php print $author->cc_linkedin; ?>"><span class="genericon genericon-linkedin"></span></a>
 	              <?php endif; ?>
-                <?php if (filter_var($author->cc_facebook, FILTER_VALIDATE_URL)): ?>
-                  <a href="<?php print $author->cc_facebook; ?>"><span class="genericon genericon-facebook"></span></a>
+                <?php if (filter_var($author->facebook, FILTER_VALIDATE_URL)): ?>
+                  <a href="<?php print $author->facebook; ?>"><span class="genericon genericon-facebook"></span></a>
                 <?php endif; ?>
 	              <?php if (filter_var($author->user_email, FILTER_VALIDATE_EMAIL)): ?>
 	                <a href="mailto:<?php print $author->user_email; ?>"><span class="genericon genericon-mail"></span></a>
