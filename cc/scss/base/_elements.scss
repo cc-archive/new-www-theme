@@ -403,3 +403,21 @@ blockquote {
 		}
 	}
 }
+
+//
+// Subscribe news letter :: about/contact/newsletter/
+// ============================================================================
+.subscribe-main-content {
+	
+	#email-Primary {
+		display:inline-block;
+		width: 60%;
+    padding: 7.8px !important;
+		@include breakpoint($desktop-sm-layout) {
+			width: 50%;
+		}
+		@include breakpoint($desktop-md-layout) {
+			width: 40%;
+		}
+	}
+}

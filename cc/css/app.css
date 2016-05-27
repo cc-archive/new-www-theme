@@ -968,6 +968,17 @@ blockquote {
       border-radius: 0px;
       text-transform: none; }
 
+.subscribe-main-content #email-Primary {
+  display: inline-block;
+  width: 60%;
+  padding: 7.8px !important; }
+  @media (min-width: 56.875em) {
+    .subscribe-main-content #email-Primary {
+      width: 50%; } }
+  @media (min-width: 61.5625em) {
+    .subscribe-main-content #email-Primary {
+      width: 40%; } }
+
 body::before, body::after {
   display: none !important;
   height: 0 !important; }
