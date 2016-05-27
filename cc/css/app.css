@@ -2091,6 +2091,8 @@ h1.entry-title {
     line-height: 1.3em;
     font-size: 1.6rem;
     font-weight: normal !important; }
+    .author-wrapper .author-info-group h4 a {
+      color: #FB7928; }
   .author-wrapper .author-info-group .author-date {
     font-size: 1.6rem;
     line-height: 1.3em; }

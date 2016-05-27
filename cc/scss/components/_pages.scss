@@ -163,6 +163,9 @@ h1.entry-title {
 	    line-height: 1.3em;
 			font-size: px2rem($fz-xsm);
 			font-weight: normal !important;
+      a {
+        color: $orange-light;
+      }
 		}
 		.author-date {
 			font-size: px2rem($fz-xsm);

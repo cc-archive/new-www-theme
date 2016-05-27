@@ -23,7 +23,7 @@
 	    ?>
 		</div>
 	  <div class="author-info-group">
-	  	<div class="author-name"><h4><?php echo get_the_author(); ?></h4></div>
+	  	<div class="author-name"><h4><?php the_author_posts_link(); ?></h4></div>
 			<div class="author-date"><?php the_date(); ?></div>
 		</div>
 	</div>
