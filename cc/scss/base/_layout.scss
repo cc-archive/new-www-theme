@@ -592,3 +592,9 @@ body.admin-bar .site-header.sticky {
 .underline {
 	text-decoration: underline;
 }
+
+.single {
+	.entry-summary {
+		@include visually-hidden();
+	}
+}
