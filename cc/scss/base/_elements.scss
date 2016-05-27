@@ -353,55 +353,53 @@ blockquote {
 //
 // Gravity Form on User & mix page
 // ============================================================================
-.category-use-remix {
-	.gform_wrapper {
-		margin: 0px;
-		.gform_body {
-			.ginput_container.ginput_container_text {
-				margin:0px !important;
-			}
-			float:left;
-			width:55%;
-		  @include breakpoint ($tablet-sm-layout) {
-				width:50%;
-			}
-			clear:none !important;
-			margin: 0px !important;
-			padding: 0px !important;
-			ul {
-				li {
-					.gfield_label {
-						display: none;
-					}
-					.ginput_container {
-						input {
-							padding: 8px 4px;
-							width:100%;
-						}
+#gform_wrapper_5 {
+	margin: 0px;
+	.gform_body {
+		.ginput_container.ginput_container_text {
+			margin:0px !important;
+		}
+		float:left;
+		width:55%;
+	  @include breakpoint ($tablet-sm-layout) {
+			width:50%;
+		}
+		clear:none !important;
+		margin: 0px !important;
+		padding: 0px !important;
+		ul {
+			li {
+				.gfield_label {
+					display: none;
+				}
+				.ginput_container {
+					input {
+						padding: 8px 4px;
+						width:100%;
 					}
 				}
 			}
 		}
-		.gform_footer {
-			width:45% !important;
-	    border-bottom-right-radius: 0px !important;
-	    border-top-right-radius: 0px  !important;
-		  @include breakpoint ($tablet-sm-layout) {
-				width:30% !important;
-			}
-			float:left;
-			border:0px !important;
-			border-radius: 0px;
-			clear:none !important;
-			margin: 0px !important;
-			padding: 0px !important;
-	    @include button($style: 'primary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+	}
+	.gform_footer {
+		width:45% !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px  !important;
+	  @include breakpoint ($tablet-sm-layout) {
+			width:30% !important;
+		}
+		float:left;
+		border:0px !important;
+		border-radius: 0px;
+		clear:none !important;
+		margin: 0px !important;
+		padding: 0px !important;
+    @include button($style: 'primary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
 
-			input {
-				border:0px;
-				border-radius: 0px;
-				text-transform: none;
-			}
+		input {
+			border:0px;
+			border-radius: 0px;
+			text-transform: none;
 		}
 	}
 }

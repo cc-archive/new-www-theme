@@ -879,25 +879,25 @@ blockquote {
   -moz-osx-font-smoothing: grayscale;
   margin-left: 0px !important; }
 
-.category-use-remix .gform_wrapper {
+#gform_wrapper_5 {
   margin: 0px; }
-  .category-use-remix .gform_wrapper .gform_body {
+  #gform_wrapper_5 .gform_body {
     float: left;
     width: 55%;
     clear: none !important;
     margin: 0px !important;
     padding: 0px !important; }
-    .category-use-remix .gform_wrapper .gform_body .ginput_container.ginput_container_text {
+    #gform_wrapper_5 .gform_body .ginput_container.ginput_container_text {
       margin: 0px !important; }
     @media (min-width: 44.375em) {
-      .category-use-remix .gform_wrapper .gform_body {
+      #gform_wrapper_5 .gform_body {
         width: 50%; } }
-    .category-use-remix .gform_wrapper .gform_body ul li .gfield_label {
+    #gform_wrapper_5 .gform_body ul li .gfield_label {
       display: none; }
-    .category-use-remix .gform_wrapper .gform_body ul li .ginput_container input {
+    #gform_wrapper_5 .gform_body ul li .ginput_container input {
       padding: 8px 4px;
       width: 100%; }
-  .category-use-remix .gform_wrapper .gform_footer {
+  #gform_wrapper_5 .gform_footer {
     width: 45% !important;
     border-bottom-right-radius: 0px !important;
     border-top-right-radius: 0px  !important;
@@ -940,9 +940,9 @@ blockquote {
     border-color: #EC592F;
     color: #fff; }
     @media (min-width: 44.375em) {
-      .category-use-remix .gform_wrapper .gform_footer {
+      #gform_wrapper_5 .gform_footer {
         width: 30% !important; } }
-    .category-use-remix .gform_wrapper .gform_footer::after {
+    #gform_wrapper_5 .gform_footer::after {
       content: '';
       display: block;
       border-color: transparent;
@@ -953,17 +953,17 @@ blockquote {
       position: absolute;
       top: 0;
       width: 0; }
-    .category-use-remix .gform_wrapper .gform_footer [class*="cc-icon-"]::before {
+    #gform_wrapper_5 .gform_footer [class*="cc-icon-"]::before {
       line-height: 0.8em; }
-    .category-use-remix .gform_wrapper .gform_footer::after {
+    #gform_wrapper_5 .gform_footer::after {
       border-left-color: #EC592F; }
-    .category-use-remix .gform_wrapper .gform_footer:hover {
+    #gform_wrapper_5 .gform_footer:hover {
       background: #FB7928;
       border-color: #FB7928;
       color: #fff; }
-      .category-use-remix .gform_wrapper .gform_footer:hover::after {
+      #gform_wrapper_5 .gform_footer:hover::after {
         border-left-color: #FB7928; }
-    .category-use-remix .gform_wrapper .gform_footer input {
+    #gform_wrapper_5 .gform_footer input {
       border: 0px;
       border-radius: 0px;
       text-transform: none; }
