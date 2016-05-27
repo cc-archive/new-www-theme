@@ -598,3 +598,6 @@ body.admin-bar .site-header.sticky {
 		@include visually-hidden();
 	}
 }
+.comments-area {
+	@include visually-hidden();  
+}
