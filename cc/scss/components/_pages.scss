@@ -147,6 +147,7 @@ h1.entry-title {
   margin: 0 0 20px 0;
 }
 .author-wrapper {
+	margin-bottom: 20px;
 	> div {
 		display:inline-block;
 		vertical-align: top;
@@ -922,6 +923,9 @@ body.page-id-48781 {
 	.post {
 		h1.entry-title {
 			margin-bottom: 20px !important;
+		}
+		.single.group-blog  {
+			@include visually-hidden();
 		}
 		.entry-content {
 			float: none;

@@ -2077,25 +2077,25 @@ h1.entry-title {
   line-height: 1.4444em;
   margin: 0 0 20px 0; }
 
-.author-wrapper > div {
-  display: inline-block;
-  vertical-align: top; }
-
-.author-wrapper .author-image img {
-  border-radius: 0px !important; }
-
-.author-wrapper .author-info-group {
-  padding-left: 10px; }
-  .author-wrapper .author-info-group h4 {
-    color: #FB7928;
-    line-height: 1.3em;
-    font-size: 1.6rem;
-    font-weight: normal !important; }
-    .author-wrapper .author-info-group h4 a {
-      color: #FB7928; }
-  .author-wrapper .author-info-group .author-date {
-    font-size: 1.6rem;
-    line-height: 1.3em; }
+.author-wrapper {
+  margin-bottom: 20px; }
+  .author-wrapper > div {
+    display: inline-block;
+    vertical-align: top; }
+  .author-wrapper .author-image img {
+    border-radius: 0px !important; }
+  .author-wrapper .author-info-group {
+    padding-left: 10px; }
+    .author-wrapper .author-info-group h4 {
+      color: #FB7928;
+      line-height: 1.3em;
+      font-size: 1.6rem;
+      font-weight: normal !important; }
+      .author-wrapper .author-info-group h4 a {
+        color: #FB7928; }
+    .author-wrapper .author-info-group .author-date {
+      font-size: 1.6rem;
+      line-height: 1.3em; }
 
 body.home .content-area {
   background-image: radial-gradient(ellipse farthest-corner, #fff, #F4F4F4);
@@ -3003,6 +3003,16 @@ body.page-id-48781 ul.ways-to-give {
 
 .single.group-blog .post h1.entry-title {
   margin-bottom: 20px !important; }
+
+.single.group-blog .post .single.group-blog {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
 
 .single.group-blog .post .entry-content {
   float: none;
