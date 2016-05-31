@@ -1993,6 +1993,39 @@ h1.entry-title {
   margin-bottom: 20px;
   margin-top: 0; }
 
+.entry-content h3,
+.entry-summary h3,
+.comment-content h3,
+.textwidget h3 {
+  font-size: 3.2rem;
+  line-height: 1.4444em;
+  margin: 0 0 20px 0; }
+
+.entry-content h4,
+.entry-summary h4,
+.comment-content h4,
+.textwidget h4 {
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  margin: 0 0 10px 0;
+  text-transform: none; }
+
+.entry-content h5,
+.entry-summary h5,
+.comment-content h5,
+.textwidget h5 {
+  font-size: 1.9rem;
+  line-height: 1.5em;
+  margin: 0 0 10px 0; }
+
+.entry-content h6,
+.entry-summary h6,
+.comment-content h6,
+.textwidget h6 {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  margin: 0 0 10px 0; }
+
 .global-affiliate-network {
   background-color: #00B5DA;
   padding: 55px 10px; }
@@ -2099,14 +2132,6 @@ h1.entry-title {
           font-weight: bold;
           font-size: 2.8rem;
           margin-left: 30px; }
-
-.entry-content h3,
-.entry-summary h3,
-.comment-content h3,
-.textwidget h3 {
-  font-size: 3.2rem;
-  line-height: 1.4444em;
-  margin: 0 0 20px 0; }
 
 .author-wrapper {
   margin-bottom: 20px; }
