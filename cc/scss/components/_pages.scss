@@ -688,8 +688,14 @@ body.page-id-48781 {
     }
 
     input[type="radio"]:checked + label {
-      background: linear-gradient( 0deg, #D2D2D2, #A1A1A1 );
-      border-color: #b2b2b2;
+      // background: linear-gradient( 0deg, #D2D2D2, #A1A1A1 );
+      // border-color: #b2b2b2;
+      background: $colour-donate;
+      border-color: darken($colour-donate, 5%);
+      border-right-color: lighten($colour-donate, 5%);
+      border-top-color: lighten($colour-donate, 20%);
+      box-shadow: 1px 1px 0px 1px rgba(darken($colour-donate, 20%), 0.6);
+      color: $white;
     }
   }
 
