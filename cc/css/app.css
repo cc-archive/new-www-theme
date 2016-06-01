@@ -4063,10 +4063,14 @@ blockquote.cc-short-block {
     padding: 0;
     margin: 0;
     font-size: 1em;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    /* It would be nice to use justify-content: center instead of flex-start,
+     * because the rows aren't always 100% wide. Hover, the misaligned last
+     * row made it less appealing. Let's try both and see which sticks.
+     */
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
@@ -4077,7 +4081,14 @@ blockquote.cc-short-block {
       overflow: visible;
       border: 0;
       margin: 0;
-      vertical-align: top; }
+      vertical-align: top;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
       .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile .resource {
         position: absolute;
         width: 100%;

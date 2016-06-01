@@ -329,7 +329,11 @@
     padding: 0;
     margin: 0;
     font-size: 1em;
-    justify-content: center;
+    /* It would be nice to use justify-content: center instead of flex-start,
+     * because the rows aren't always 100% wide. Hover, the misaligned last
+     * row made it less appealing. Let's try both and see which sticks.
+     */
+    justify-content: flex-start;
     flex-wrap: wrap;
 
     .resource-tile {
@@ -340,6 +344,8 @@
       border: 0;
       margin: 0;
       vertical-align: top;
+      flex-grow: 0;
+      flex-shrink: 0;
 
       .resource {
         position: absolute;
