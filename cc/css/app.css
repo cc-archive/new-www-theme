@@ -4048,9 +4048,8 @@ blockquote.cc-short-block {
     .widget_creativecommons_resource_homepage_widget div.intro {
       margin-left: 400px; } }
   .widget_creativecommons_resource_homepage_widget .resource-list {
-    display: -webkit-flex;
-    display: -moz-flex;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
