@@ -57,7 +57,7 @@
             </div>
             <aside>
               <div xmlns:cc="http://creativecommons.org/ns#" about="http://creativecommons.org">
-                <p>Except where otherwise <a class="subfoot" href="http://creativecommons.org/policies#license">noted</a>, content on this site is licensed under a <a class="subfoot" href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>. Icons</a> by <a class="subfoot" href="https://thenounproject.com/" target="blank"> The Noun Project</a>.</p>
+                <p>Except where otherwise <a class="subfoot" href="http://creativecommons.org/policies#license">noted</a>, content on this site is licensed under a <a class="subfoot" href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>. <a class="subfoot" href="/icons" target="blank">Icons</a> by The Noun Project.</p>
               </div>
               <p class="website-credit">Website by <a class="subfoot" href="http://affinitybridge.com/" target="blank"> Affinity Bridge</a>.</p>
             </aside>
