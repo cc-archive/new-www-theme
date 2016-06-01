@@ -55,7 +55,7 @@
             headerFloatOffset = headerElem.hasClass('detached') ? -headerElem.height() : 0;
         updateSticky(headerElem, headerSpacerElem, {
             detached: params['top'] > headerFloatTop + headerFloatOffset,
-            reveal: params['delta'] < 0 || params['delta'] == undefined
+            reveal: params['velocity'] < 0 || params['velocity'] == undefined
         });
 
         if (footerFloatFromElem.length > 0) {

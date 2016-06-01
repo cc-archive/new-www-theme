@@ -7,7 +7,7 @@
     var SCROLL_DELTA_BUFFER_SIZE = 5;
     var lastScrollTop = undefined;
 
-    var arraySum = function(array) {
+    var arrayAverage = function(array) {
         var sum = 0;
         for (var i = 0; i < array.length; i++) {
             sum += array[i];
@@ -26,28 +26,28 @@
 
         var scrollTop = $(window).scrollTop();
         var scrollBottom = scrollTop + $(window).height();
-        var scrollDelta = undefined;
+        var scrollVelocity = undefined;
 
         if (lastScrollTop !== undefined) {
             if (scrollDeltaBuffer.push(scrollTop - lastScrollTop) > SCROLL_DELTA_BUFFER_SIZE) {
                 scrollDeltaBuffer.shift();
             }
-            scrollDelta = arraySum(scrollDeltaBuffer);
+            scrollVelocity = arrayAverage(scrollDeltaBuffer);
         }
 
         var eventParams = {
             'top': scrollTop,
             'bottom': scrollBottom,
-            'delta': scrollDelta,
+            'velocity': scrollVelocity,
             'bumpTop': scrollTop == 0,
             'bumpBottom': scrollBottom == $(document).height()
         }
 
-        if (scrollDelta < 0) {
+        if (scrollVelocity < 0) {
             $(document).trigger('cc-scroll-up', eventParams);
-        } else if (scrollDelta === undefined && scrollTop > 0) {
+        } else if (scrollVelocity === undefined && scrollTop > 0) {
             $(document).trigger('cc-scroll-down', eventParams);
-        } else if (scrollDelta > 0) {
+        } else if (scrollVelocity > 0) {
             $(document).trigger('cc-scroll-down', eventParams);
         }
 
