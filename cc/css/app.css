@@ -4244,15 +4244,15 @@ blockquote.cc-short-block {
       opacity: 0.15;
       -webkit-transition: opacity 0.2s ease;
       transition: opacity 0.2s ease; }
-      .widget_creativecommons_resource_homepage_widget .resource .overlay .resource-click-fallthrough {
-        display: none; }
-      .widget_creativecommons_resource_homepage_widget .resource .overlay .resource-details {
+      .widget_creativecommons_resource_homepage_widget .resource .overlay .resource-click-fallthrough,
+      .widget_creativecommons_resource_homepage_widget .resource .overlay .resource-details,
+      .widget_creativecommons_resource_homepage_widget .resource .overlay .resource-extra {
         display: none; }
     .widget_creativecommons_resource_homepage_widget .resource.active .overlay {
       opacity: 1; }
-      .widget_creativecommons_resource_homepage_widget .resource.active .overlay .resource-click-fallthrough {
-        display: block; }
-      .widget_creativecommons_resource_homepage_widget .resource.active .overlay .resource-details {
+      .widget_creativecommons_resource_homepage_widget .resource.active .overlay .resource-click-fallthrough,
+      .widget_creativecommons_resource_homepage_widget .resource.active .overlay .resource-details,
+      .widget_creativecommons_resource_homepage_widget .resource.active .overlay .resource-extra {
         display: block; }
   .widget_creativecommons_resource_homepage_widget .resource-click-fallthrough {
     position: absolute;
@@ -4329,6 +4329,27 @@ blockquote.cc-short-block {
         .widget_creativecommons_resource_homepage_widget .resource-details .resource-logo {
           margin: 15px 10px;
           padding-left: 6px; } }
+  .widget_creativecommons_resource_homepage_widget .resource-extra {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin: 4px 5px;
+    padding-left: 3px;
+    z-index: 2;
+    pointer-events: none; }
+    .widget_creativecommons_resource_homepage_widget .resource-extra a {
+      line-height: 1.5em;
+      color: #E9E9E9;
+      pointer-events: auto; }
+      .widget_creativecommons_resource_homepage_widget .resource-extra a:hover, .widget_creativecommons_resource_homepage_widget .resource-extra a:focus {
+        text-decoration: underline;
+        color: #fff; }
+    @media (min-width: 44.375em) {
+      .widget_creativecommons_resource_homepage_widget .resource-extra {
+        margin: 8px 10px;
+        padding-left: 6px; } }
 
 /* -- Homepage Sharing -- */
 .homepage-sharing-widget {

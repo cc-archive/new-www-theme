@@ -465,11 +465,9 @@
       opacity: 0.15;
       transition: opacity 0.2s ease;
 
-      .resource-click-fallthrough {
-        display: none;
-      }
-
-      .resource-details {
+      .resource-click-fallthrough,
+      .resource-details,
+      .resource-extra {
         display: none;
       }
     }
@@ -477,11 +475,9 @@
     &.active .overlay {
       opacity: 1;
 
-      .resource-click-fallthrough {
-        display: block;
-      }
-
-      .resource-details {
+      .resource-click-fallthrough,
+      .resource-details,
+      .resource-extra {
         display: block;
       }
     }
@@ -577,6 +573,34 @@
         margin: 15px 10px;
         padding-left: 6px;
       }
+    }
+  }
+
+  .resource-extra {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    line-height: $line-height-base;
+    margin: 4px 5px;
+    padding-left: 3px;
+    z-index: 2;
+    pointer-events: none;
+
+    a {
+      line-height: $line-height-base;
+      color: $grey-lighter;
+      pointer-events: auto;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+        color: $white;
+      }
+    }
+
+    @include breakpoint ($tablet-sm-layout) {
+      margin: 8px 10px;
+      padding-left: 6px;
     }
   }
 }
