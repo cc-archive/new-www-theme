@@ -31,7 +31,7 @@ gulp.task('sass', function () {
         .on('error', sass.logError)
       )
     .pipe(autoprefixer({
-      browsers: ['> 1%', 'last 2 versions',  'Firefox ESR']
+      browsers: ['> 1%', 'last 3 versions', 'Firefox ESR', 'iOS >= 8']
     }))
     .pipe(sourcemaps.write('../maps'));
     if (isDist) {
