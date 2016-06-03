@@ -4376,7 +4376,11 @@ blockquote.cc-short-block {
     .widget_creativecommons_resource_homepage_widget .resource-details .resource-logo {
       display: block;
       margin: 6px 5px;
-      padding-left: 3px; }
+      padding-left: 3px;
+      max-width: 140px;
+      max-height: 40px;
+      width: auto;
+      height: auto; }
       @media (min-width: 44.375em) {
         .widget_creativecommons_resource_homepage_widget .resource-details .resource-logo {
           margin: 15px 10px;

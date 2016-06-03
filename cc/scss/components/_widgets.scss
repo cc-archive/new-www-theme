@@ -586,6 +586,10 @@
       display: block;
       margin: 6px 5px;
       padding-left: 3px;
+      max-width: 140px;
+      max-height: 40px;
+      width: auto;
+      height: auto;
 
       @include breakpoint ($tablet-sm-layout) {
         margin: 15px 10px;

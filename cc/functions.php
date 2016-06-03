@@ -19,7 +19,7 @@ function cc_enqueue_scripts() {
     'cc-style',
     get_stylesheet_directory_uri() . '/css/app.css',
     array( 'parent-style', 'cc-google-fonts', 'cc-fontello' ),
-    '20160601'
+    '20160603'
   );
 
   wp_enqueue_script(
