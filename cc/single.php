@@ -56,5 +56,8 @@ get_header(); ?>
     <?php get_sidebar(); ?>
   </div>
 </div><!-- .content-area -->
+<!-- content-below -->
+<?php get_sidebar( 'content-below' ); ?>
+<!-- END content-below -->
 
 <?php get_footer(); ?>
