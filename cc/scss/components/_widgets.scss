@@ -81,10 +81,11 @@
 // By Type
 // =================================
 
-/* Homepage
+/* Donate
  --------------------------------- */
-/* -- Homepage Donate -- */
-#gform_widget-3 {
+/* -- Homepage and post template Donate forms -- */
+#gform_widget-3,
+#gform_widget-5 {
   background: $grey-lighter;
   @include clearfix();
   margin: 0 !important;
