@@ -31,7 +31,9 @@
 			<header id="masthead" class="site-header sticky-nav-main" role="banner">
 				<div class="site-header-main">
 					<div class="site-branding">
-						<?php twentysixteen_the_custom_logo(); ?>
+						<a class="cc-site-logo-link" href="<?php echo home_url('/'); ?>" rel="home">
+							<img class="cc-site-logo" width="303" height="72" src="<?php echo get_stylesheet_directory_uri() . '/images/cc.logo.white.svg' ?>">
+						</a>
 					</div><!-- .site-branding -->
 
 					<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) || has_nav_menu( 'social' ) ) : ?>

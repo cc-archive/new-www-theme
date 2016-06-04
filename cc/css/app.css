@@ -1156,12 +1156,12 @@ body.admin-bar .site-header.sticky {
   overflow: hidden;
   max-height: 100%; }
   @media (max-width: 56.874em) {
-    .site-branding .custom-logo-link {
+    .site-branding .cc-site-logo-link {
       display: inline-block;
       margin-top: 18px; }
-      .site-header.sticky .site-branding .custom-logo-link {
+      .site-header.sticky .site-branding .cc-site-logo-link {
         margin-top: 9px; }
-      .site-header.sticky.detached .site-branding .custom-logo-link {
+      .site-header.sticky.detached .site-branding .cc-site-logo-link {
         margin-top: 3px; } }
   @media (min-width: 56.875em) {
     .site-branding {

@@ -1,4 +1,10 @@
 <?php
+
+function cc_setup() {
+  remove_theme_support( 'custom-logo' );
+}
+add_action( 'after_setup_theme', 'cc_setup', 9999 );
+
 /**
  * Enqueue Scripts / Styles
  */
