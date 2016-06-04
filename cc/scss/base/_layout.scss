@@ -47,7 +47,8 @@ body {
   &.sticky {
     position: absolute;
     bottom: 0;
-    transition: top 0.4s ease;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
   }
 
   &.sticky.detached {
@@ -59,7 +60,7 @@ body {
   }
 
   &.detached.offscreen {
-    top: -40px;
+    transform: translateY(-100%);
   }
 
   &.sticky.detached {
@@ -96,10 +97,6 @@ body {
       .site-branding {
         margin-bottom: 12px;
       }
-    }
-
-    &.detached.offscreen {
-        top: -60px;
     }
   }
 }
@@ -304,7 +301,8 @@ body.admin-bar .site-header.sticky {
   &.sticky {
     position: absolute;
     bottom: 0;
-    transition: bottom 0.4s ease;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
   }
 
   &.sticky.detached {
@@ -315,7 +313,7 @@ body.admin-bar .site-header.sticky {
   }
 
   &.detached.offscreen {
-    bottom: -100%;
+    transform: translateY(100%);
   }
 }
 
