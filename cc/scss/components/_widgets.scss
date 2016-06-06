@@ -266,26 +266,7 @@
   .cc-footer-float-from {
     position: absolute;
     visibility: hidden;
-    margin-top: 2 * 50%;
     width: 100%;
-
-    /* Margin matches column sizes for .resource-list .resource-tile */
-
-    @include breakpoint($tablet-sm-layout) {
-      margin-top: 2 * 33.3%;
-    }
-
-    @include breakpoint($desktop-sm-layout) {
-      margin-top:  2 * 25%;
-    }
-
-    @include breakpoint($desktop-lg-layout) {
-      margin-top:  2 * 16.6%;
-    }
-
-    @include breakpoint($desktop-xl-layout) {
-      margin-top:  2 * 12.5%;
-    }
   }
 
   h2 {
@@ -376,44 +357,35 @@
         visibility: hidden;
       }
     }
+  }
 
-    .resource-tile {
-      /* Minimum: 2 tiles per row */
-      width: 50%;
-      @include stagger-delay(2, 0.02s, '.resource');
+  @mixin tile_breakpoint($count, $size) {
+    .resource-list .resource-tile {
+      width: $size;
+      @include stagger-delay($count, 0.02s, '.resource');
     }
 
-    @include breakpoint($tablet-sm-layout) {
-      .resource-tile {
-        /* 3 tiles per row */
-        width: 33.3%;
-        @include stagger-delay(3, 0.02s, '.resource');
-      }
+    .cc-footer-float-from {
+      margin-top: 2 * $size;
     }
+  }
 
-    @include breakpoint($desktop-sm-layout) {
-      .resource-tile {
-        /* 4 tiles per row */
-        width: 25%;
-        @include stagger-delay(4, 0.02s, '.resource');
-      }
-    }
+  @include tile_breakpoint(2, 50%);
 
-    @include breakpoint($desktop-lg-layout) {
-      .resource-tile {
-        /* 6 tiles per row */
-        width: 16.6%;
-        @include stagger-delay(6, 0.02s, '.resource');
-      }
-    }
+  @include breakpoint($tablet-sm-layout) {
+    @include tile_breakpoint(3, 33.33%);
+  }
 
-    @include breakpoint($desktop-xl-layout) {
-      .resource-tile {
-        /* Maximum: 8 tiles per row */
-        width: 12.5%;
-        @include stagger-delay(8, 0.02s, '.resource');
-      }
-    }
+  @include breakpoint($desktop-sm-layout) {
+    @include tile_breakpoint(4, 25%);
+  }
+
+  @include breakpoint($desktop-lg-layout) {
+    @include tile_breakpoint(6, 16.66%);
+  }
+
+  @include breakpoint($desktop-xl-layout) {
+    @include tile_breakpoint(8, 12.5%);
   }
 
   .resource {

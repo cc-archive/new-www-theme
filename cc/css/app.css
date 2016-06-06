@@ -4045,21 +4045,7 @@ blockquote.cc-short-block {
   .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
     position: absolute;
     visibility: hidden;
-    margin-top: 100%;
-    width: 100%;
-    /* Margin matches column sizes for .resource-list .resource-tile */ }
-    @media (min-width: 44.375em) {
-      .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
-        margin-top: 66.6%; } }
-    @media (min-width: 56.875em) {
-      .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
-        margin-top: 50%; } }
-    @media (min-width: 75em) {
-      .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
-        margin-top: 33.2%; } }
-    @media (min-width: 100em) {
-      .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
-        margin-top: 25%; } }
+    width: 100%; }
   .widget_creativecommons_resource_homepage_widget h2 {
     color: #333333;
     font-family: "Roboto Condensed", sans-serif;
@@ -4161,94 +4147,99 @@ blockquote.cc-short-block {
         content: "";
         padding-bottom: 100%;
         visibility: hidden; }
+  .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
+    width: 50%; }
+    .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(2n+1) .resource {
+      -webkit-transition-delay: 0.02s;
+              transition-delay: 0.02s; }
+    .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(2n+2) .resource {
+      -webkit-transition-delay: 0.04s;
+              transition-delay: 0.04s; }
+  .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
+    margin-top: 100%; }
+  @media (min-width: 44.375em) {
     .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
-      /* Minimum: 2 tiles per row */
-      width: 50%; }
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(2n+1) .resource {
+      width: 33.33%; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(3n+1) .resource {
         -webkit-transition-delay: 0.02s;
                 transition-delay: 0.02s; }
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(2n+2) .resource {
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(3n+2) .resource {
         -webkit-transition-delay: 0.04s;
                 transition-delay: 0.04s; }
-    @media (min-width: 44.375em) {
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
-        /* 3 tiles per row */
-        width: 33.3%; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(3n+1) .resource {
-          -webkit-transition-delay: 0.02s;
-                  transition-delay: 0.02s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(3n+2) .resource {
-          -webkit-transition-delay: 0.04s;
-                  transition-delay: 0.04s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(3n+3) .resource {
-          -webkit-transition-delay: 0.06s;
-                  transition-delay: 0.06s; } }
-    @media (min-width: 56.875em) {
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
-        /* 4 tiles per row */
-        width: 25%; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+1) .resource {
-          -webkit-transition-delay: 0.02s;
-                  transition-delay: 0.02s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+2) .resource {
-          -webkit-transition-delay: 0.04s;
-                  transition-delay: 0.04s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+3) .resource {
-          -webkit-transition-delay: 0.06s;
-                  transition-delay: 0.06s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+4) .resource {
-          -webkit-transition-delay: 0.08s;
-                  transition-delay: 0.08s; } }
-    @media (min-width: 75em) {
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
-        /* 6 tiles per row */
-        width: 16.6%; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+1) .resource {
-          -webkit-transition-delay: 0.02s;
-                  transition-delay: 0.02s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+2) .resource {
-          -webkit-transition-delay: 0.04s;
-                  transition-delay: 0.04s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+3) .resource {
-          -webkit-transition-delay: 0.06s;
-                  transition-delay: 0.06s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+4) .resource {
-          -webkit-transition-delay: 0.08s;
-                  transition-delay: 0.08s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+5) .resource {
-          -webkit-transition-delay: 0.1s;
-                  transition-delay: 0.1s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+6) .resource {
-          -webkit-transition-delay: 0.12s;
-                  transition-delay: 0.12s; } }
-    @media (min-width: 100em) {
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
-        /* Maximum: 8 tiles per row */
-        width: 12.5%; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+1) .resource {
-          -webkit-transition-delay: 0.02s;
-                  transition-delay: 0.02s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+2) .resource {
-          -webkit-transition-delay: 0.04s;
-                  transition-delay: 0.04s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+3) .resource {
-          -webkit-transition-delay: 0.06s;
-                  transition-delay: 0.06s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+4) .resource {
-          -webkit-transition-delay: 0.08s;
-                  transition-delay: 0.08s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+5) .resource {
-          -webkit-transition-delay: 0.1s;
-                  transition-delay: 0.1s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+6) .resource {
-          -webkit-transition-delay: 0.12s;
-                  transition-delay: 0.12s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+7) .resource {
-          -webkit-transition-delay: 0.14s;
-                  transition-delay: 0.14s; }
-        .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+8) .resource {
-          -webkit-transition-delay: 0.16s;
-                  transition-delay: 0.16s; } }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(3n+3) .resource {
+        -webkit-transition-delay: 0.06s;
+                transition-delay: 0.06s; }
+    .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
+      margin-top: 66.66%; } }
+  @media (min-width: 56.875em) {
+    .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
+      width: 25%; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+1) .resource {
+        -webkit-transition-delay: 0.02s;
+                transition-delay: 0.02s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+2) .resource {
+        -webkit-transition-delay: 0.04s;
+                transition-delay: 0.04s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+3) .resource {
+        -webkit-transition-delay: 0.06s;
+                transition-delay: 0.06s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(4n+4) .resource {
+        -webkit-transition-delay: 0.08s;
+                transition-delay: 0.08s; }
+    .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
+      margin-top: 50%; } }
+  @media (min-width: 75em) {
+    .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
+      width: 16.66%; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+1) .resource {
+        -webkit-transition-delay: 0.02s;
+                transition-delay: 0.02s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+2) .resource {
+        -webkit-transition-delay: 0.04s;
+                transition-delay: 0.04s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+3) .resource {
+        -webkit-transition-delay: 0.06s;
+                transition-delay: 0.06s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+4) .resource {
+        -webkit-transition-delay: 0.08s;
+                transition-delay: 0.08s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+5) .resource {
+        -webkit-transition-delay: 0.1s;
+                transition-delay: 0.1s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(6n+6) .resource {
+        -webkit-transition-delay: 0.12s;
+                transition-delay: 0.12s; }
+    .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
+      margin-top: 33.32%; } }
+  @media (min-width: 100em) {
+    .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile {
+      width: 12.5%; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+1) .resource {
+        -webkit-transition-delay: 0.02s;
+                transition-delay: 0.02s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+2) .resource {
+        -webkit-transition-delay: 0.04s;
+                transition-delay: 0.04s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+3) .resource {
+        -webkit-transition-delay: 0.06s;
+                transition-delay: 0.06s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+4) .resource {
+        -webkit-transition-delay: 0.08s;
+                transition-delay: 0.08s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+5) .resource {
+        -webkit-transition-delay: 0.1s;
+                transition-delay: 0.1s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+6) .resource {
+        -webkit-transition-delay: 0.12s;
+                transition-delay: 0.12s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+7) .resource {
+        -webkit-transition-delay: 0.14s;
+                transition-delay: 0.14s; }
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile:nth-child(8n+8) .resource {
+        -webkit-transition-delay: 0.16s;
+                transition-delay: 0.16s; }
+    .widget_creativecommons_resource_homepage_widget .cc-footer-float-from {
+      margin-top: 25%; } }
   .widget_creativecommons_resource_homepage_widget .resource {
     display: block;
     overflow: hidden;
