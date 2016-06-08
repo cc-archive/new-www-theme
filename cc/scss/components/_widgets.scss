@@ -343,7 +343,7 @@
       }
 
       .resource.loading,
-      &.offscreen-below.never-shown .resource {
+      &.offscreen .resource {
         transform: translateY(30%);
         opacity: 0;
         visibility: hidden;

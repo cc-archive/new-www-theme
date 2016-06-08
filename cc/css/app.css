@@ -4138,7 +4138,7 @@ blockquote.cc-short-block {
         -ms-touch-action: manipulation;
         touch-action: manipulation; }
       .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile .resource.loading,
-      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile.offscreen-below.never-shown .resource {
+      .widget_creativecommons_resource_homepage_widget .resource-list .resource-tile.offscreen .resource {
         -webkit-transform: translateY(30%);
             -ms-transform: translateY(30%);
                 transform: translateY(30%);
