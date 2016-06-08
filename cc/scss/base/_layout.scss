@@ -47,8 +47,6 @@ body {
   &.sticky {
     position: absolute;
     bottom: 0;
-    transform: translateY(0);
-    transition: transform 0.4s ease;
   }
 
   &.sticky.detached {
@@ -57,10 +55,15 @@ body {
     top: 0;
     bottom: auto;
     z-index: 301;
+    transform: translateY(0);
+
+    &.offscreen {
+      transform: translateY(-105%);
+    }
   }
 
-  &.detached.offscreen {
-    transform: translateY(-100%);
+  &.sticky:not(.attached) {
+    transition: transform 0.4s ease;
   }
 
   &.sticky.detached {
@@ -301,8 +304,6 @@ body.admin-bar .site-header.sticky {
   &.sticky {
     position: absolute;
     bottom: 0;
-    transform: translateY(0);
-    transition: transform 0.4s ease;
   }
 
   &.sticky.detached {
@@ -310,10 +311,15 @@ body.admin-bar .site-header.sticky {
     position: fixed;
     bottom: 0;
     z-index: 201;
+    transform: translateY(0);
+
+    &.offscreen {
+      transform: translateY(105%);
+    }
   }
 
-  &.detached.offscreen {
-    transform: translateY(100%);
+  &.sticky:not(.attached) {
+    transition: transform 0.4s ease;
   }
 }
 

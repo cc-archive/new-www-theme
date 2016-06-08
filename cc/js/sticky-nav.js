@@ -16,7 +16,7 @@
     headerSpacerElem = headerElem.clone().attr('id', null).addClass('spacer');
     headerSpacerElem.removeClass('sticky-nav-main');
     headerSpacerElem.insertAfter(headerElem);
-    headerElem.addClass('sticky');
+    headerElem.addClass('sticky attached');
 
     if (footerFloatFromElem.length == 0 && $(document.body).hasClass('infinite-scroll')) {
         // Automatic sticky footer for Jetpack's infinite scroll pages.
@@ -28,26 +28,35 @@
         footerSpacerElem = footerElem.clone().attr('id', null).addClass('spacer');
         footerSpacerElem.removeClass('sticky-nav-main');
         footerSpacerElem.insertAfter(footerElem);
-        footerElem.addClass('sticky detached offscreen');
+        footerElem.addClass('sticky attached');
     }
+
+    var reflow = function(elem) {
+        if (elem.length > 0) elem[0].offsetTop;
+    };
 
     var updateSticky = function(stickyElem, spacerElem, options) {
         var detached = options['detached'] || false;
         var reveal = options['reveal'] || false;
 
         if (detached) {
-            stickyElem.addClass('detached');
-            spacerElem.addClass('detached');
             if (reveal) {
                 stickyElem.removeClass('offscreen');
             } else {
                 stickyElem.addClass('offscreen');
             }
+            stickyElem.addClass('detached');
+            spacerElem.addClass('detached');
+            // Force a reflow before removing the attached class. This way the
+            // CSS transition for .sticky.detached will be skipped.
+            reflow(stickyElem);
+            stickyElem.removeClass('attached');
         } else {
+            stickyElem.addClass('attached');
             stickyElem.removeClass('detached offscreen');
             spacerElem.removeClass('detached');
         }
-    }
+    };
 
     var onScrollCb = function(e, params) {
         // Show header if scrolling up past bottom of site-header, or initial page load.
@@ -55,7 +64,7 @@
             headerFloatOffset = headerElem.hasClass('detached') ? -headerElem.height() : 0;
         updateSticky(headerElem, headerSpacerElem, {
             detached: params['top'] > headerFloatTop + headerFloatOffset,
-            reveal: params['velocity'] < 0 || params['velocity'] == undefined
+            reveal: params['velocity'] < 0
         });
 
         if (footerFloatFromElem.length > 0) {
@@ -69,7 +78,7 @@
                 reveal: params['bottom'] >= footerFloatTop || params['bumpBottom']
             });
         }
-    }
+    };
 
     $(document).on('cc-scroll', onScrollCb);
 

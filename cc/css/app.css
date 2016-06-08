@@ -1023,24 +1023,25 @@ body::before, body::after {
       visibility: hidden; }
   .site-header.sticky {
     position: absolute;
-    bottom: 0;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transition: -webkit-transform 0.4s ease;
-    transition: -webkit-transform 0.4s ease;
-    transition: transform 0.4s ease;
-    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
+    bottom: 0; }
   .site-header.sticky.detached {
     /* Detached header behaviour */
     position: fixed;
     top: 0;
     bottom: auto;
-    z-index: 301; }
-  .site-header.detached.offscreen {
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%); }
+    z-index: 301;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+    .site-header.sticky.detached.offscreen {
+      -webkit-transform: translateY(-105%);
+          -ms-transform: translateY(-105%);
+              transform: translateY(-105%); }
+  .site-header.sticky:not(.attached) {
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
   .site-header.sticky.detached {
     /* Detached header contents */
     height: 40px; }
@@ -1259,23 +1260,24 @@ body.admin-bar .site-header.sticky {
     z-index: 200; }
   .site-footer.sticky {
     position: absolute;
-    bottom: 0;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transition: -webkit-transform 0.4s ease;
-    transition: -webkit-transform 0.4s ease;
-    transition: transform 0.4s ease;
-    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
+    bottom: 0; }
   .site-footer.sticky.detached {
     /* Detached footer behaviour */
     position: fixed;
     bottom: 0;
-    z-index: 201; }
-  .site-footer.detached.offscreen {
-    -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%); }
+    z-index: 201;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+    .site-footer.sticky.detached.offscreen {
+      -webkit-transform: translateY(105%);
+          -ms-transform: translateY(105%);
+              transform: translateY(105%); }
+  .site-footer.sticky:not(.attached) {
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
 
 .cc-footer {
   margin-left: 20px;

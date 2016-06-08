@@ -40,7 +40,8 @@
             'bottom': scrollBottom,
             'velocity': scrollVelocity,
             'bumpTop': scrollTop == 0,
-            'bumpBottom': scrollBottom == $(document).height()
+            'bumpBottom': scrollBottom == $(document).height(),
+            'ignoreVelocity': _isInitial || lastScrollTop === undefined
         }
 
         if (scrollVelocity < 0) {
