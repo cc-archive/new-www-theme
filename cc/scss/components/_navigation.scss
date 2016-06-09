@@ -355,6 +355,7 @@
       font-size: px2rem($fz-h4);
       margin-bottom: 25px;
       padding: 8px 10px;
+      text-transform: none;
       @include add-fontello-icon('\e808', 'after') {
         font-size: 1.5em;
         float: right;
