@@ -350,13 +350,17 @@
     padding: 0;
 
     > .widget-title {
-      background: $colour-primary;
+      background: #F8722A;
       color: $white;
       font-size: px2rem($fz-h4);
       margin-bottom: 25px;
       padding: 8px 10px;
       @include add-fontello-icon('\e808', 'after') {
+        font-size: 1.5em;
         float: right;
+        margin: 0;
+        position: relative;
+        top: -0.05em;
       }
 
       &:hover { cursor: pointer; }
