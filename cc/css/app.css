@@ -76,6 +76,11 @@ a:hover, a:focus {
 .entry-content a {
   box-shadow: none; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 h1, .h1 {
   color: #333333;
   font-size: 3.8rem;
@@ -1921,6 +1926,99 @@ body.admin-bar .site-header.sticky {
 .breadcrumbs {
   font-size: 1.5rem;
   margin-bottom: 25px; }
+
+@media (max-width: 56.874em) {
+  #advanced_sidebar_menu-3 {
+    display: none; } }
+
+@media (max-width: 56.874em) {
+  #advanced_sidebar_menu-3-clone {
+    padding: 0; }
+    #advanced_sidebar_menu-3-clone > .widget-title {
+      background: #EC592F;
+      color: #fff;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      padding: 8px 10px; }
+      #advanced_sidebar_menu-3-clone > .widget-title::after {
+        content: "";
+        font-family: "cc-fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: .2em;
+        text-align: center;
+        /* opacity: .8; */
+        /* For safety - reset parent styles, that can break glyph codes*/
+        font-variant: normal;
+        text-transform: none;
+        /* fix buttons height, for twitter bootstrap */
+        line-height: 1em;
+        /* Animation center compensation - margins should be symmetric */
+        /* remove if not needed */
+        margin-left: .2em;
+        /* you can be more comfortable with increased icons size */
+        /* font-size: 120%; */
+        /* Font smoothing. That was taken from TWBS */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* Uncomment for 3D effect */
+        /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+        float: right; }
+      #advanced_sidebar_menu-3-clone > .widget-title:hover {
+        cursor: pointer; }
+    #advanced_sidebar_menu-3-clone ul {
+      list-style: none;
+      margin: 0px; }
+      #advanced_sidebar_menu-3-clone ul li {
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        list-style-image: none;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        text-transform: capitalize;
+        position: relative;
+        padding-left: 20px; }
+        #advanced_sidebar_menu-3-clone ul li::before {
+          content: "";
+          font-family: "cc-fontello";
+          font-style: normal;
+          font-weight: normal;
+          speak: none;
+          display: inline-block;
+          text-decoration: inherit;
+          width: 1em;
+          margin-right: .2em;
+          text-align: center;
+          /* opacity: .8; */
+          /* For safety - reset parent styles, that can break glyph codes*/
+          font-variant: normal;
+          text-transform: none;
+          /* fix buttons height, for twitter bootstrap */
+          line-height: 1em;
+          /* Animation center compensation - margins should be symmetric */
+          /* remove if not needed */
+          margin-left: .2em;
+          /* you can be more comfortable with increased icons size */
+          /* font-size: 120%; */
+          /* Font smoothing. That was taken from TWBS */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          /* Uncomment for 3D effect */
+          /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+          color: #EC592F;
+          position: absolute;
+          left: -3px;
+          top: 4px;
+          font-size: 1.9rem; }
+    #advanced_sidebar_menu-3-clone.expanded > .widget-title::after {
+      content: '\e80b'; }
+    #advanced_sidebar_menu-3-clone > .child-sidebar-menu {
+      display: none; } }
 
 .widget_creativecommons_author_navigation_sidebar_widget,
 .widget_atom_twitter_feeds,

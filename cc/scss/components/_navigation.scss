@@ -337,6 +337,61 @@
 // =================================
 
 //---* In This Section
+#advanced_sidebar_menu-3 {
+
+  @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
+    display: none;
+  }
+}
+
+#advanced_sidebar_menu-3-clone {
+
+  @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
+    padding: 0;
+
+    > .widget-title {
+      background: $colour-primary;
+      color: $white;
+      font-size: px2rem($fz-h4);
+      margin-bottom: 25px;
+      padding: 8px 10px;
+      @include add-fontello-icon('\e808', 'after') {
+        float: right;
+      }
+
+      &:hover { cursor: pointer; }
+    }
+
+    ul {
+      list-style:none;
+      margin: 0px;
+
+      li {
+        @include font-weight($fw-semi-bold);
+        list-style-image: none ;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        text-transform: capitalize;
+        position: relative;
+        padding-left:20px;
+        @include  add-fontello-icon('\e80a','before') {
+          color:$orange-dark;
+          position:absolute;
+          left: -3px;
+          top: 4px;
+          font-size: px2rem($fz-h5);
+        }
+      }
+    }
+
+    &.expanded {
+
+      > .widget-title::after { content: '\e80b';}
+    }
+
+    > .child-sidebar-menu { display: none; }
+  }
+}
 
 //---* Find us on Twitter
 //---* Find new by topic

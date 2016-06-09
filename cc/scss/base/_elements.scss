@@ -37,6 +37,8 @@ a {
 //
 // Typography
 // ============================================================================
+h1, h2, h3, h4, h5, h6 { @include font-weight($fw-bold); }
+
 h1, .h1 {
   color: $grey-dark;
   font-size: px2rem(38);
@@ -408,7 +410,7 @@ blockquote {
 // Subscribe news letter :: about/contact/newsletter/
 // ============================================================================
 .subscribe-main-content {
-	
+
 	#email-Primary {
 		display:inline-block;
 		width: 60%;

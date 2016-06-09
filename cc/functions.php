@@ -59,6 +59,14 @@ function cc_enqueue_scripts() {
     '20160608',
     true
   );
+
+  wp_enqueue_script(
+    'cc-dynamic-subnavigation',
+    get_stylesheet_directory_uri() . '/js/dynamic-subnavigation.js',
+    array( 'jquery' ),
+    '20160608',
+    true
+  );
 }
 add_action( 'wp_enqueue_scripts', 'cc_enqueue_scripts' );
 
@@ -153,7 +161,7 @@ function cc_widgets_init() {
     'before_title'  => '<h2 class="rounded">',
     'after_title'   => '</h2>',
   ) );
-	
+
   register_sidebar( array(
     'name'          => 'Homepage Below Content',
     'id'            => 'home-content-below',
