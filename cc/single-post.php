@@ -8,6 +8,11 @@
  */
 
 get_header(); ?>
+
+<!-- header-below -->
+<?php get_sidebar( 'header-below' ); ?>
+<!-- END header-below -->
+
 <div id="primary" class="content-area">
   <div id="wrapper-main" class="wrapper-main">
     <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
