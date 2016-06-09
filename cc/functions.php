@@ -67,6 +67,14 @@ function cc_enqueue_scripts() {
     '20160608',
     true
   );
+
+  wp_enqueue_script(
+    'cc-donation',
+    get_stylesheet_directory_uri() . '/js/donation.js',
+    array( 'jquery' ),
+    '20160608',
+    true
+  );
 }
 add_action( 'wp_enqueue_scripts', 'cc_enqueue_scripts' );
 

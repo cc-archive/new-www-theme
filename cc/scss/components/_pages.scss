@@ -675,6 +675,8 @@ body.page-id-48781 {
         margin-bottom: 0;
         position: relative;
 
+        &.selected { border-color: $colour-donate; }
+
         input {
           background: #F3F3F3;
           border: 0 none;
