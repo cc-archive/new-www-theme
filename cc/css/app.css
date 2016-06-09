@@ -3431,6 +3431,26 @@ body.page-id-48781 ul.ways-to-give {
   float: none;
   width: 100%; }
 
+body.error404 {
+  height: 100%; }
+  body.error404 .page-title {
+    font-size: 4.4rem; }
+  body.error404 input {
+    padding-bottom: 0;
+    padding-top: 0; }
+  @media (min-width: 56.875em) {
+    body.error404 #page {
+      min-height: 100%;
+      padding-bottom: 190px; }
+      body.error404 #page > .site-inner {
+        position: static; }
+    body.error404 .site-footer-wrapper {
+      bottom: 0;
+      height: 190px;
+      left: 0;
+      position: absolute;
+      width: 100%; } }
+
 .cc-team-shortcode h2.cc-team-heading {
   padding-top: 30px;
   font-size: 2em;

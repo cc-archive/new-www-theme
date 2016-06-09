@@ -980,4 +980,36 @@ body.page-id-48781 {
 
 }
 
+//
+// 404
+// =================================
+body.error404 {
+  height: 100%;
 
+  .page-title {
+    font-size: px2rem($fz-h2);
+  }
+
+  input {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  @include breakpoint ($desktop-sm-layout) {
+
+    #page {
+      min-height: 100%;
+      padding-bottom: 190px;
+
+      > .site-inner { position: static; }
+    }
+
+    .site-footer-wrapper {
+      bottom: 0;
+      height: 190px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
