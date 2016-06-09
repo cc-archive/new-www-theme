@@ -2235,6 +2235,13 @@ h1.entry-title {
   line-height: 1.5em;
   margin: 0 0 10px 0; }
 
+.entry-content ul, .entry-content ol,
+.entry-summary ul,
+.entry-summary ol,
+.comment-content ul,
+.comment-content ol {
+  margin-left: 0.9em; }
+
 .global-affiliate-network {
   background-color: #00B5DA;
   padding: 55px 10px; }

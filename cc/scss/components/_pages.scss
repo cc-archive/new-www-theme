@@ -66,6 +66,13 @@ h1.entry-title {
   margin: 0 0 10px 0;
 }
 
+.entry-content,
+.entry-summary,
+.comment-content {
+
+  ul, ol { margin-left: 0.9em; }
+}
+
 .global-affiliate-network{
 	background-color: $blue-light;
 	padding: 55px 10px;
