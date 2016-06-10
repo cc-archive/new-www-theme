@@ -61,14 +61,6 @@ function cc_enqueue_scripts() {
   );
 
   wp_enqueue_script(
-    'cc-dynamic-subnavigation',
-    get_stylesheet_directory_uri() . '/js/dynamic-subnavigation.js',
-    array( 'jquery' ),
-    '20160608',
-    true
-  );
-
-  wp_enqueue_script(
     'cc-donation',
     get_stylesheet_directory_uri() . '/js/donation.js',
     array( 'jquery' ),
@@ -123,7 +115,17 @@ function cc_widgets_init() {
   register_sidebar( array(
     'name'          => 'Content Above',
     'id'            => 'content-above',
-    'description'   => 'Appears above the content after the title.',
+    'description'   => 'Appears above the content.',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
+
+  register_sidebar( array(
+    'name'          => 'Content Above (Mobile)',
+    'id'            => 'content-above-mobile',
+    'description'   => 'Appears above the content, on mobile.',
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h2 class="widget-title">',
@@ -171,7 +173,7 @@ function cc_widgets_init() {
   ) );
 
   register_sidebar( array(
-    'name'          => 'Homepage Below Content',
+    'name'          => 'Below Content (Homepage)',
     'id'            => 'home-content-below',
     'before_widget' => '<div id="%1$s" class="%2$s">',
     'after_widget'  => '</div>',

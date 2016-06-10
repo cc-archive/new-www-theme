@@ -336,77 +336,15 @@
 // Sidebar menu
 // =================================
 
-//---* In This Section
-#advanced_sidebar_menu-3 {
-
-  @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
-    display: none;
-  }
-}
-
-#advanced_sidebar_menu-3-clone {
-
-  @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
-    padding: 0;
-
-    > .widget-title {
-      background: #F8722A;
-      color: $white;
-      font-size: px2rem($fz-h4);
-      margin-bottom: 25px;
-      padding: 8px 10px;
-      text-transform: none;
-      @include add-fontello-icon('\e808', 'after') {
-        font-size: 1.5em;
-        float: right;
-        margin: 0;
-        position: relative;
-        top: -0.05em;
-      }
-
-      &:hover { cursor: pointer; }
-    }
-
-    ul {
-      list-style:none;
-      margin: 0px;
-
-      li {
-        @include font-weight($fw-semi-bold);
-        list-style-image: none ;
-        margin-bottom: 0px;
-        margin-top: 8px;
-        text-transform: capitalize;
-        position: relative;
-        padding-left:20px;
-        @include  add-fontello-icon('\e80a','before') {
-          color:$orange-dark;
-          position:absolute;
-          left: -3px;
-          top: 4px;
-          font-size: px2rem($fz-h5);
-        }
-      }
-    }
-
-    &.expanded {
-
-      > .widget-title::after { content: '\e80b';}
-    }
-
-    > .child-sidebar-menu { display: none; }
-  }
-}
-
 //---* Find us on Twitter
 //---* Find new by topic
 //---* Recent Post
 .widget_creativecommons_author_navigation_sidebar_widget,
 .widget_atom_twitter_feeds,
-#advanced_sidebar_menu-2 ,
-.widget_categories ,
+.widget.advanced-sidebar-menu,
+.widget_categories,
 .widget_recent_entries {
-	border-left: 10px solid $grey-lighter !important;
+  border-left: 10px solid $grey-lighter !important;
 
   .current_page_item,
   .current-page-ancestor {
@@ -414,6 +352,64 @@
     a {
       color: $colour-font;
     }
+  }
+}
+
+//---* In This Section
+#content-above-mobile .widget.advanced-sidebar-menu,
+#content-above-mobile .widget.widget_categories {
+  padding: 0;
+  border-left: none !important;
+
+  > .widget-title {
+    background: #F8722A;
+    color: $white;
+    font-size: px2rem($fz-sm);
+    line-height: $line-height-base;
+    font-weight: $fw-semi-bold;
+    margin-bottom: 20px;
+    padding: 8px 10px;
+    text-transform: none;
+
+    @include add-fontello-icon('\e808', 'after') {
+      padding-top: 2px;
+      font-size: 1.2em;
+      float: right;
+      margin: 0;
+      position: relative;
+    }
+
+    &:hover { cursor: pointer; }
+  }
+
+  ul {
+    list-style:none;
+    margin: 0 0 0 5px;
+
+    li {
+      @include font-weight($fw-semi-bold);
+      list-style-image: none ;
+      margin-bottom: 0px;
+      margin-top: 8px;
+      text-transform: capitalize;
+      position: relative;
+      padding-left: 20px;
+
+      @include  add-fontello-icon('\e80a','before') {
+        color:$orange-dark;
+        position:absolute;
+        left: -3px;
+        top: 4px;
+        font-size: px2rem($fz-h5);
+      }
+    }
+  }
+
+  > ul { display: none; }
+
+  &.expanded {
+    > .widget-title::after { content: '\e80b'; }
+    > ul { display: block; }
   }
 }
 

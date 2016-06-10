@@ -13,6 +13,13 @@
   line-height: inherit;
   margin-bottom: 3.230769231em;
   padding-top: 0;
+
+  &.cloned-for-mobile {
+    display: block;
+    @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
+      display: none;
+    }
+  }
 }
 
 //Sidebar General
@@ -60,6 +67,15 @@
 // =================================
 
 /* -- Sidebar -- */
+
+#content-above-mobile {
+  display: none;
+  margin-bottom: 25px;
+
+  @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
+    display: block;
+  }
+}
 
 /* -- home-content-below -- */
 #home-content-below {

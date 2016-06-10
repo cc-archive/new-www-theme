@@ -70,6 +70,7 @@ if (!empty($wp_query->query['author_name'])){
 					</div>
   			</header><!-- .page-header -->
 
+        <?php get_sidebar( 'content-above-mobile' ); ?>
         <?php get_sidebar( 'content-above' ); ?>
 
         <div class="bio">

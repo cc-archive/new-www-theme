@@ -35,6 +35,9 @@ get_header(); ?>
     				?>
     			</header><!-- .page-header -->
 
+                <?php get_sidebar( 'content-above-mobile' ); ?>
+                <?php get_sidebar( 'content-above' ); ?>
+
     			<?php
     			// Start the Loop.
     			while ( have_posts() ) : the_post();

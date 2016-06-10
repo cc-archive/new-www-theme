@@ -34,6 +34,7 @@ get_header(); ?>
     					the_archive_description( '<div class="taxonomy-description">', '</div>' );
     				?>
     			</header><!-- .page-header -->
+          <?php get_sidebar( 'content-above-mobile' ); ?>
           <?php get_sidebar( 'content-above' ); ?>
     			<?php
     			// Start the Loop.

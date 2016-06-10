@@ -73,9 +73,17 @@
 
     $(document).ready(function(e) {
         onScrollTimeoutCb(true);
+    });
 
-        $('.choose-license-btn').on('click', function() {
-            document.location.href = 'https://creativecommons.org/choose/'
+    $(document).ready(function() {
+        /* Mobile-friendly clone of the subnav widget */
+        var mobileSidebar = $('#content-above-mobile'),
+            mobileMenus = $('.widget_categories, .advanced-sidebar-menu', mobileSidebar);
+        mobileMenus.each(function(index, subnav) {
+            var subnavTitle = $(subnav).children('.widget-title');
+            subnavTitle.on('click.cc_dynamic_subnav', function() {
+                $(subnav).toggleClass('expanded');
+            });
         });
     });
 })(jQuery);

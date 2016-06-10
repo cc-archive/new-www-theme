@@ -25,6 +25,8 @@ get_header(); ?>
       }?>
     </div>
   	<main id="main" class="site-main" role="main">
+      <?php get_sidebar( 'content-above-mobile' ); ?>
+      <?php get_sidebar( 'content-above' ); ?>
   		<?php
     		// Start the loop.
     		while ( have_posts() ) : the_post();
