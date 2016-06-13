@@ -62,9 +62,9 @@ if (!empty($wp_query->query['author_name'])){
                 <?php if (filter_var($author->facebook, FILTER_VALIDATE_URL)): ?>
                   <a href="<?php print $author->facebook; ?>"><span class="genericon genericon-facebook"></span></a>
                 <?php endif; ?>
-	              <?php if (filter_var($author->user_email, FILTER_VALIDATE_EMAIL)): ?>
+	              <?php /* if (filter_var($author->user_email, FILTER_VALIDATE_EMAIL)): ?>
 	                <a href="mailto:<?php print $author->user_email; ?>"><span class="genericon genericon-mail"></span></a>
-	              <?php endif; ?>
+	              <?php endif; */ ?>
 	            </div>
 	          </div>
 					</div>
