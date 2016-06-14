@@ -1368,6 +1368,72 @@
   }
 }
 
+#gform_widget-4 {
+  padding-left:0px;
+
+  .widget-title {
+    font-family: $ff-roboto-condensed;
+    font-size: px2rem($fz-h5);
+    text-transform: uppercase;
+    position:relative;
+    padding-left: 45px;
+    font-size: px2rem($fz-h5);
+    @include  add-fontello-icon('\e801','before'){
+      color:$grey-lighter;
+      position:absolute;
+      left: -3px;
+      top: -8px;
+      @include breakpoint($desktop-sm-layout) {
+        top: -7px !important;
+      }
+      font-size: px2rem($fz-h3);
+    }
+  }
+
+  .gform_footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  li { padding: 0; }
+
+  label { @include visually-hidden(); }
+
+  #input_7_1 {
+    border: 0px;
+    font-size: px2rem($fz-sm);
+    width: 52%;
+    padding: 10px 5px 9px 5px;
+    @include breakpoint($desktop-sm-layout) {
+      width: 100%;
+    }
+    line-height: 1.0em;
+    margin-right: -5px;
+    &::-webkit-input-placeholder {
+      font-size: px2rem($fz-xxsm);
+      text-align: center;
+    }
+    &:focus{
+      background:#F3F3F3 !important;
+    }
+  }
+
+  #gform_submit_button_7 {
+    background: url('../images/primary-button-sprite.png') no-repeat right top;
+    border: 0 none;
+    color: $white;
+    height: 40px;
+    margin: 0;
+    padding-top: 13px;
+    width: 140px;
+
+    &:hover,
+    &:focus {
+      background-position: right bottom;
+    }
+  }
+}
+
 /* Stay Tuned to the Commons
  -- Homepage widget
  --------------------------------- */

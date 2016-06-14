@@ -5296,6 +5296,90 @@ blockquote.cc-short-block {
     padding: .5em 1.4em;
     vertical-align: top; }
 
+#gform_widget-4 {
+  padding-left: 0px; }
+  #gform_widget-4 .widget-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 45px;
+    font-size: 1.9rem; }
+    #gform_widget-4 .widget-title::before {
+      content: "";
+      font-family: "cc-fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+      /* you can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+      color: #E9E9E9;
+      position: absolute;
+      left: -3px;
+      top: -8px;
+      font-size: 3.2rem; }
+      @media (min-width: 56.875em) {
+        #gform_widget-4 .widget-title::before {
+          top: -7px !important; } }
+  #gform_widget-4 .gform_footer {
+    margin: 0;
+    padding: 0; }
+  #gform_widget-4 li {
+    padding: 0; }
+  #gform_widget-4 label {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  #gform_widget-4 #input_7_1 {
+    border: 0px;
+    font-size: 1.7rem;
+    width: 52%;
+    padding: 10px 5px 9px 5px;
+    line-height: 1.0em;
+    margin-right: -5px; }
+    @media (min-width: 56.875em) {
+      #gform_widget-4 #input_7_1 {
+        width: 100%; } }
+    #gform_widget-4 #input_7_1::-webkit-input-placeholder {
+      font-size: 1.5rem;
+      text-align: center; }
+    #gform_widget-4 #input_7_1:focus {
+      background: #F3F3F3 !important; }
+  #gform_widget-4 #gform_submit_button_7 {
+    background: url("../images/primary-button-sprite.png") no-repeat right top;
+    border: 0 none;
+    color: #fff;
+    height: 40px;
+    margin: 0;
+    padding-top: 13px;
+    width: 140px; }
+    #gform_widget-4 #gform_submit_button_7:hover, #gform_widget-4 #gform_submit_button_7:focus {
+      background-position: right bottom; }
+
 /* Stay Tuned to the Commons
  -- Homepage widget
  --------------------------------- */
