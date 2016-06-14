@@ -5354,6 +5354,8 @@ blockquote.cc-short-block {
     margin: -1px;
     padding: 0;
     border: 0; }
+  #gform_widget-4 #field_7_2 {
+    display: none; }
   #gform_widget-4 #input_7_1 {
     border: 0px;
     font-size: 1.7rem;
@@ -5448,6 +5450,137 @@ blockquote.cc-short-block {
         width: 50px; }
       #text-10 h2 span {
         display: block; } }
+
+#gform_widget-6 {
+  background-image: -webkit-linear-gradient(top, #E1B300, #EFBE00);
+  background-image: linear-gradient(180deg, #E1B300, #EFBE00);
+  padding: 40px 0; }
+  #gform_widget-6 h2 {
+    color: #333333;
+    font-size: 2.8rem;
+    line-height: 0.85em;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-transform: uppercase; }
+  #gform_widget-6 form {
+    padding-right: 140px;
+    position: relative; }
+  #gform_widget-6 label {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  #gform_widget-6 .gform_wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 1120px; }
+    @media (min-width: 1192px) {
+      #gform_widget-6 .gform_wrapper {
+        margin-left: auto;
+        margin-right: auto; } }
+  #gform_widget-6 #input_7_1 {
+    background: #fff url("../images/grey-envelope.png") no-repeat 15px center;
+    margin-bottom: 0;
+    padding-bottom: 0.8em;
+    padding-left: 50px;
+    padding-top: 0.8em;
+    width: 100%; }
+  #gform_widget-6 #gform_submit_button_7 {
+    background: url("../images/primary-button-sprite.png") no-repeat right top;
+    background-size: auto 200%;
+    border: 0 none;
+    color: #fff;
+    height: 50px;
+    margin: 0;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    width: 140px; }
+    #gform_widget-6 #gform_submit_button_7:hover, #gform_widget-6 #gform_submit_button_7:focus {
+      background-position: right bottom; }
+  #gform_widget-6 .gform_footer {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    z-index: 2; }
+  @media (min-width: 48.9375em) {
+    #gform_widget-6 * + * {
+      margin-top: 0; }
+    #gform_widget-6 li {
+      margin: 0; }
+    #gform_widget-6 form {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      padding-right: 0; }
+    #gform_widget-6 .gform_fields {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap; }
+    #gform_widget-6 .gform_wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 700px;
+      padding-left: 20px;
+      padding-right: 20px; }
+    #gform_widget-6 .gform_footer {
+      position: static; }
+    #gform_widget-6 h2 {
+      float: left;
+      margin-right: 24px;
+      padding-left: 60px;
+      position: relative; }
+      #gform_widget-6 h2::before {
+        background: url("../images/email_signup.png") no-repeat left center;
+        content: '';
+        display: block;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        top: -4px;
+        width: 50px; }
+      #gform_widget-6 h2 span {
+        display: block; }
+    #gform_widget-6 #input_7_1 {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 290px;
+          -ms-flex: 0 1 290px;
+              flex: 0 1 290px;
+      width: 240px; }
+    #gform_widget-6 #field_7_2 {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 310px;
+          -ms-flex: 0 1 310px;
+              flex: 0 1 310px;
+      width: 310px; } }
+  @media (min-width: 56.875em) {
+    #gform_widget-6 #input_7_1 {
+      width: 290px; } }
 
 /* End of: Stay Tuned to the Commons
  --------------------------------- */
