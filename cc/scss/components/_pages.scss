@@ -73,6 +73,39 @@ h1.entry-title {
   ul, ol { margin-left: 0.9em; }
 }
 
+.entry-content a,
+.entry-summary a,
+.taxonomy-description a,
+.logged-in-as a,
+.comment-content a,
+.pingback .comment-body > a,
+.textwidget a,
+.entry-footer a:hover,
+.site-info a:hover {
+  box-shadow: none;
+}
+
+.entry-footer {
+  color: $colour-link;
+  font-family: $ff-source-sans-pro;
+  font-size: px2rem($fz-base);
+  margin-top: 15px;
+
+  a {
+    &,
+    &:visited {
+      color: $colour-link;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colour-link-hover;
+      text-decoration: none;
+    }
+  }
+
+}
+
 .global-affiliate-network{
 	background-color: $blue-light;
 	padding: 55px 10px;
@@ -442,6 +475,19 @@ body.author{
       line-height: 0.9em;
       margin-bottom: 10px;
     }
+  }
+}
+
+//
+// Archive
+// =================================
+body.search {
+
+  .site-main > article {
+    margin-bottom: 40px;
+
+    @include breakpoint ($tablet-sm-layout) { margin-bottom: 60px; }
+    @include breakpoint ($desktop-sm-layout) { margin-bottom: 80px; }
   }
 }
 

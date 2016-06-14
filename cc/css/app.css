@@ -2252,6 +2252,28 @@ h1.entry-title {
 .comment-content ol {
   margin-left: 0.9em; }
 
+.entry-content a,
+.entry-summary a,
+.taxonomy-description a,
+.logged-in-as a,
+.comment-content a,
+.pingback .comment-body > a,
+.textwidget a,
+.entry-footer a:hover,
+.site-info a:hover {
+  box-shadow: none; }
+
+.entry-footer {
+  color: #049CCF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.9rem;
+  margin-top: 15px; }
+  .entry-footer a, .entry-footer a:visited {
+    color: #049CCF; }
+  .entry-footer a:hover, .entry-footer a:focus {
+    color: #464646;
+    text-decoration: none; }
+
 .global-affiliate-network {
   background-color: #00B5DA;
   padding: 55px 10px; }
@@ -2786,6 +2808,15 @@ body.author .site-main h3.news-rule {
   text-transform: uppercase;
   line-height: 0.9em;
   margin-bottom: 10px; }
+
+body.search .site-main > article {
+  margin-bottom: 40px; }
+  @media (min-width: 44.375em) {
+    body.search .site-main > article {
+      margin-bottom: 60px; } }
+  @media (min-width: 56.875em) {
+    body.search .site-main > article {
+      margin-bottom: 80px; } }
 
 body.archive .page-header {
   margin-bottom: 0px; }
