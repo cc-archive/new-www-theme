@@ -78,7 +78,9 @@ if (!empty($wp_query->query['author_name'])){
           <?php print wpautop(htmlspecialchars_decode($author->cc_biography)); ?>
         </div>
 
-        <h3 class="news-rule"><?php print $author->first_name; ?>'s News</h3>
+        <?php if(!empty($post->post_content)) { ?>
+          <h3 class="news-rule"><?php print $author->first_name; ?>'s News</h3>
+        <?php } ?>
 
         <?php
           // Start the Loop.
