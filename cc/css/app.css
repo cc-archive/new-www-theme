@@ -3273,6 +3273,7 @@ body.page-id-48781 .button[value="Next"],
 body.page-id-48781 .button[value="Submit"] {
   background: url("../images/donate-button-sprite.png") no-repeat right top;
   border: 0 none;
+  box-shadow: none;
   color: #fff;
   height: 54px;
   margin: 0 10px !important;
