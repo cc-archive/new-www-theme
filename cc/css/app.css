@@ -4235,6 +4235,7 @@ blockquote.cc-short-block {
   #gform_widget-5 .gform_button[value="Next"] {
     background: url("../images/donate-button-sprite.png") no-repeat right top;
     background-size: auto 94px;
+    box-shadow: none;
     border: 0 none;
     color: #fff;
     font-size: 2rem;
