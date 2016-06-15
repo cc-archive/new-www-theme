@@ -3581,10 +3581,10 @@ body.error404 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -3594,6 +3594,12 @@ body.error404 {
   -webkit-align-content: stretch;
       -ms-flex-line-pack: stretch;
           align-content: stretch; }
+  @media (min-width: 44.375em) {
+    .cc-team-shortcode ul {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   @media (min-width: 75em) {
     .cc-team-shortcode ul::after {
       content: "";
@@ -3604,9 +3610,9 @@ body.error404 {
   .cc-team-shortcode ul li {
     list-style-image: none;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+    -webkit-flex: 0 1 330px;
+        -ms-flex: 0 1 330px;
+            flex: 0 1 330px;
     padding-bottom: 50px;
     position: relative;
     background-color: #E9E9E9;

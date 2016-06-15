@@ -10,10 +10,13 @@
   ul {
 		display: flex;
 		flex-wrap: wrap ;
-		justify-content: space-between;
+		justify-content: center;
 		flex-direction: row;
     list-style: none;
 		align-content: stretch;
+    @include breakpoint($tablet-sm-layout) {
+      justify-content: space-between;
+    }
 		@include breakpoint($desktop-lg-layout){
 			&::after {
 		  	content: "";
@@ -22,7 +25,7 @@
 		}
 		li {
 			list-style-image: none ;
-	    flex: 0 1 100%;
+	    flex: 0 1 330px;
       padding-bottom: 50px;
       position: relative;
 			@include breakpoint($tablet-sm-layout) {
