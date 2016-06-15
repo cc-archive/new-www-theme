@@ -1423,6 +1423,7 @@
   #gform_submit_button_7 {
     background: url('../images/primary-button-sprite.png') no-repeat right top;
     border: 0 none;
+    box-shadow: none;
     color: $white;
     height: 40px;
     margin: 0;
@@ -1550,6 +1551,7 @@
   #gform_submit_button_7 {
     background: url('../images/primary-button-sprite.png') no-repeat right top;
     background-size: auto 200%;
+    box-shadow: none;
     border: 0 none;
     color: $white;
     height: 50px;
