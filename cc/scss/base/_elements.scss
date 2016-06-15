@@ -111,16 +111,26 @@ textarea {
   color: $grey-medium;
   font-family: $ff-source-sans-pro;
   font-size: px2rem($fz-xsm);
+
+  &:not([placeholder='']) {
+    margin-bottom: 10px;
+
+    &+ label { display: none !important; }
+  }
+
+  &:focus {
+    background-color: #F3F3F3;
+    border-color: $grey-darker;
+  }
 }
 
-//
-// Btns
-// ============================================================================
-button,
+select { padding: 0.625em 0.4375em; }
+
 input[type="submit"] {
-  color: $grey-medium;
-  font-family: $ff-source-sans-pro;
+  @include button('default');
 }
+
+.crm-marker { color: $colour-primary; }
 
 /* -- Search form -- */
 .search-form {

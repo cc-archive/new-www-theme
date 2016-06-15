@@ -149,11 +149,80 @@ textarea {
   color: #464646;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem; }
+  select:not([placeholder='']),
+  input[type="text"]:not([placeholder='']),
+  input[type="email"]:not([placeholder='']),
+  input[type="url"]:not([placeholder='']),
+  input[type="password"]:not([placeholder='']),
+  input[type="search"]:not([placeholder='']),
+  input[type="tel"]:not([placeholder='']),
+  input[type="number"]:not([placeholder='']),
+  textarea:not([placeholder='']) {
+    margin-bottom: 10px; }
+    select:not([placeholder='']) + label,
+    input[type="text"]:not([placeholder='']) + label,
+    input[type="email"]:not([placeholder='']) + label,
+    input[type="url"]:not([placeholder='']) + label,
+    input[type="password"]:not([placeholder='']) + label,
+    input[type="search"]:not([placeholder='']) + label,
+    input[type="tel"]:not([placeholder='']) + label,
+    input[type="number"]:not([placeholder='']) + label,
+    textarea:not([placeholder='']) + label {
+      display: none !important; }
+  select:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    background-color: #F3F3F3;
+    border-color: #2B2B2B; }
 
-button,
+select {
+  padding: 0.625em 0.4375em; }
+
 input[type="submit"] {
-  color: #464646;
-  font-family: "Source Sans Pro", sans-serif; }
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1em;
+  margin-bottom: 0;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #D3D3D3);
+  background-image: linear-gradient(180deg, #FFFFFF, #D3D3D3);
+  border-color: #d4d4d4;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.6);
+  color: #333333; }
+  input[type="submit"] [class*="cc-icon-"]::before {
+    line-height: 0.8em; }
+  input[type="submit"]:hover {
+    background: -webkit-linear-gradient(bottom, #D2D2D2, #A1A1A1);
+    background: linear-gradient(0deg, #D2D2D2, #A1A1A1);
+    border-color: #b2b2b2; }
+
+.crm-marker {
+  color: #EC592F; }
 
 /* -- Search form -- */
 .search-form {
