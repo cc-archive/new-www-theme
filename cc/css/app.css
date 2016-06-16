@@ -3987,7 +3987,6 @@ blockquote.cc-short-block {
     .wrapper-sidebar .widget ul li {
       list-style-image: none;
       margin-bottom: 0px;
-      text-transform: capitalize;
       position: relative;
       padding-left: 20px; }
       .wrapper-sidebar .widget ul li::before {
