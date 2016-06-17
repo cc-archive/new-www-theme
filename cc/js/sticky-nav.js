@@ -36,13 +36,14 @@
     };
 
     var updateSticky = function(stickyElem, spacerElem, options) {
-        var detached = options['detached'] || false;
-        var reveal = options['reveal'] || false;
+        var detached = options['detached'];
+        var reveal = options['reveal'];
+        var hide = options['hide'];
 
-        if (detached) {
-            if (reveal) {
+        if (detached === true) {
+            if (reveal === true) {
                 stickyElem.removeClass('offscreen');
-            } else {
+            } else if (hide !== false) {
                 stickyElem.addClass('offscreen');
             }
             stickyElem.addClass('detached');
@@ -64,7 +65,8 @@
             headerFloatOffset = headerElem.hasClass('detached') ? -headerElem.height() : 0;
         updateSticky(headerElem, headerSpacerElem, {
             detached: params['top'] > headerFloatTop + headerFloatOffset,
-            reveal: params['velocity'] < 0
+            reveal: params['velocity'] < -20,
+            hide: params['velocity'] > 0
         });
 
         if (footerFloatFromElem.length > 0) {
