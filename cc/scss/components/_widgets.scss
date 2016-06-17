@@ -1637,7 +1637,8 @@
     display: block;
     margin: 0;
     margin-right: $gutter * 1.5;
-    flex-grow: 1;
+    flex-grow: 0;
+    align-self: center;
   }
 
   .donate-action {
