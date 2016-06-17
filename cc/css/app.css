@@ -550,8 +550,8 @@ button,
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       padding-top: 0.4em;
       position: relative;
       z-index: 1;
@@ -569,7 +569,8 @@ button,
         left: 100%;
         position: absolute;
         top: 0;
-        width: 0; }
+        width: 0;
+        margin: -1px 1px; }
       button.primary.arrow [class*="cc-icon-"]::before,
       .button.primary.arrow [class*="cc-icon-"]::before {
         line-height: 0.8em; }
@@ -653,8 +654,8 @@ button,
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       padding-top: 0.4em;
       position: relative;
       z-index: 1;
@@ -672,7 +673,8 @@ button,
         left: 100%;
         position: absolute;
         top: 0;
-        width: 0; }
+        width: 0;
+        margin: -1px 1px; }
       button.secondary.arrow [class*="cc-icon-"]::before,
       .button.secondary.arrow [class*="cc-icon-"]::before {
         line-height: 0.8em; }
@@ -756,8 +758,8 @@ button,
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       padding-top: 0.4em;
       position: relative;
       z-index: 1;
@@ -775,7 +777,8 @@ button,
         left: 100%;
         position: absolute;
         top: 0;
-        width: 0; }
+        width: 0;
+        margin: -1px 1px; }
       button.tertiary.arrow [class*="cc-icon-"]::before,
       .button.tertiary.arrow [class*="cc-icon-"]::before {
         line-height: 0.8em; }
@@ -859,8 +862,8 @@ button,
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
       padding-top: 0.4em;
       position: relative;
       z-index: 1;
@@ -878,7 +881,8 @@ button,
         left: 100%;
         position: absolute;
         top: 0;
-        width: 0; }
+        width: 0;
+        margin: -1px 1px; }
       button.donate.arrow [class*="cc-icon-"]::before,
       .button.donate.arrow [class*="cc-icon-"]::before {
         line-height: 0.8em; }
@@ -1013,8 +1017,8 @@ blockquote {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     padding-top: 0.4em;
     position: relative;
     z-index: 1;
@@ -1034,7 +1038,8 @@ blockquote {
       left: 100%;
       position: absolute;
       top: 0;
-      width: 0; }
+      width: 0;
+      margin: -1px 1px; }
     #gform_wrapper_5 .gform_footer [class*="cc-icon-"]::before {
       line-height: 0.8em; }
     #gform_wrapper_5 .gform_footer::after {
