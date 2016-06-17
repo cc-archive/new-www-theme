@@ -13,13 +13,6 @@
   line-height: inherit;
   margin-bottom: 3.230769231em;
   padding-top: 0;
-
-  &.cloned-for-mobile {
-    display: block;
-    @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
-      display: none;
-    }
-  }
 }
 
 //Sidebar General
@@ -1216,95 +1209,6 @@
 
 	/* End of: News
 	 --------------------------------- */
-
-
-	//
-	// Individual widgets
-	// =================================
-
-	/* -- Donation bar -- */
-	.donation-bar-wrapper {
-	  background: $grey-lighter;
-	  border-bottom: 1px solid $white;
-	  color: $grey-dark;
-	  @include font-weight($fw-bold);
-	  padding: 15px 0;
-	}
-
-	.donation-bar-inner {
-	  @include content-constrained();
-	  @include clearfix();
-
-	  p {
-	    display: inline-block;
-	    margin-bottom: 0;
-
-	    &:nth-child(1) {
-	      margin-right: $gutter;
-	    }
-	  }
-
-	  .button.donate{
-	    padding-left: 40px !important;
-
-	    &::before {
-	      background: url("../images/cc_heart-white.png") no-repeat left center;
-	      background-size: 30px;
-	      content: '';
-	      height: 28px;
-	      left: 5px;
-	      position: absolute;
-	      top: 5px;
-	      width: 30px;
-	    }
-	  }
-
-	  @include breakpoint (max-width $tablet-sm-layout - 0.001em) {
-	    font-size: px2rem($fz-xxsm);
-	    line-height: 1.5em;
-	    @include font-weight($fw-semi-bold);
-
-	    p {
-	      float: left;
-	      width: 50%;
-
-	      &:nth-child(1) {
-	        margin-right: 0;
-	        padding-right: floor($gutter / 2);
-	      }
-	      &:nth-child(2) {
-	        float: right;
-	        padding-left: ceil($gutter / 2);
-	      }
-	    }
-
-	    .button {
-	      padding-left: 2px !important;
-	      padding-right: 4px !important;
-	    }
-	  }
-
-	  @include breakpoint ($desktop-sm-layout) {
-	    font-size: px2rem($fz-xlg);
-	    line-height: 1.5em;
-
-	    .button {
-	      font-size: px2rem($fz-xlg) !important;
-
-	      &.donate {
-	        padding-left: 55px !important;
-
-	        &::before {
-	          background-size: 36px;
-	          height: 32px;
-	          left: 10px;
-	          top: 8px;
-	          width: 36px;
-	        }
-	      }
-	    }
-	  }
-	}
 }
 
 
@@ -1725,30 +1629,36 @@
 }
 
 .donation-bar-inner {
+  display: flex;
   @include content-constrained();
   @include clearfix();
 
-  p {
-    display: inline-block;
-    margin-bottom: 0;
+  .donate-text {
+    display: block;
+    margin: 0;
+    margin-right: $gutter * 1.5;
+    flex-grow: 1;
+  }
 
-    &:nth-child(1) {
-      margin-right: $gutter;
-    }
+  .donate-action {
+    align-self: center;
   }
 
   .button.donate{
-    padding-left: 40px !important;
+    padding-left: 8px + 30px + 8px !important;
+    padding-right: 8px !important;
+    margin-right: 8px;
 
     &::before {
-      background: url("../images/cc_heart-white.png") no-repeat left center;
-      background-size: 30px;
-      content: '';
-      height: 28px;
-      left: 5px;
       position: absolute;
-      top: 5px;
+      content: '';
+      background: url("../images/cc-heart.white.png") no-repeat left center;
+      background-image: url("../images/cc-heart.white.svg"), none;
+      background-size: 30px auto; // ratio: 0.8773
       width: 30px;
+      height: 28px;
+      top: 4px;
+      left: 8px;
     }
   }
 
@@ -1757,23 +1667,8 @@
     line-height: 1.5em;
     @include font-weight($fw-semi-bold);
 
-    p {
-      float: left;
-      width: 50%;
-
-      &:nth-child(1) {
-        margin-right: 0;
-        padding-right: floor($gutter / 2);
-      }
-      &:nth-child(2) {
-        float: right;
-        padding-left: ceil($gutter / 2);
-      }
-    }
-
-    .button {
-      padding-left: 2px !important;
-      padding-right: 4px !important;
+    .donate-text {
+      margin-right: 20px;
     }
   }
 
@@ -1781,19 +1676,22 @@
     font-size: px2rem($fz-xlg);
     line-height: 1.5em;
 
-    .button {
+    .donate-text {
+      flex-grow: 0;
+    }
+
+    .button.donate {
       font-size: px2rem($fz-xlg) !important;
+      padding-left: 12px + 36px + 12px !important;
+      padding-right: 20px !important;
+      margin-right: 20px;
 
-      &.donate {
-        padding-left: 55px !important;
-
-        &::before {
-          background-size: 36px;
-          height: 32px;
-          left: 10px;
-          top: 8px;
-          width: 36px;
-        }
+      &::before {
+        background-size: 36px auto;
+        width: 36px;
+        height: 32px;
+        top: 10px;
+        left: 12px;
       }
     }
   }

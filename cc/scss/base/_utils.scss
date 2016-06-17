@@ -21,3 +21,9 @@
     display: none;
   }
 }
+
+.widget.cloned-for-mobile {
+  @include breakpoint (max-width $desktop-sm-layout - 0.001em) {
+    display: none;
+  }
+}
