@@ -43,7 +43,7 @@
 
             <ul>
               <li><a href="mailto:Info@creativecommons.org" class="mail">Info@creativecommons.org</a></li>
-              <li><a href="tel:1-145-429-5471">1-145-429-5471</a></li>
+              <li><a href="tel:1-415-429-6753">1-415-429-6753</a></li>
               <li><a href="/faq">Frequently Asked Questions</a></li>
             </ul>
           </div>
