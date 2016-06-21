@@ -32,7 +32,7 @@
 				<div class="site-header-main">
 					<div class="site-branding">
 						<a class="cc-site-logo-link" href="<?php echo home_url('/'); ?>" rel="home">
-							<img class="cc-site-logo" width="303" height="72" src="<?php echo get_stylesheet_directory_uri() . '/images/cc.logo.white.svg' ?>">
+							<img class="cc-site-logo" alt="Creative Commons" width="303" height="72" src="<?php echo get_stylesheet_directory_uri() . '/images/cc.logo.white.svg' ?>">
 						</a>
 					</div><!-- .site-branding -->
 
