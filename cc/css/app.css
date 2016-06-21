@@ -2371,7 +2371,7 @@ h1.entry-title {
     width: auto;
     vertical-align: bottom; }
 
-.paltform-partner ul {
+.platform-partner ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2393,13 +2393,13 @@ h1.entry-title {
       -ms-flex-line-pack: stretch;
           align-content: stretch; }
   @media (min-width: 75em) {
-    .paltform-partner ul::after {
+    .platform-partner ul::after {
       content: "";
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 18%;
           -ms-flex: 0 1 18%;
               flex: 0 1 18%; } }
-  .paltform-partner ul li {
+  .platform-partner ul li {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2418,18 +2418,18 @@ h1.entry-title {
             flex: 0 1 46%;
     margin-bottom: 25px; }
     @media (min-width: 44.375em) {
-      .paltform-partner ul li {
+      .platform-partner ul li {
         -webkit-box-flex: 0;
         -webkit-flex: 0 1 23%;
             -ms-flex: 0 1 23%;
                 flex: 0 1 23%; } }
     @media (min-width: 75em) {
-      .paltform-partner ul li {
+      .platform-partner ul li {
         -webkit-box-flex: 0;
         -webkit-flex: 0 1 18%;
             -ms-flex: 0 1 18%;
                 flex: 0 1 18%; } }
-    .paltform-partner ul li img {
+    .platform-partner ul li img {
       max-width: none;
       width: 100%; }
 
