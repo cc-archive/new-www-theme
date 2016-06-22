@@ -61,14 +61,14 @@ function cc_enqueue_scripts() {
     'cc-style',
     get_stylesheet_directory_uri() . '/css/app.css',
     array( 'parent-style', 'cc-google-fonts', 'cc-fontello' ),
-    '20160608'
+    '20160622'
   );
 
   wp_enqueue_script(
     'cc-breakpoint-body-class',
     get_stylesheet_directory_uri() . '/js/breakpoint-body-class.js',
     array( 'jquery' ),
-    '20160608',
+    '20160622',
     true
   );
 
@@ -76,7 +76,7 @@ function cc_enqueue_scripts() {
     'cc-common',
     get_stylesheet_directory_uri() . '/js/cc.js',
     array( 'jquery' ),
-    '20160608',
+    '20160622',
     true
   );
 
@@ -84,7 +84,7 @@ function cc_enqueue_scripts() {
     'cc-sticky-nav',
     get_stylesheet_directory_uri() . '/js/sticky-nav.js',
     array( 'cc-common', 'jquery' ),
-    '20160608',
+    '20160622',
     true
   );
 
@@ -92,7 +92,7 @@ function cc_enqueue_scripts() {
     'cc-toggle-search',
     get_stylesheet_directory_uri() . '/js/toggle-search.js',
     array( 'jquery' ),
-    '20160608',
+    '20160622',
     true
   );
 
@@ -100,7 +100,7 @@ function cc_enqueue_scripts() {
     'cc-donation',
     get_stylesheet_directory_uri() . '/js/donation.js',
     array( 'jquery' ),
-    '20160608',
+    '20160622',
     true
   );
 }

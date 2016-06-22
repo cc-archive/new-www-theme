@@ -375,27 +375,26 @@ blockquote {
 
   .gform_body {
     width: 55%;
+    margin: 0;
 
     @include breakpoint ($tablet-sm-layout) {
       width: 50%;
     }
 
-    .ginput_container.ginput_container_text {
-      margin: 0;
+    .gfield_label {
+      display: none;
     }
 
-    ul {
-      li {
-        .gfield_label {
-          display: none;
-        }
-        .ginput_container {
-          input {
-            padding: 8px 4px;
-            width:100%;
-          }
-        }
+    .ginput_container {
+      input {
+        padding: 8px 4px;
+        width: 100%;
+        height: 40px; /* matches height of input-button */
       }
+    }
+
+    .ginput_container.ginput_container_text {
+      margin: 0;
     }
   }
 

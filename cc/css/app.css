@@ -983,17 +983,20 @@ blockquote {
         -ms-flex-direction: row;
             flex-direction: row; }
   .cc-search-form .gform_wrapper .gform_body {
-    width: 55%; }
+    width: 55%;
+    margin: 0; }
     @media (min-width: 44.375em) {
       .cc-search-form .gform_wrapper .gform_body {
         width: 50%; } }
+    .cc-search-form .gform_wrapper .gform_body .gfield_label {
+      display: none; }
+    .cc-search-form .gform_wrapper .gform_body .ginput_container input {
+      padding: 8px 4px;
+      width: 100%;
+      height: 40px;
+      /* matches height of input-button */ }
     .cc-search-form .gform_wrapper .gform_body .ginput_container.ginput_container_text {
       margin: 0; }
-    .cc-search-form .gform_wrapper .gform_body ul li .gfield_label {
-      display: none; }
-    .cc-search-form .gform_wrapper .gform_body ul li .ginput_container input {
-      padding: 8px 4px;
-      width: 100%; }
   .cc-search-form .gform_wrapper .gform_footer.left_label {
     width: 12em;
     -webkit-flex-shrink: 1;
