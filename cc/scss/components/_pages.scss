@@ -136,10 +136,12 @@ h1.entry-title {
 .platform-partner {
 	ul {
 		display: flex;
-		flex-wrap: wrap ;
+    margin: 0 0 1.75em 0;
+    padding: 0;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		flex-direction: row;
-    list-style: none;
+        list-style: none;
 		align-content: stretch;
 		@include breakpoint($desktop-lg-layout){
 			&::after {
@@ -149,6 +151,8 @@ h1.entry-title {
 		}
 		li {
 			display: flex;
+      margin: 0;
+      padding: 0;
 	    align-items: center;
 	    justify-content: center;
 	    flex: 0 1 46%;
