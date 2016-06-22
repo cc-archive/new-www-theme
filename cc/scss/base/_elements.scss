@@ -321,8 +321,8 @@ ul {
   }
 }
 li {
-	margin-bottom: 0.5em;
-	list-style-image:url('../images/bulletin.png');
+  margin-bottom: 0.5em;
+  list-style-image:url('../images/bulletin.png');
 }
 
 //
@@ -343,18 +343,18 @@ hr {
 // ============================================================================
 .more-link {
   display: inline-block;
-	font-size: px2rem($fz-sm);
+  font-size: px2rem($fz-sm);
   @include font-weight($fw-bold);
-	text-transform: uppercase;
-	@include add-fontello-icon('\e80a','after'){
-		color: $orange-medium;
-	}
+  text-transform: uppercase;
+  @include add-fontello-icon('\e80a','after'){
+    color: $orange-medium;
+  }
 }
 //
 // Blockquote
 // ============================================================================
 blockquote {
-	border-left: 10px solid $blue-light;
+  border-left: 10px solid $blue-light;
   color: $grey-medium;
   font-size: px2rem($fz-quote);
   font-style: normal;
@@ -363,58 +363,69 @@ blockquote {
 }
 
 //
-// Gravity Form on User & mix page
+// Gravity Form on Use & remix page
 // ============================================================================
-#gform_wrapper_5 {
-	margin: 0px;
-	.gform_body {
-		.ginput_container.ginput_container_text {
-			margin:0px !important;
-		}
-		float:left;
-		width:55%;
-	  @include breakpoint ($tablet-sm-layout) {
-			width:50%;
-		}
-		clear:none !important;
-		margin: 0px !important;
-		padding: 0px !important;
-		ul {
-			li {
-				.gfield_label {
-					display: none;
-				}
-				.ginput_container {
-					input {
-						padding: 8px 4px;
-						width:100%;
-					}
-				}
-			}
-		}
-	}
-	.gform_footer {
-		width:45% !important;
-    border-bottom-right-radius: 0px !important;
-    border-top-right-radius: 0px  !important;
-	  @include breakpoint ($tablet-sm-layout) {
-			width:30% !important;
-		}
-		float:left;
-		border:0px !important;
-		border-radius: 0px;
-		clear:none !important;
-		margin: 0px !important;
-		padding: 0px !important;
-    @include button($style: 'primary', $add-basic-style: true, $add-parent-style: true, $arrow-style: true, $border-radius: 0);
+.cc-search-form .gform_wrapper {
+  display: block;
 
-		input {
-			border:0px;
-			border-radius: 0px;
-      box-shadow: none;
-			text-transform: none;
-		}
-	}
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gform_body {
+    width: 55%;
+
+    @include breakpoint ($tablet-sm-layout) {
+      width: 50%;
+    }
+
+    .ginput_container.ginput_container_text {
+      margin: 0;
+    }
+
+    ul {
+      li {
+        .gfield_label {
+          display: none;
+        }
+        .ginput_container {
+          input {
+            padding: 8px 4px;
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+
+  .gform_footer.left_label {
+    width: 12em;
+    flex-shrink: 1;
+    margin: 0;
+    padding: 0;
+
+    .button.gform_button {
+      @include input-button($style: 'primary', $border-radius: 0);
+      width: 100%;
+      text-transform: none;
+    }
+
+    // border-bottom-right-radius: 0px !important;
+    // border-top-right-radius: 0px  !important;
+    // border:0px !important;
+    // border-radius: 0px;
+    // clear:none !important;
+    // margin: 0px !important;
+    // padding: 0px !important;
+
+    // input {
+    //  border:0px;
+    //  border-radius: 0px;
+  //     box-shadow: none;
+    //  text-transform: none;
+    // }
+  }
 }
 
 //
@@ -422,15 +433,15 @@ blockquote {
 // ============================================================================
 .subscribe-main-content {
 
-	#email-Primary {
-		display:inline-block;
-		width: 60%;
+  #email-Primary {
+    display:inline-block;
+    width: 60%;
     padding: 7.8px !important;
-		@include breakpoint($desktop-sm-layout) {
-			width: 50%;
-		}
-		@include breakpoint($desktop-md-layout) {
-			width: 40%;
-		}
-	}
+    @include breakpoint($desktop-sm-layout) {
+      width: 50%;
+    }
+    @include breakpoint($desktop-md-layout) {
+      width: 40%;
+    }
+  }
 }

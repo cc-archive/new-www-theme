@@ -46,7 +46,12 @@
  * @param string $border-radius: value for css property 'border-radius'
  */
 /**
- * Stager a transition-delay within a large grid of elements.
+ * Provide a pointy arrow style for an input element that renders as a button.
+ * Note that this is quite limited and it is a much better idea to use the
+ * button mixin with either an <a> or a <button> element.
+ */
+/**
+ * Stagger a transition-delay within a large grid of elements.
  */
 /**
  * @file
@@ -965,96 +970,50 @@ blockquote {
   -moz-osx-font-smoothing: grayscale;
   margin-left: 0px !important; }
 
-#gform_wrapper_5 {
-  margin: 0px; }
-  #gform_wrapper_5 .gform_body {
-    float: left;
-    width: 55%;
-    clear: none !important;
-    margin: 0px !important;
-    padding: 0px !important; }
-    #gform_wrapper_5 .gform_body .ginput_container.ginput_container_text {
-      margin: 0px !important; }
+.cc-search-form .gform_wrapper {
+  display: block; }
+  .cc-search-form .gform_wrapper form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .cc-search-form .gform_wrapper .gform_body {
+    width: 55%; }
     @media (min-width: 44.375em) {
-      #gform_wrapper_5 .gform_body {
+      .cc-search-form .gform_wrapper .gform_body {
         width: 50%; } }
-    #gform_wrapper_5 .gform_body ul li .gfield_label {
+    .cc-search-form .gform_wrapper .gform_body .ginput_container.ginput_container_text {
+      margin: 0; }
+    .cc-search-form .gform_wrapper .gform_body ul li .gfield_label {
       display: none; }
-    #gform_wrapper_5 .gform_body ul li .ginput_container input {
+    .cc-search-form .gform_wrapper .gform_body ul li .ginput_container input {
       padding: 8px 4px;
       width: 100%; }
-  #gform_wrapper_5 .gform_footer {
-    width: 45% !important;
-    border-bottom-right-radius: 0px !important;
-    border-top-right-radius: 0px  !important;
-    float: left;
-    border: 0px !important;
-    border-radius: 0px;
-    clear: none !important;
-    margin: 0px !important;
-    padding: 0px !important;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 0;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 1.9rem;
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1em;
-    margin-bottom: 0;
-    padding: .5em 1em;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-        touch-action: manipulation;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding-top: 0.4em;
-    position: relative;
-    z-index: 1;
-    background: #EC592F;
-    border-color: #EC592F;
-    color: #fff; }
-    @media (min-width: 44.375em) {
-      #gform_wrapper_5 .gform_footer {
-        width: 30% !important; } }
-    #gform_wrapper_5 .gform_footer::after {
-      content: '';
-      display: block;
-      border-color: transparent;
-      border-style: solid none solid solid;
-      border-width: 1em 0 1em 0.6em;
-      height: 0;
-      left: 100%;
-      position: absolute;
-      top: 0;
-      width: 0;
-      margin: -1px 1px; }
-    #gform_wrapper_5 .gform_footer [class*="cc-icon-"]::before {
-      line-height: 0.8em; }
-    #gform_wrapper_5 .gform_footer::after {
-      border-left-color: #EC592F; }
-    #gform_wrapper_5 .gform_footer:hover {
-      background: #FB7928;
-      border-color: #FB7928;
-      color: #fff; }
-      #gform_wrapper_5 .gform_footer:hover::after {
-        border-left-color: #FB7928; }
-    #gform_wrapper_5 .gform_footer input {
-      border: 0px;
-      border-radius: 0px;
+  .cc-search-form .gform_wrapper .gform_footer.left_label {
+    width: 12em;
+    -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+    margin: 0;
+    padding: 0; }
+    .cc-search-form .gform_wrapper .gform_footer.left_label .button.gform_button {
+      border: 0 none;
+      border-radius: 0;
       box-shadow: none;
+      color: #fff;
+      height: 40px;
+      max-width: 200px;
+      max-height: 40px;
+      background: url("../images/primary-button-sprite.png") no-repeat right top;
+      width: 100%;
       text-transform: none; }
+      .cc-search-form .gform_wrapper .gform_footer.left_label .button.gform_button:hover, .cc-search-form .gform_wrapper .gform_footer.left_label .button.gform_button:focus {
+        background-position: right bottom; }
 
 .subscribe-main-content #email-Primary {
   display: inline-block;
@@ -5414,14 +5373,19 @@ blockquote.cc-short-block {
     #gform_widget-4 #input_7_1:focus {
       background: #F3F3F3 !important; }
   #gform_widget-4 #gform_submit_button_7 {
-    background: url("../images/primary-button-sprite.png") no-repeat right top;
     border: 0 none;
+    border-radius: 0;
     box-shadow: none;
     color: #fff;
     height: 40px;
+    max-width: 200px;
+    max-height: 40px;
+    background: url("../images/primary-button-sprite.png") no-repeat right top;
     margin: 0;
     padding-top: 13px;
     width: 140px; }
+    #gform_widget-4 #gform_submit_button_7:hover, #gform_widget-4 #gform_submit_button_7:focus {
+      background-position: right bottom; }
     #gform_widget-4 #gform_submit_button_7:hover, #gform_widget-4 #gform_submit_button_7:focus {
       background-position: right bottom; }
 

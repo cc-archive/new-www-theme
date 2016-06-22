@@ -339,11 +339,32 @@ $clearfix-extend: false !default;
   }
 }
 
+/**
+ * Provide a pointy arrow style for an input element that renders as a button.
+ * Note that this is quite limited and it is a much better idea to use the
+ * button mixin with either an <a> or a <button> element.
+ */
+@mixin input-button($style: 'primary', $border-radius: $border-radius-default) {
+  border: 0 none;
+  border-radius: $border-radius;
+  box-shadow: none;
+  color: $white;
+  height: 40px;
+  max-width: 200px;
+  max-height: 40px;
+
+  @if $style == 'primary' {
+    background: url('../images/primary-button-sprite.png') no-repeat right top;
+
+    &:hover, &:focus {
+      background-position: right bottom;
+    }
+  }
+}
 
 /**
- * Stager a transition-delay within a large grid of elements.
+ * Stagger a transition-delay within a large grid of elements.
  */
-
 @mixin stagger-delay($cols, $time, $selector:'') {
   @for $i from 1 through $cols {
     &:nth-child(#{$cols}n+#{$i}) #{$selector} {
