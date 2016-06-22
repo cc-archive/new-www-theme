@@ -5686,8 +5686,12 @@ blockquote.cc-short-block {
   .donation-bar-inner .donate-action {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
-            align-self: center; }
+            align-self: center;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
   .donation-bar-inner .button.donate {
+    display: block;
     padding-left: 46px !important;
     padding-right: 8px !important;
     margin-right: 8px; }
@@ -5709,7 +5713,7 @@ blockquote.cc-short-block {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
       .donation-bar-inner .donate-text {
-        margin-right: 20px; } }
+        margin-right: 15px; } }
   @media (min-width: 56.875em) {
     .donation-bar-inner {
       font-size: 2.8rem;
