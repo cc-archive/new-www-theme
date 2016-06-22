@@ -5377,7 +5377,7 @@ blockquote.cc-short-block {
       background: #F3F3F3 !important; }
   #gform_widget-4 #gform_submit_button_7 {
     border: 0 none;
-    border-radius: 0;
+    border-radius: 3px;
     box-shadow: none;
     color: #fff;
     height: 40px;
