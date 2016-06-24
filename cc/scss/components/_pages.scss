@@ -174,7 +174,7 @@ h1.entry-title {
 .our-programs {
   clear: both;
   background-color: $blue-light;
-  padding: 55px 10px;
+  padding: 55px 20px;
 
   @include breakpoint($tablet-sm-layout) {
     padding: 55px;
@@ -194,6 +194,8 @@ h1.entry-title {
       flex-direction: row;
       list-style: none;
       align-content: stretch;
+      margin: 0;
+      padding: 0;
       li {
         display: flex;
         align-items: center;
@@ -216,8 +218,8 @@ h1.entry-title {
           display:block;
           color:white;
           font-weight: bold;
-          font-size: px2rem($fz-xlg);
-          margin-left: 30px;
+          font-size: px2rem($fz-lg);
+          margin-left: 20px;
           flex-grow: 1;
         }
       }
