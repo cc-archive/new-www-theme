@@ -198,7 +198,7 @@ h1.entry-title {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        color:white;
+        color: white;
         flex: 0 1 100%;
         font-weight: bold;
         font-size: px2rem($fz-xlg);
@@ -207,7 +207,10 @@ h1.entry-title {
           flex: 0 1 40%;
         }
         img {
-          height: 100%; //firefox bug
+          display: block;
+          width: 77px;
+          height: auto;
+          flex-shrink: 0;
         }
         .program-title{
           display:block;
@@ -215,7 +218,7 @@ h1.entry-title {
           font-weight: bold;
           font-size: px2rem($fz-xlg);
           margin-left: 30px;
-
+          flex-grow: 1;
         }
       }
     }
