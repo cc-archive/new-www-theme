@@ -2401,7 +2401,7 @@ h1.entry-title {
 .our-programs {
   clear: both;
   background-color: #00B5DA;
-  padding: 55px 10px; }
+  padding: 55px 20px; }
   @media (min-width: 44.375em) {
     .our-programs {
       padding: 55px; } }
@@ -2430,7 +2430,9 @@ h1.entry-title {
       list-style: none;
       -webkit-align-content: stretch;
           -ms-flex-line-pack: stretch;
-              align-content: stretch; }
+              align-content: stretch;
+      margin: 0;
+      padding: 0; }
       .our-programs .inner-list ul li {
         display: -webkit-box;
         display: -webkit-flex;
@@ -2459,13 +2461,22 @@ h1.entry-title {
                 -ms-flex: 0 1 40%;
                     flex: 0 1 40%; } }
         .our-programs .inner-list ul li img {
-          height: 100%; }
+          display: block;
+          width: 77px;
+          height: auto;
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0; }
         .our-programs .inner-list ul li .program-title {
           display: block;
           color: white;
           font-weight: bold;
-          font-size: 2.8rem;
-          margin-left: 30px; }
+          font-size: 2.4rem;
+          margin-left: 20px;
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1; }
 
 .author-wrapper {
   margin-bottom: 20px; }
