@@ -3059,12 +3059,14 @@ body.page-id-48781 .gf_page_steps {
   body.page-id-48781 .gf_page_steps .gf_step {
     margin: 0 5px;
     opacity: 1;
-    position: relative; }
-  body.page-id-48781 .gf_page_steps .gf_step_active {
+    position: relative;
+    width: auto !important;
+    display: inline-block; }
+  body.page-id-48781 .gf_page_steps span.gf_step_active {
     color: #333333; }
-    body.page-id-48781 .gf_page_steps .gf_step_active .gf_step_number {
+    body.page-id-48781 .gf_page_steps span.gf_step_active span.gf_step_number {
       background: #fff; }
-  body.page-id-48781 .gf_page_steps .gf_step_number {
+  body.page-id-48781 .gf_page_steps span.gf_step_number {
     background: #DBDBDB;
     border-radius: 50%;
     display: block;
@@ -3073,11 +3075,13 @@ body.page-id-48781 .gf_page_steps {
     margin: 0 auto;
     padding-top: 10px;
     text-align: center;
-    width: 48px; }
-  body.page-id-48781 .gf_page_steps .gf_step_label {
+    width: 48px;
+    font-size: 1.25em; }
+  body.page-id-48781 .gf_page_steps span.gf_step_label {
     display: block;
     margin: -10px auto 0 auto;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.25em; }
 
 body.page-id-48781 #field_3_1,
 body.page-id-48781 #field_3_2,
@@ -3251,13 +3255,17 @@ body.page-id-48781 #input_3_3 {
 body.page-id-48781 #field_3_20 {
   display: none; }
 
+body.page-id-48781 #field_3_24 {
+  margin-left: 20% !important;
+  width: 60%; }
+
 body.page-id-48781 .gform_page_footer {
   border: 0 none;
   padding-top: 0;
   text-align: center; }
 
-body.page-id-48781 .button[value="Next"],
-body.page-id-48781 .button[value="Submit"] {
+body.page-id-48781 input.button[value="Next"],
+body.page-id-48781 input.button[value="Submit"] {
   background: url("../images/donate-button-sprite.png") no-repeat right top;
   border: 0 none;
   box-shadow: none;
@@ -3266,12 +3274,12 @@ body.page-id-48781 .button[value="Submit"] {
   margin: 0 10px !important;
   padding-top: 13px;
   width: 170px; }
-  body.page-id-48781 .button[value="Next"]:hover, body.page-id-48781 .button[value="Next"]:focus,
-  body.page-id-48781 .button[value="Submit"]:hover,
-  body.page-id-48781 .button[value="Submit"]:focus {
+  body.page-id-48781 input.button[value="Next"]:hover, body.page-id-48781 input.button[value="Next"]:focus,
+  body.page-id-48781 input.button[value="Submit"]:hover,
+  body.page-id-48781 input.button[value="Submit"]:focus {
     background-position: right bottom; }
 
-body.page-id-48781 .button[value="Back"] {
+body.page-id-48781 input.button[value="Back"] {
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -3307,13 +3315,13 @@ body.page-id-48781 .button[value="Back"] {
   color: #999999;
   position: relative;
   top: 5px; }
-  body.page-id-48781 .button[value="Back"] [class*="cc-icon-"]::before {
+  body.page-id-48781 input.button[value="Back"] [class*="cc-icon-"]::before {
     line-height: 0.8em; }
-  body.page-id-48781 .button[value="Back"]:hover {
+  body.page-id-48781 input.button[value="Back"]:hover {
     background: -webkit-linear-gradient(bottom, #D2D2D2, #A1A1A1);
     background: linear-gradient(0deg, #D2D2D2, #A1A1A1);
     border-color: #b2b2b2; }
-  body.page-id-48781 .button[value="Back"]:hover, body.page-id-48781 .button[value="Back"]:focus {
+  body.page-id-48781 input.button[value="Back"]:hover, body.page-id-48781 input.button[value="Back"]:focus {
     background: transparent;
     border-color: #464646;
     color: #464646; }

@@ -666,15 +666,17 @@ body.page-id-48781 {
       margin: 0 5px;
       opacity: 1;
       position: relative;
+      width: auto !important;
+      display: inline-block;
     }
 
-    .gf_step_active {
+    span.gf_step_active {
       color: $grey-dark;
 
-      .gf_step_number { background: $white; }
+      span.gf_step_number { background: $white; }
     }
 
-    .gf_step_number {
+    span.gf_step_number {
       background: #DBDBDB;
       border-radius: 50%;
       display: block;
@@ -684,12 +686,14 @@ body.page-id-48781 {
       padding-top: 10px;
       text-align: center;
       width: 48px;
+      font-size: 1.25em;
     }
 
-    .gf_step_label {
+    span.gf_step_label {
       display: block;
       margin: -10px auto 0 auto;
       text-align: center;
+      font-size: 1.25em;
     }
   }
 
@@ -791,14 +795,16 @@ body.page-id-48781 {
 
   #field_3_20 { display: none; }
 
+  #field_3_24 { margin-left: 20% !important; width: 60%;}
+
   .gform_page_footer {
     border: 0 none;
     padding-top: 0;
     text-align: center;
   }
 
-  .button[value="Next"],
-  .button[value="Submit"] {
+  input.button[value="Next"],
+  input.button[value="Submit"] {
     background: url('../images/donate-button-sprite.png') no-repeat right top;
     border: 0 none;
     box-shadow: none;
@@ -814,7 +820,7 @@ body.page-id-48781 {
     }
   }
 
-  .button[value="Back"] {
+  input.button[value="Back"] {
     @include button('default');
     background: transparent;
     border-color: $grey-light;
