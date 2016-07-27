@@ -5464,7 +5464,8 @@ blockquote.cc-short-block {
     background: #fff url("../images/grey-envelope.png") no-repeat 15px center;
     padding-bottom: 0.8em;
     padding-left: 50px;
-    padding-top: 0.8em; }
+    padding-top: 0.8em;
+    width: inherit; }
   #text-10 .button.primary.arrow,
   #text-13 .button.primary.arrow {
     padding-bottom: 0.8em;
