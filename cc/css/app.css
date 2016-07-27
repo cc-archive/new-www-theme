@@ -4222,7 +4222,7 @@ blockquote.cc-short-block {
       color: #fff; }
   #gform_widget-3 .gform_footer,
   #gform_widget-5 .gform_footer {
-    bottom: 20px;
+    bottom: 25px;
     left: 51%;
     margin: 0;
     padding: 0;
@@ -4250,7 +4250,7 @@ blockquote.cc-short-block {
       font-size: 2.8rem; }
     #gform_widget-3 .gfield_radio,
     #gform_widget-5 .gfield_radio {
-      padding-right: 100px; }
+      padding-right: 120px; }
       #gform_widget-3 .gfield_radio > li,
       #gform_widget-5 .gfield_radio > li {
         -webkit-flex-basis: 15%;
@@ -5462,9 +5462,9 @@ blockquote.cc-short-block {
   #text-10 input[type="email"],
   #text-13 input[type="email"] {
     background: #fff url("../images/grey-envelope.png") no-repeat 15px center;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.9em;
     padding-left: 50px;
-    padding-top: 0.8em;
+    padding-top: 0.9em;
     width: inherit; }
   #text-10 .button.primary.arrow,
   #text-13 .button.primary.arrow {
