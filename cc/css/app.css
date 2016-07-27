@@ -5414,6 +5414,9 @@ blockquote.cc-short-block {
   background-image: -webkit-linear-gradient(top, #E1B300, #EFBE00);
   background-image: linear-gradient(180deg, #E1B300, #EFBE00);
   padding: 40px 0; }
+  body.home #text-10, body.home
+  #text-13 {
+    margin-top: -30px; }
   #text-10 h2,
   #text-13 h2 {
     color: #333333;
