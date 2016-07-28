@@ -36,9 +36,24 @@ get_header(); ?>
     					<h1 class="page-title">News</h1>
     				</header>
     			<?php endif; ?>
+
+          <?php
+              // We want to suppress hero/featured posts from the main
+              // post list.
+              $featured_post_ids = array();
+              if (function_exists('cc_widgets_get_featured_post_ids')){
+                $featured_post_ids = cc_widgets_get_featured_post_ids();
+              }
+          ?>
+
     			<?php
     			// Start the loop.
     			while ( have_posts() ) : the_post();
+
+            // Skip display of featured posts.
+            if (in_array(get_the_ID(), $featured_post_ids)){
+              continue;
+            }
 
     				/*
     				 * Include the Post-Format-specific template for the content.
