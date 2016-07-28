@@ -5454,9 +5454,11 @@ blockquote.cc-short-block {
   #text-10 input[type="email"],
   #text-13 input[type="email"] {
     background: #fff url("../images/grey-envelope.png") no-repeat 15px center;
+    height: 50px;
     padding-bottom: 0.8em;
     padding-left: 50px;
-    padding-top: 0.8em; }
+    padding-top: 0.8em;
+    min-width: 150px; }
   #text-10 .button.primary.arrow,
   #text-13 .button.primary.arrow {
     padding-bottom: 0.8em;
@@ -5490,7 +5492,10 @@ blockquote.cc-short-block {
         width: 50px; }
       #text-10 h2 span,
       #text-13 h2 span {
-        display: block; } }
+        display: block; }
+    #text-10 input[type="email"],
+    #text-13 input[type="email"] {
+      min-width: 200px; } }
 
 #gform_widget-6 {
   background-image: -webkit-linear-gradient(top, #E1B300, #EFBE00);

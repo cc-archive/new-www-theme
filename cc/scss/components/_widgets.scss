@@ -1374,6 +1374,7 @@
     padding-bottom: 0.8em;
     padding-left: 50px;
     padding-top: 0.8em;
+    min-width: 150px
   }
 
   .button.primary.arrow {
@@ -1415,7 +1416,7 @@
       }
     }
 
-    input[type="email"] { width: 200px; }
+    input[type="email"] { min-width: 200px; }
   }
 }
 
