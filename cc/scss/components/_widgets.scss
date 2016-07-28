@@ -1370,9 +1370,11 @@
 
   input[type="email"] {
     background: $white url('../images/grey-envelope.png') no-repeat 15px center;
+    height: 50px;
     padding-bottom: 0.8em;
     padding-left: 50px;
     padding-top: 0.8em;
+    min-width: 150px
   }
 
   .button.primary.arrow {
@@ -1413,6 +1415,8 @@
         display: block;
       }
     }
+
+    input[type="email"] { min-width: 200px; }
   }
 }
 
