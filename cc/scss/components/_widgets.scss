@@ -190,7 +190,7 @@
   }
 
   .gform_footer {
-    bottom: 20px;
+    bottom: 25px;
     left: 51%;
     margin: 0;
     padding: 0;
@@ -224,7 +224,7 @@
     }
 
     .gfield_radio {
-      padding-right: 100px;
+      padding-right: 120px;
 
       > li {
         flex-basis: 15%;
@@ -1370,11 +1370,10 @@
 
   input[type="email"] {
     background: $white url('../images/grey-envelope.png') no-repeat 15px center;
-    height: 50px;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.9em;
     padding-left: 50px;
-    padding-top: 0.8em;
-    min-width: 150px
+    padding-top: 0.9em;
+    width: inherit;
   }
 
   .button.primary.arrow {
