@@ -5466,10 +5466,14 @@ blockquote.cc-short-block {
     padding-left: 50px;
     padding-top: 0.9em;
     width: inherit; }
+  #text-10 span.input-group-btn,
+  #text-13 span.input-group-btn {
+    min-width: 110px; }
   #text-10 .button.primary.arrow,
   #text-13 .button.primary.arrow {
     padding-bottom: 0.8em;
-    padding-top: 0.8em; }
+    padding-top: 0.8em;
+    width: 110px; }
     #text-10 .button.primary.arrow::after,
     #text-13 .button.primary.arrow::after {
       border-width: 1.4em 0 1.3em 0.8em; }
