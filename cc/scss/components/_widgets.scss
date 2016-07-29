@@ -1414,6 +1414,8 @@
         display: block;
       }
     }
+
+    input[type="email"] { min-width: 200px; }
   }
 }
 

@@ -5499,7 +5499,10 @@ blockquote.cc-short-block {
         width: 50px; }
       #text-10 h2 span,
       #text-13 h2 span {
-        display: block; } }
+        display: block; }
+    #text-10 input[type="email"],
+    #text-13 input[type="email"] {
+      min-width: 200px; } }
 
 #gform_widget-6 {
   background-image: -webkit-linear-gradient(top, #E1B300, #EFBE00);
