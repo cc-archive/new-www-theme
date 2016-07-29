@@ -1376,10 +1376,14 @@
     width: inherit;
   }
 
+  span.input-group-btn {
+    min-width: 110px;
+  }
+
   .button.primary.arrow {
     padding-bottom: 0.8em;
     padding-top: 0.8em;
-
+    width: 110px;
     &::after { border-width: 1.4em 0 1.3em 0.8em; }
   }
 
