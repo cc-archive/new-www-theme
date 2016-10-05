@@ -865,6 +865,16 @@ body.page-id-48781 {
       font-size: px2rem($fz-xlg);
       line-height: 1em;
     }
+
+    .gform_wrapper .gform_page_footer {
+
+      &.left_label,
+      &.right_label {
+        padding-left: 0;
+      }
+
+      .button.gform_previous_button { max-width: 40%; }
+    }
   }
 
   @include breakpoint ($tablet-sm-layout) {

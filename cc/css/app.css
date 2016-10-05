@@ -3346,7 +3346,11 @@ body.page-id-48781 ul.ways-to-give {
 @media (max-width: 44.374em) {
   body.page-id-48781 .form-title h2 {
     font-size: 2.8rem;
-    line-height: 1em; } }
+    line-height: 1em; }
+  body.page-id-48781 .gform_wrapper .gform_page_footer.left_label, body.page-id-48781 .gform_wrapper .gform_page_footer.right_label {
+    padding-left: 0; }
+  body.page-id-48781 .gform_wrapper .gform_page_footer .button.gform_previous_button {
+    max-width: 40%; } }
 
 @media (min-width: 44.375em) {
   body.page-id-48781 .gf_page_steps {
