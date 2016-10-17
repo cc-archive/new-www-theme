@@ -3347,6 +3347,8 @@ body.page-id-48781 ul.ways-to-give {
   body.page-id-48781 .form-title h2 {
     font-size: 2.8rem;
     line-height: 1em; }
+  body.page-id-48781 .paypal-toggle {
+    position: static; }
   body.page-id-48781 .gform_wrapper .gform_page_footer.left_label, body.page-id-48781 .gform_wrapper .gform_page_footer.right_label {
     padding-left: 0; }
   body.page-id-48781 .gform_wrapper .gform_page_footer .button.gform_previous_button {
