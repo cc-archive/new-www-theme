@@ -1173,7 +1173,6 @@ body.admin-bar .site-header.sticky {
         -webkit-box-align: end;
         -webkit-align-items: flex-end;
             -ms-flex-align: end;
-                    -ms-grid-row-align: flex-end;
                 align-items: flex-end;
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
@@ -1198,6 +1197,7 @@ body.admin-bar .site-header.sticky {
 .site-header.detached .site-header-menu {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
           align-self: center;
   margin: 0; }
 
@@ -3565,6 +3565,31 @@ body.error404 {
       position: absolute;
       width: 100%; } }
 
+.cc-store h3 :focus {
+  outline: none; }
+
+.cc-store ul.list-unstyled-inline {
+  list-style-type: none;
+  padding: 0; }
+  .cc-store ul.list-unstyled-inline li {
+    margin: 0 30px;
+    display: inline; }
+
+.cc-store .store-item {
+  width: 100%;
+  padding: 0 10px; }
+  @media (min-width: 56.875em) {
+    .cc-store .store-item {
+      width: 50%;
+      float: left; }
+      .cc-store .store-item .panel-body {
+        min-height: 210px; } }
+  .cc-store .store-item .panel-footer {
+    max-height: 50px; }
+  .cc-store .store-item .license-image img {
+    max-width: 200px;
+    margin-top: -30px; }
+
 .cc-team-shortcode h2.cc-team-heading {
   padding-top: 30px;
   font-size: 2em;
@@ -5733,10 +5758,12 @@ blockquote.cc-short-block {
             flex-grow: 0;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center; }
   .donation-bar-inner .donate-action {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
