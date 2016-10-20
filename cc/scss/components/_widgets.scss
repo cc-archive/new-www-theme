@@ -1039,16 +1039,18 @@
 			}
 			.author-image {
 				img {
+          margin-right: 10px;
 					border-radius: 0px !important;
 				}
 			}
 			.author-info-group {
-				padding-left: 10px;
 				h4 {
-					color: $orange-light;
 			    line-height: 1em;
 					font-size: px2rem($fz-md);
 					font-weight: normal !important;
+          a {
+            color: $orange-light;
+          }
 				}
 				.author-date {
 					font-size: px2rem($fz-xxsm);

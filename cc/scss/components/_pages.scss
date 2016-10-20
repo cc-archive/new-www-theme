@@ -236,12 +236,11 @@ h1.entry-title {
   .author-image {
     img {
       border-radius: 0px !important;
+      margin-right: 10px;
     }
   }
   .author-info-group {
-    padding-left: 10px;
     h4 {
-      color: $orange-light;
       line-height: 1.3em;
       font-size: px2rem($fz-xsm);
       font-weight: normal !important;
