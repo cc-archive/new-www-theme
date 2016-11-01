@@ -1109,6 +1109,7 @@ body.error404 {
   .store-item {
     width: 100%;
     padding: 0 10px;
+    padding-bottom: 50px;
     @include breakpoint($desktop-sm-layout){
       width: 50%;
       float: left;
