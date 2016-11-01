@@ -3589,6 +3589,8 @@ body.error404 {
   .cc-store .store-item .license-image img {
     max-width: 200px;
     margin-top: -30px; }
+  .cc-store .store-item .sharedaddy {
+    position: static; }
 
 .cc-team-shortcode h2.cc-team-heading {
   padding-top: 30px;
