@@ -3577,7 +3577,8 @@ body.error404 {
 
 .cc-store .store-item {
   width: 100%;
-  padding: 0 10px; }
+  padding: 0 10px;
+  padding-bottom: 50px; }
   @media (min-width: 56.875em) {
     .cc-store .store-item {
       width: 50%;
