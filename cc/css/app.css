@@ -5926,6 +5926,8 @@ blockquote.cc-short-block {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 ); }
   .pum-overlay .pum-container .no-wrap {
     white-space: nowrap; }
+  .pum-overlay .pum-container #confetti-canvas {
+    position: absolute; }
   .pum-overlay .pum-container .pum-content img.cc-logo {
     display: block;
     margin: auto; }
