@@ -1,0 +1,91 @@
+.pum-overlay {
+  .pum-container {
+
+    left: 0;
+    .no-wrap {
+      white-space: nowrap;
+    }
+
+    background: rgba(28,181,195,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,181,195,1)), color-stop(100%, rgba(22,144,155,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
+
+    .pum-content {
+
+      img.cc-logo {
+        display: block;
+        margin: auto;
+      }
+
+      .content-container {
+
+        max-width: 90%;
+        @include breakpoint($tablet-sm-layout) {
+          max-width: 70%;
+          margin-top: -30px;
+        }
+        @include breakpoint($desktop-lg-layout){
+          max-width: 50%;
+          margin-top: -70px;
+
+        }
+
+        margin: auto;
+        text-align: center;
+        padding-bottom: 48px;
+
+        .yellow-ribbon {
+          margin-top: -20px;
+          background-color: #FFEB32;
+          color: $black;
+          display: inline-block;
+          width: 60%;
+          padding: 10px 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          -webkit-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.5);
+          -moz-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.5);
+          box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.5);
+        }
+
+        .header {
+          text-align: center;
+          h1 {
+            color: $white;
+            width: 90%;
+            margin: 24px auto;
+            display: inline-block;
+            clear: left;
+          }
+        }
+
+        color: $white;
+
+        #gform_widget-3 {
+          margin-top: 40px;
+          height: 186px;
+          margin: auto;
+          padding-top: 0px;
+          background: transparent;
+          .widget-inner{
+            border-left: 10px solid $colour-donate;
+            border-top: none;
+
+            h2 {
+              color: $black;
+            }
+          }
+        }
+
+        h4 {
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}
