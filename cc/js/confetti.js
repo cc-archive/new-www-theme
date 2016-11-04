@@ -83,8 +83,6 @@
 
   canvas = document.getElementById("confetti-canvas");
 
-  if (typeof canvas != 'undefined'){
-
   var context = canvas.getContext('2d');
   W = canvas.width = window.innerWidth;
   H = canvas.height = window.innerHeight;
