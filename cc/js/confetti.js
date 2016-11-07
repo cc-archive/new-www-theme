@@ -93,17 +93,13 @@
   friction = element3.value;
   wind = element4.value;
   colors = [
-    '#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
-    '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4CAF50',
+    '#f44336', '#e91e63', '#9c27b0', '#673ab7',
+    '#03a9f4', '#00bcd4', '#009688', '#4CAF50',
     '#8BC34A', '#CDDC39', '#FFEB3B', '#FFC107', '#FF9800',
-    '#FF5722', '#795548'
+    '#FF5722'
   ];
 
-  //
-  // Add the Generator Here :)
-  //
-
-generator1 = new particleGenerator(0, 0, W, 0, element1.value);
+  generator1 = new particleGenerator(0, 0, W, 0, element1.value);
 
   function loadImage(url) {
     var img = document.createElement("img");
@@ -134,7 +130,8 @@ generator1 = new particleGenerator(0, 0, W, 0, element1.value);
     this.y = y;
     this.vx = randomInt(-4, 4);
     this.vy = randomInt(-10, -0);
-    this.type = utils.randomInt(0,1);
+    // Set the shape.
+    this.type = 1;
 
     this.w = utils.randomRange(5, 20);
     this.h = utils.randomRange(5, 20);
@@ -178,30 +175,33 @@ generator1 = new particleGenerator(0, 0, W, 0, element1.value);
     context.fillStyle = this.color;
     context.strokeStyle = this.color;
     context.lineCap="round";
-      context.lineWidth = 2;
+    context.lineWidth = 2;
+
 
     if (this.type === 0) {
+      // Circles
       context.beginPath();
       context.arc(0, 0, this.r, 0, 2 * Math.PI);
       context.fill();
-    }else if(this.type === 2){
-    context.beginPath();
-    for (i = 0; i < 22; i++) {
-        angle = 0.5 * i;
-        x = (.2 + 1.5 * angle) * Math.cos(angle);
-        y =(.2 + 1.5 * angle) * Math.sin(angle);
+    } else if (this.type === 2){
+      // Swirlies!
+      context.beginPath();
 
-        context.lineTo(x, y);
-    }
-    context.stroke();
-      
-    }else if(this.type === 1){
+      for (i = 0; i < 22; i++) {
+          angle = 0.5 * i;
+          x = (.2 + 1.5 * angle) * Math.cos(angle);
+          y =(.2 + 1.5 * angle) * Math.sin(angle);
+
+          context.lineTo(x, y);
+      }
+      context.stroke();
+    } else if (this.type === 1){
+      // Rectagles
       context.fillRect(-this.w / 2, -this.h / 2, this.w, this.h);
     }
 
     context.closePath();
     context.restore();
-
 
   }
 
@@ -215,9 +215,9 @@ generator1 = new particleGenerator(0, 0, W, 0, element1.value);
     this.particles = [];
     this.text = text;
     this.recycle = true;
-    
+    // 0 = fountain
+    // 1 = falling
     this.type=1;
-    
   }
   particleGenerator.prototype.animate = function() {
 
