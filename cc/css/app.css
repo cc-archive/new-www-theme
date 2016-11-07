@@ -5925,7 +5925,8 @@ blockquote.cc-short-block {
   .pum-overlay .pum-container .no-wrap {
     white-space: nowrap; }
   .pum-overlay .pum-container #confetti-canvas {
-    position: absolute; }
+    position: absolute;
+    pointer-events: none; }
   .pum-overlay .pum-container .pum-content img.cc-logo {
     display: block;
     margin: auto; }
