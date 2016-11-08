@@ -1741,7 +1741,7 @@
 		text-transform: uppercase;
 		position: absolute;
     right: 0px;
-		a{
+		a {
 			padding-right:30px;
 			position: relative;
 			font-family: $ff-roboto-condensed;
@@ -1756,4 +1756,62 @@
 		}
 	}
 }
+
+/* 15th Anniversary Ask */
+
+body.home .cc-fifteenth-anniversary-ask-widget,
+.cc-fifteenth-anniversary-ask-widget {
+  background: rgba(28,181,195,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,181,195,1)), color-stop(100%, rgba(22,144,155,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
+  background: url('/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png') 100% no-repeat;
+
+
+  text-align: center;
+
+  h2.widget-title {
+    text-transform: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFEB32;
+    color: $black;
+    display: inline-block;
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.5);
+  }
+
+  #gform_widget-3 {
+    padding-top: 0px;
+    background: transparent;
+    .widget-inner{
+      border-left: 10px solid $colour-donate;
+      border-top: none;
+
+      h2 {
+        color: $black;
+      }
+
+      #field_10_1 {
+        /* amount buttons */
+        margin-top: -50px;
+      }
+
+    }
+  }
+
+
+}
+
 

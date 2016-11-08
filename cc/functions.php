@@ -299,4 +299,7 @@ function cc_eat_excluded_types ( $exclude_types ){
     return $exclude_types;
 }
 
+// Allow shortcodes in html widgets.
+add_filter('widget_text','do_shortcode');
+
 ?>

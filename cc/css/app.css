@@ -5914,6 +5914,48 @@ blockquote.cc-short-block {
         right: 0px;
         top: -4px; }
 
+/* 15th Anniversary Ask */
+body.home .cc-fifteenth-anniversary-ask-widget,
+.cc-fifteenth-anniversary-ask-widget {
+  background: #1cb5c3;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #1cb5c3), color-stop(100%, #16909b));
+  background: -webkit-radial-gradient(center, ellipse cover, #1cb5c3 0%, #16909b 100%);
+  background: -webkit-radial-gradient(center ellipse, #1cb5c3 0%, #16909b 100%);
+  background: radial-gradient(ellipse at center, #1cb5c3 0%, #16909b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
+  background: url("/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png") 100% no-repeat;
+  text-align: center; }
+  body.home .cc-fifteenth-anniversary-ask-widget h2.widget-title,
+  .cc-fifteenth-anniversary-ask-widget h2.widget-title {
+    text-transform: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFEB32;
+    color: #000;
+    display: inline-block;
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.5); }
+  body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3,
+  .cc-fifteenth-anniversary-ask-widget #gform_widget-3 {
+    padding-top: 0px;
+    background: transparent; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner {
+      border-left: 10px solid #01A635;
+      border-top: none; }
+      body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner h2,
+      .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner h2 {
+        color: #000; }
+      body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner #field_10_1,
+      .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner #field_10_1 {
+        /* amount buttons */
+        margin-top: -50px; }
+
 .pum-overlay .pum-container {
   left: 0;
   background: #1cb5c3;
@@ -5942,7 +5984,7 @@ blockquote.cc-short-block {
         margin-top: -30px; } }
     @media (min-width: 75em) {
       .pum-overlay .pum-container .pum-content .content-container {
-        max-width: 50%;
+        max-width: 60%;
         margin-top: -70px; } }
     .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
       margin-top: -20px;
@@ -5974,7 +6016,13 @@ blockquote.cc-short-block {
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .widget-inner h2 {
           color: #000; }
     .pum-overlay .pum-container .pum-content .content-container h4 {
-      margin-top: 24px; }
+      margin-top: 160px; }
+      @media (min-width: 44.375em) {
+        .pum-overlay .pum-container .pum-content .content-container h4 {
+          margin-top: 48px; } }
+      @media (min-width: 75em) {
+        .pum-overlay .pum-container .pum-content .content-container h4 {
+          margin-top: 24px; } }
 
 /*
 @import "colours";
