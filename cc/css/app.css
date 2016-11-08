@@ -5923,7 +5923,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
   background: -webkit-radial-gradient(center ellipse, #1cb5c3 0%, #16909b 100%);
   background: radial-gradient(ellipse at center, #1cb5c3 0%, #16909b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
-  background: url("/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png") 100% no-repeat;
+  background: #158B95 url("/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png") center no-repeat;
   text-align: center; }
   body.home .cc-fifteenth-anniversary-ask-widget h2.widget-title,
   .cc-fifteenth-anniversary-ask-widget h2.widget-title {
