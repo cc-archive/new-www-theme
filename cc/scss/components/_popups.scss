@@ -25,7 +25,17 @@
 
       img.cc-logo {
         display: block;
-        margin: auto;
+        left: -25%;
+        margin: 0 auto -5% auto;
+        max-width: 150%;
+        position: relative;
+        top: -10%;
+
+        @include breakpoint($desktop-sm-layout){
+          left: 0;
+          margin-bottom: 0;
+          max-width: 100%;
+        }
       }
 
       .content-container {

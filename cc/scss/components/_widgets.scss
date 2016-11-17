@@ -303,7 +303,7 @@
     }
   }
 
-  @include breakpoint (1100px) {
+  @include breakpoint ($desktop-lg-layout) {
 
     form {
       background: url('../images/cc_heart.png') left center no-repeat;

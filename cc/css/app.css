@@ -4346,7 +4346,7 @@ blockquote.cc-short-block {
       #gform_widget-3 h2 span:nth-child(2)::after,
       #gform_widget-5 h2 span:nth-child(2)::after {
         height: 0; } }
-  @media (min-width: 1100px) {
+  @media (min-width: 75em) {
     #gform_widget-3 form,
     #gform_widget-5 form {
       background: url("../images/cc_heart.png") left center no-repeat;
@@ -6019,7 +6019,16 @@ body.home .cc-fifteenth-anniversary-ask-widget,
     pointer-events: none; }
   .pum-overlay .pum-container .pum-content img.cc-logo {
     display: block;
-    margin: auto; }
+    left: -25%;
+    margin: 0 auto -5% auto;
+    max-width: 150%;
+    position: relative;
+    top: -10%; }
+    @media (min-width: 56.875em) {
+      .pum-overlay .pum-container .pum-content img.cc-logo {
+        left: 0;
+        margin-bottom: 0;
+        max-width: 100%; } }
   .pum-overlay .pum-container .pum-content .content-container {
     max-width: 90%;
     margin: auto;
