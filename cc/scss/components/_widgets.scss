@@ -137,7 +137,11 @@
     margin-top: 0.5em;
   }
 
-  #field_2_1 > label { display: none; }
+  #field_2_1,
+  #field_10_1 {
+
+    > label { display: none; }
+  }
 
   .gfield_radio {
     display: flex;
@@ -177,7 +181,7 @@
           background: #F3F3F3;
           border: 0 none;
           // font-size: px2rem($fz-md) !important;
-          line-height: 1.5em;
+          line-height: 1.6em;
           margin-bottom: 0;
           width: 90%;
         }
@@ -191,6 +195,7 @@
       display: block;
       font-size: px2rem($fz-md) !important;
       margin-left: 0;
+      max-width: none;
       width: 100%;
     }
 
@@ -249,9 +254,9 @@
   @include breakpoint (620px) {
 
     h2 {
-      background: url('../images/cc_heart.png') left center no-repeat;
+      background: url('../images/cc_heart.png') 14% center no-repeat;
       background-size: 66px;
-      padding-left: 80px;
+      padding-left: 26%;
       padding-top: 5px;
       text-align: left;
     }
@@ -260,24 +265,18 @@
   @include breakpoint ($tablet-sm-layout) {
 
     .gfield_radio {
-      padding-right: 120px;
+      margin: 20px 0;
 
       > li {
         flex-basis: 15%;
         margin-bottom: 0!important;
 
+        &.gchoice_10_1_3 { display: block; }
+
         &:last-child {
           flex-basis: 25%;
-
-          input { padding: .2em 0; }
         }
       }
-    }
-
-    .gform_footer {
-      left: auto;
-      right: 20px;
-      width: auto;
     }
 
     .gform_button[value="Next"] {
@@ -296,6 +295,7 @@
 
 
     h2 {
+      background-position: 16% center;
       font-size: px2rem($fz-h3);
       padding-top: 10px;
 
@@ -316,14 +316,24 @@
       font-size: px2rem($fz-big);
       min-height: auto;
       padding-left: 0;
+
+      .share-wins { display: none; }
+
+      .contribute-today { font-weight: $fw-bold; }
     }
 
-    .share-wins { display: none; }
+    .gfield_radio {
+      padding-right: 200px;
+    }
 
-    .contribute-today { font-weight: $fw-bold; }
+    .gform_footer {
+      bottom: 38px;
+      // left: auto;
+      position: absolute;
+      right: 20px;
+      width: auto;
+    }
   }
-
-  @include breakpoint ($desktop-lg-layout) {}
 }
 
 
