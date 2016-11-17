@@ -118,15 +118,21 @@
 
   h2 {
     align-items: center;
-    background: url('../images/cc_heart.png') left center no-repeat;
-    background-size: 66px;
-    display: flex;
     font-size: px2rem($fz-base + 1);
     @include font-weight($fw-bold);
     line-height: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     min-height: 60px;
-    padding-left: 80px;
+    text-align: center;
+  }
+
+  .share-wins { display: block; }
+
+  .contribute-today {
+    display: block;
+    font-size: 0.8em;
+    font-weight: $fw-normal;
+    margin-top: 0.5em;
   }
 
   #field_2_1 > label { display: none; }
@@ -216,12 +222,27 @@
     }
   }
 
-
-  @include breakpoint ($tablet-sm-layout) {
+  @include breakpoint (520px) {
 
     h2 {
-      font-size: px2rem($fz-xlg);
+      font-size: px2rem($fz-lg);
     }
+
+    .contribute-today { margin-top: 0; }
+  }
+
+  @include breakpoint (620px) {
+
+    h2 {
+      background: url('../images/cc_heart.png') left center no-repeat;
+      background-size: 66px;
+      padding-left: 80px;
+      padding-top: 5px;
+      text-align: left;
+    }
+  }
+
+  @include breakpoint ($tablet-sm-layout) {
 
     .gfield_radio {
       padding-right: 120px;
@@ -251,7 +272,24 @@
     }
   }
 
+  @include breakpoint ($tablet-md-layout) {
+
+    h2 { font-size: px2rem($fz-xlg); }
+  }
+
   @include breakpoint ($desktop-sm-layout) {
+
+
+    h2 {
+      font-size: px2rem($fz-h3);
+      padding-top: 10px;
+
+      span:nth-child(2)::after { height: 0; }
+    }
+  }
+
+  @include breakpoint (1100px) {
+
     form {
       background: url('../images/cc_heart.png') left center no-repeat;
       background-size: 100px;
@@ -260,10 +298,17 @@
 
     h2 {
       background-image: none;
-      font-size: px2rem($fz-h3);
+      font-size: px2rem($fz-big);
+      min-height: auto;
       padding-left: 0;
     }
+
+    .share-wins { display: none; }
+
+    .contribute-today { font-weight: $fw-bold; }
   }
+
+  @include breakpoint ($desktop-lg-layout) {}
 }
 
 

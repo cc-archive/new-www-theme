@@ -4106,20 +4106,23 @@ blockquote.cc-short-block {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: url("../images/cc_heart.png") left center no-repeat;
-    background-size: 66px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 2rem;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     min-height: 60px;
-    padding-left: 80px; }
+    text-align: center; }
+  #gform_widget-3 .share-wins,
+  #gform_widget-5 .share-wins {
+    display: block; }
+  #gform_widget-3 .contribute-today,
+  #gform_widget-5 .contribute-today {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-top: 0.5em; }
   #gform_widget-3 #field_2_1 > label,
   #gform_widget-5 #field_2_1 > label {
     display: none; }
@@ -4274,10 +4277,22 @@ blockquote.cc-short-block {
     #gform_widget-5 .gform_button[value="Next"]:hover,
     #gform_widget-5 .gform_button[value="Next"]:focus {
       background-position: right bottom; }
-  @media (min-width: 44.375em) {
+  @media (min-width: 520px) {
     #gform_widget-3 h2,
     #gform_widget-5 h2 {
-      font-size: 2.8rem; }
+      font-size: 2.4rem; }
+    #gform_widget-3 .contribute-today,
+    #gform_widget-5 .contribute-today {
+      margin-top: 0; } }
+  @media (min-width: 620px) {
+    #gform_widget-3 h2,
+    #gform_widget-5 h2 {
+      background: url("../images/cc_heart.png") left center no-repeat;
+      background-size: 66px;
+      padding-left: 80px;
+      padding-top: 5px;
+      text-align: left; } }
+  @media (min-width: 44.375em) {
     #gform_widget-3 .gfield_radio,
     #gform_widget-5 .gfield_radio {
       padding-right: 120px; }
@@ -4305,7 +4320,19 @@ blockquote.cc-short-block {
       background-size: auto 86px;
       height: 43px;
       width: 94px; } }
+  @media (min-width: 48.9375em) {
+    #gform_widget-3 h2,
+    #gform_widget-5 h2 {
+      font-size: 2.8rem; } }
   @media (min-width: 56.875em) {
+    #gform_widget-3 h2,
+    #gform_widget-5 h2 {
+      font-size: 3.2rem;
+      padding-top: 10px; }
+      #gform_widget-3 h2 span:nth-child(2)::after,
+      #gform_widget-5 h2 span:nth-child(2)::after {
+        height: 0; } }
+  @media (min-width: 1100px) {
     #gform_widget-3 form,
     #gform_widget-5 form {
       background: url("../images/cc_heart.png") left center no-repeat;
@@ -4314,8 +4341,15 @@ blockquote.cc-short-block {
     #gform_widget-3 h2,
     #gform_widget-5 h2 {
       background-image: none;
-      font-size: 3.2rem;
-      padding-left: 0; } }
+      font-size: 4.4rem;
+      min-height: auto;
+      padding-left: 0; }
+    #gform_widget-3 .share-wins,
+    #gform_widget-5 .share-wins {
+      display: none; }
+    #gform_widget-3 .contribute-today,
+    #gform_widget-5 .contribute-today {
+      font-weight: 700; } }
 
 /* -- Homepage Resources -- */
 .widget_creativecommons_resource_homepage_widget {
@@ -5984,10 +6018,11 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         margin-top: -30px; } }
     @media (min-width: 75em) {
       .pum-overlay .pum-container .pum-content .content-container {
-        max-width: 60%;
+        max-width: 1120px;
         margin-top: -70px; } }
     .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
       background-color: #FEEB32;
+      box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.5);
       color: #000;
       font-weight: 600;
       -webkit-font-smoothing: antialiased;
@@ -5997,7 +6032,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       margin: 0px auto;
       padding: 10px 0px;
       position: relative;
-      box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.5);
+      top: -15px;
       width: 80%; }
       .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::before, .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::after {
         border: 31px solid #FEEB32;
@@ -6034,7 +6069,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             right: auto; } }
       @media (min-width: 56.875em) {
         .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
-          font-size: 2.2rem; } }
+          font-size: 2.2rem;
+          margin-bottom: 30px; } }
       @media (min-width: 75em) {
         .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
           font-size: 2.4rem; } }
