@@ -132,7 +132,7 @@
 
         #gform_widget-3 {
           margin-top: 40px;
-          height: 186px;
+          // height: 186px;
           margin: auto;
           padding-top: 0px;
           background: transparent;
@@ -147,13 +147,23 @@
         }
 
         h4 {
-          margin-top: 160px;
-          @include breakpoint($tablet-sm-layout) {
-          margin-top: 48px;
+          font-size: px2rem($fz-h6);
+          line-height: 1.5em;
+          @include font-weight($fw-semi-bold);
 
+          .share-wins {
+            font-size: 1.28em;
+            font-weight: $fw-bold;
           }
-          @include breakpoint($desktop-lg-layout){
-          margin-top: 24px;
+
+          @include breakpoint ($tablet-sm-layout) {
+            font-size: px2rem($fz-h4);
+            line-height: 1.5em;
+          }
+
+          @include breakpoint ($desktop-sm-layout) {
+            font-size: px2rem($fz-xlg);
+            line-height: 1.5em;
           }
         }
       }

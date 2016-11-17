@@ -4090,6 +4090,8 @@ blockquote.cc-short-block {
     max-width: 1120px;
     background: #F3F3F3;
     border-top: 10px solid #01A635;
+    margin-left: 0;
+    margin-right: 0;
     padding: 20px;
     position: relative; }
     @media (min-width: 1192px) {
@@ -4147,12 +4149,16 @@ blockquote.cc-short-block {
               flex: 0 0 48%;
       margin: 0 0 20px 0;
       overflow: visible; }
+      #gform_widget-3 .gfield_radio > li.gchoice_10_1_3,
+      #gform_widget-5 .gfield_radio > li.gchoice_10_1_3 {
+        display: none; }
       #gform_widget-3 .gfield_radio > li:last-child,
       #gform_widget-5 .gfield_radio > li:last-child {
         border-color: #d4d4d4;
         border-radius: 3px;
         border-style: solid;
         border-width: 4px 4px 4px 40px;
+        height: 44px;
         margin-bottom: 0;
         position: relative; }
         #gform_widget-3 .gfield_radio > li:last-child::before,
@@ -4183,6 +4189,7 @@ blockquote.cc-short-block {
           -moz-osx-font-smoothing: grayscale;
           /* Uncomment for 3D effect */
           /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+          color: #464646;
           left: -33px;
           position: absolute;
           top: 50%;
@@ -4192,11 +4199,14 @@ blockquote.cc-short-block {
         #gform_widget-3 .gfield_radio > li:last-child.selected,
         #gform_widget-5 .gfield_radio > li:last-child.selected {
           border-color: #01A635; }
+          #gform_widget-3 .gfield_radio > li:last-child.selected::before,
+          #gform_widget-5 .gfield_radio > li:last-child.selected::before {
+            color: #fff; }
         #gform_widget-3 .gfield_radio > li:last-child input,
         #gform_widget-5 .gfield_radio > li:last-child input {
           background: #F3F3F3;
           border: 0 none;
-          font-size: 2rem !important;
+          line-height: 1.5em;
           margin-bottom: 0;
           width: 90%; }
     #gform_widget-3 .gfield_radio input[type="radio"],
@@ -4255,25 +4265,29 @@ blockquote.cc-short-block {
       color: #fff; }
   #gform_widget-3 .gform_footer,
   #gform_widget-5 .gform_footer {
-    bottom: 25px;
-    left: 51%;
-    margin: 0;
     padding: 0;
-    position: absolute;
-    width: 40%; }
+    text-align: center; }
+  #gform_widget-3 .gform_button[value="Donate Now"],
   #gform_widget-3 .gform_button[value="Next"],
+  #gform_widget-5 .gform_button[value="Donate Now"],
   #gform_widget-5 .gform_button[value="Next"] {
-    background: url("../images/donate-button-sprite.png") no-repeat right top;
+    background: url("../images/donate-button-bevel-sprite.png") no-repeat right top;
     background-size: auto 94px;
     box-shadow: none;
     border: 0 none;
     color: #fff;
     font-size: 2rem;
+    line-height: 1em;
     height: 47px;
     margin: 0 10px 0 0px !important;
-    text-transform: none;
+    max-width: 232px;
+    text-transform: none !important;
     width: 100%; }
-    #gform_widget-3 .gform_button[value="Next"]:hover, #gform_widget-3 .gform_button[value="Next"]:focus,
+    #gform_widget-3 .gform_button[value="Donate Now"]:hover, #gform_widget-3 .gform_button[value="Donate Now"]:focus,
+    #gform_widget-3 .gform_button[value="Next"]:hover,
+    #gform_widget-3 .gform_button[value="Next"]:focus,
+    #gform_widget-5 .gform_button[value="Donate Now"]:hover,
+    #gform_widget-5 .gform_button[value="Donate Now"]:focus,
     #gform_widget-5 .gform_button[value="Next"]:hover,
     #gform_widget-5 .gform_button[value="Next"]:focus {
       background-position: right bottom; }
@@ -6084,7 +6098,6 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         clear: left; }
     .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 {
       margin-top: 40px;
-      height: 186px;
       margin: auto;
       padding-top: 0px;
       background: transparent; }
@@ -6094,13 +6107,22 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .widget-inner h2 {
           color: #000; }
     .pum-overlay .pum-container .pum-content .content-container h4 {
-      margin-top: 160px; }
+      font-size: 1.8rem;
+      line-height: 1.5em;
+      font-weight: 600;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+      .pum-overlay .pum-container .pum-content .content-container h4 .share-wins {
+        font-size: 1.28em;
+        font-weight: 700; }
       @media (min-width: 44.375em) {
         .pum-overlay .pum-container .pum-content .content-container h4 {
-          margin-top: 48px; } }
-      @media (min-width: 75em) {
+          font-size: 2.2rem;
+          line-height: 1.5em; } }
+      @media (min-width: 56.875em) {
         .pum-overlay .pum-container .pum-content .content-container h4 {
-          margin-top: 24px; } }
+          font-size: 2.8rem;
+          line-height: 1.5em; } }
 
 /*
 @import "colours";

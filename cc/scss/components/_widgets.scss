@@ -110,6 +110,8 @@
     @include content-constrained();
     background: #F3F3F3;
     border-top: 10px solid $colour-donate;
+    margin-left: 0;
+    margin-right: 0;
     padding: 20px;
     position: relative;
   }
@@ -147,8 +149,11 @@
       margin: 0 0 20px 0;
       overflow: visible;
 
+      &.gchoice_10_1_3 { display: none; }
+
       &:last-child {
         @include add-fontello-icon('\E813') {
+          color: $colour-font;
           left: -33px;
           position: absolute;
           top: 50%;
@@ -158,15 +163,21 @@
         border-radius: $border-radius-default;
         border-style: solid;
         border-width: 4px 4px 4px 40px;
+        height: 44px;
         margin-bottom: 0;
         position: relative;
 
-        &.selected { border-color: $colour-donate; }
+        &.selected {
+          border-color: $colour-donate;
+
+          &::before { color: $white; }
+        }
 
         input {
           background: #F3F3F3;
           border: 0 none;
-          font-size: px2rem($fz-md) !important;
+          // font-size: px2rem($fz-md) !important;
+          line-height: 1.5em;
           margin-bottom: 0;
           width: 90%;
         }
@@ -196,24 +207,28 @@
   }
 
   .gform_footer {
-    bottom: 25px;
-    left: 51%;
-    margin: 0;
+    // bottom: 25px;
+    // left: 51%;
+    // margin: 0;
     padding: 0;
-    position: absolute;
-    width: 40%;
+    // position: absolute;
+    text-align: center;
+    // width: 40%;
   }
 
+  .gform_button[value="Donate Now"],
   .gform_button[value="Next"] {
-    background: url('../images/donate-button-sprite.png') no-repeat right top;
+    background: url('../images/donate-button-bevel-sprite.png') no-repeat right top;
     background-size: auto 94px;
     box-shadow: none;
     border: 0 none;
     color: $white;
     font-size: px2rem($fz-md);
+    line-height: 1em;
     height: 47px;
     margin: 0 10px 0 0px !important;
-    text-transform: none;
+    max-width: 232px;
+    text-transform: none !important;
     width: 100%;
 
     &:hover,
