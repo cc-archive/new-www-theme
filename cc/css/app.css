@@ -138,6 +138,9 @@ strong {
     .txt-big {
       font-size: 4.4rem; } }
 
+.no-wrap {
+  white-space: nowrap; }
+
 select,
 input[type="text"],
 input[type="email"],
@@ -5973,44 +5976,161 @@ blockquote.cc-short-block {
 /* 15th Anniversary Ask */
 body.home .cc-fifteenth-anniversary-ask-widget,
 .cc-fifteenth-anniversary-ask-widget {
-  background: #1cb5c3;
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #1cb5c3), color-stop(100%, #16909b));
-  background: -webkit-radial-gradient(center, ellipse cover, #1cb5c3 0%, #16909b 100%);
-  background: -webkit-radial-gradient(center ellipse, #1cb5c3 0%, #16909b 100%);
-  background: radial-gradient(ellipse at center, #1cb5c3 0%, #16909b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
-  background: #158B95 url("/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png") center no-repeat;
+  background: #158B95 url("/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png") center top no-repeat;
+  background-size: cover;
   text-align: center; }
-  body.home .cc-fifteenth-anniversary-ask-widget h2.widget-title,
-  .cc-fifteenth-anniversary-ask-widget h2.widget-title {
-    text-transform: none;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFEB32;
+  body.home .cc-fifteenth-anniversary-ask-widget .textwidget,
+  .cc-fifteenth-anniversary-ask-widget .textwidget {
+    margin: 0 auto;
+    max-width: 90%; }
+    @media (min-width: 44.375em) {
+      body.home .cc-fifteenth-anniversary-ask-widget .textwidget,
+      .cc-fifteenth-anniversary-ask-widget .textwidget {
+        max-width: 80%;
+        margin-top: -30px; } }
+    @media (min-width: 75em) {
+      body.home .cc-fifteenth-anniversary-ask-widget .textwidget,
+      .cc-fifteenth-anniversary-ask-widget .textwidget {
+        max-width: 1120px;
+        margin-top: -70px; } }
+  body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
+  .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
+    background-color: #FEEB32;
+    box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.5);
     color: #000;
-    display: inline-block;
-    width: 60%;
-    padding: 10px 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.5); }
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 62px;
+    line-height: 1.3em;
+    margin: 20px auto 10px auto;
+    padding: 10px 0px;
+    position: relative;
+    width: 80%; }
+    body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::before, body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::after,
+    .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::before,
+    .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::after {
+      border: 31px solid #FEEB32;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 1; }
+    body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::before,
+    .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::before {
+      border-left-color: transparent;
+      left: -35px; }
+    body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::after,
+    .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::after {
+      border-right-color: transparent;
+      right: -35px; }
+    body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon span,
+    .cc-fifteenth-anniversary-ask-widget .yellow-ribbon span {
+      position: relative;
+      z-index: 2; }
+    @media (min-width: 480px) {
+      body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
+      .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
+        font-size: 1.8rem;
+        padding: 10px 5%; } }
+    @media (min-width: 620px) {
+      body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
+      .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
+        padding: 18px 0px; } }
+    @media (min-width: 48.9375em) {
+      body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
+      .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
+        font-size: 2rem;
+        padding: 18px 0px; }
+        body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::before,
+        .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::before {
+          left: auto;
+          right: 100%; }
+        body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::after,
+        .cc-fifteenth-anniversary-ask-widget .yellow-ribbon::after {
+          left: 100%;
+          right: auto; } }
+    @media (min-width: 56.875em) {
+      body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
+      .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
+        font-size: 2.2rem;
+        margin-bottom: 30px; } }
+    @media (min-width: 75em) {
+      body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
+      .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
+        font-size: 2.4rem; } }
   body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3,
   .cc-fifteenth-anniversary-ask-widget #gform_widget-3 {
-    padding-top: 0px;
-    background: transparent; }
+    background: transparent;
+    padding-top: 0px; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 h2,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 h2 {
+      color: #333333;
+      margin-bottom: 10px;
+      min-height: auto; }
     body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner,
     .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner {
       border-left: 10px solid #01A635;
       border-top: none; }
-      body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner h2,
-      .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner h2 {
-        color: #000; }
       body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner #field_10_1,
       .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .widget-inner #field_10_1 {
         /* amount buttons */
         margin-top: -50px; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 #field_14_1 > label,
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_0,
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_2,
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_3,
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .contribute-today,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 #field_14_1 > label,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_0,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_2,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_3,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .contribute-today {
+      display: none; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li {
+      margin-bottom: 10px; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gform_footer,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gform_footer {
+      margin-top: 0; }
+  @media (min-width: 620px) {
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 h2,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 h2 {
+      min-height: 60px; }
+      body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 h2 .contribute-today,
+      .cc-fifteenth-anniversary-ask-widget #gform_widget-3 h2 .contribute-today {
+        display: block; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_0,
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_2,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_0,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_2 {
+      display: block; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li {
+      -webkit-flex-basis: 23%;
+          -ms-flex-preferred-size: 23%;
+              flex-basis: 23%; } }
+  @media (min-width: 44.375em) {
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_3,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gchoice_14_1_3 {
+      display: block; }
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li,
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li {
+      -webkit-flex-basis: 15%;
+          -ms-flex-preferred-size: 15%;
+              flex-basis: 15%; }
+      body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li:last-child,
+      .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gfield_radio > li:last-child {
+        -webkit-flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; } }
+  @media (min-width: 56.875em) {
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gform_button[value="Donate Now"],
+    body.home .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gform_button[value="Next"],
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gform_button[value="Donate Now"],
+    .cc-fifteenth-anniversary-ask-widget #gform_widget-3 .gform_button[value="Next"] {
+      padding-bottom: 10px;
+      padding-top: 10px; } }
 
 .pum-overlay .pum-container {
   left: 0;
@@ -6020,8 +6140,6 @@ body.home .cc-fifteenth-anniversary-ask-widget,
   background: -webkit-radial-gradient(center ellipse, #1cb5c3 0%, #16909b 100%);
   background: radial-gradient(ellipse at center, #1cb5c3 0%, #16909b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 ); }
-  .pum-overlay .pum-container .no-wrap {
-    white-space: nowrap; }
   .pum-overlay .pum-container #confetti-canvas {
     position: absolute;
     pointer-events: none; }
@@ -6114,15 +6232,15 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         display: inline-block;
         clear: left; }
     .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 {
+      background: transparent;
       margin-top: 40px;
       margin: auto;
-      padding-top: 0px;
-      background: transparent; }
+      padding-top: 0px; }
       .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .widget-inner {
         border-left: 10px solid #01A635;
         border-top: none; }
-        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .widget-inner h2 {
-          color: #000; }
+      .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 h2 {
+        color: #333333; }
     .pum-overlay .pum-container .pum-content .content-container h4 {
       font-size: 1.8rem;
       line-height: 1.5em;

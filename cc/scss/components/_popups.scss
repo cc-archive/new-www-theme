@@ -12,10 +12,6 @@
     background: radial-gradient(ellipse at center, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
 
-    .no-wrap {
-      white-space: nowrap;
-    }
-
     #confetti-canvas {
       position: absolute;
       pointer-events: none;
@@ -48,7 +44,6 @@
         @include breakpoint($desktop-lg-layout){
           max-width: 1120px;
           margin-top: -70px;
-
         }
 
         margin: auto;
@@ -141,19 +136,18 @@
         color: $white;
 
         #gform_widget-3 {
+          background: transparent;
           margin-top: 40px;
           // height: 186px;
           margin: auto;
           padding-top: 0px;
-          background: transparent;
+
           .widget-inner{
             border-left: 10px solid $colour-donate;
             border-top: none;
-
-            h2 {
-              color: $black;
-            }
           }
+
+          h2 { color: $grey-dark; }
         }
 
         h4 {
