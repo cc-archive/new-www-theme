@@ -1840,11 +1840,9 @@ body.home .cc-fifteenth-anniversary-ask-widget,
     max-width: 90%;
     @include breakpoint($tablet-sm-layout) {
       max-width: 80%;
-      margin-top: -30px;
     }
     @include breakpoint($desktop-lg-layout){
       max-width: 1120px;
-      margin-top: -70px;
     }
   }
 

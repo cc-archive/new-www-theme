@@ -5986,13 +5986,11 @@ body.home .cc-fifteenth-anniversary-ask-widget,
     @media (min-width: 44.375em) {
       body.home .cc-fifteenth-anniversary-ask-widget .textwidget,
       .cc-fifteenth-anniversary-ask-widget .textwidget {
-        max-width: 80%;
-        margin-top: -30px; } }
+        max-width: 80%; } }
     @media (min-width: 75em) {
       body.home .cc-fifteenth-anniversary-ask-widget .textwidget,
       .cc-fifteenth-anniversary-ask-widget .textwidget {
-        max-width: 1120px;
-        margin-top: -70px; } }
+        max-width: 1120px; } }
   body.home .cc-fifteenth-anniversary-ask-widget .yellow-ribbon,
   .cc-fifteenth-anniversary-ask-widget .yellow-ribbon {
     background-color: #FEEB32;
