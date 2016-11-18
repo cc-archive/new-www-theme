@@ -24,19 +24,23 @@
     });
   });
 
-  if (typeof(__gaTracker) == 'function'){
-    // Next on Page 1
-    $("#gform_next_button_3_18").on( "click", function() {
+  // Next on Page 1
+  $("#gform_next_button_3_18").on( "click", function() {
+    if (typeof(__gaTracker) == 'function'){
       __gaTracker('send', 'pageview','/donate/page-two');
-    });
-    // Next on Page 2
-    $("#gform_next_button_3_19").on( "click", function() {
+    }
+  });
+  // Next on Page 2
+  $("#gform_next_button_3_19").on( "click", function() {
+    if (typeof(__gaTracker) == 'function'){
       __gaTracker('send', 'pageview','/donate/page-three');
-    });
-    // Next on Page 2
-    $("#gform_submit_button_3").on( "click", function() {
+    }
+  });
+  // Next on Page 3
+  $("#gform_submit_button_3").on( "click", function() {
+    if (typeof(__gaTracker) == 'function'){
       __gaTracker('send', 'pageview','/donate/complete');
-    });
-  }
+    }
+  });
 
 })(jQuery);
