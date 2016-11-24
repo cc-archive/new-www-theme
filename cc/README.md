@@ -16,3 +16,4 @@ To build the js/css:
      `css/app.css` files as you edit the src files.
 - when preparing for production:
     - run `gulp dist` to create minified `css/app.css` files.
+- also update the CC_CSS_RELEASE_SERIAL_NUMBER at the top of functions.php to purge the caches.
