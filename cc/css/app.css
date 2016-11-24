@@ -3063,9 +3063,9 @@ body.page-id-48781 .gf_page_steps {
     position: relative;
     width: auto !important;
     display: inline-block; }
-  body.page-id-48781 .gf_page_steps span.gf_step_active {
+  body.page-id-48781 .gf_page_steps div.gf_step_active {
     color: #333333; }
-    body.page-id-48781 .gf_page_steps span.gf_step_active span.gf_step_number {
+    body.page-id-48781 .gf_page_steps div.gf_step_active span.gf_step_number {
       background: #fff; }
   body.page-id-48781 .gf_page_steps span.gf_step_number {
     background: #DBDBDB;
