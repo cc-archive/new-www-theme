@@ -1,0 +1,177 @@
+.pum-overlay {
+
+  .pum-container {
+    left: 0;
+
+    background: rgba(28,181,195,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,181,195,1)), color-stop(100%, rgba(22,144,155,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(28,181,195,1) 0%, rgba(22,144,155,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb5c3', endColorstr='#16909b', GradientType=1 );
+
+    #confetti-canvas {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .pum-content {
+      overflow: hidden;
+
+      img.cc-logo {
+        display: block;
+        left: -25%;
+        margin: 0 auto -5% auto;
+        max-width: 150%;
+        position: relative;
+        top: -10%;
+
+        @include breakpoint($desktop-sm-layout){
+          left: 0;
+          margin-bottom: 0;
+          max-width: 100%;
+        }
+      }
+
+      .content-container {
+
+        max-width: 90%;
+        @include breakpoint($tablet-sm-layout) {
+          max-width: 80%;
+          margin-top: -30px;
+        }
+        @include breakpoint($desktop-lg-layout){
+          max-width: 1120px;
+          margin-top: -70px;
+        }
+
+        margin: auto;
+        text-align: center;
+        padding-bottom: 48px;
+
+        .yellow-ribbon {
+          background-color: $yellow-lighter;
+          box-shadow: 0px 6px 5px -2px rgba($black, 0.5);
+          color: $black;
+          @include font-weight($fw-semi-bold);
+          height: 62px;
+          line-height: 1.3em;
+          margin: 0px auto;
+          padding: 10px 0px;
+          position: relative;
+          top: -15px;
+          width: 80%;
+
+          &::before,
+          &::after {
+            border: 31px solid $yellow-lighter;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+          }
+
+          &::before {
+            border-left-color: transparent;
+            left: -35px;
+          }
+
+          &::after {
+            border-right-color: transparent;
+            right: -35px;
+          }
+
+          span {
+            position: relative;
+            z-index: 2;
+          }
+
+          @include breakpoint (480px) {
+            font-size: px2rem(18);
+            padding: 10px 5%;
+          }
+
+          @include breakpoint (620px) {
+            padding: 18px 0px;
+          }
+
+          @include breakpoint ($tablet-md-layout) {
+            font-size: px2rem(20);
+            padding: 18px 0px;
+
+            &::before {
+              left: auto;
+              right: 100%;
+            }
+
+            &::after {
+              left: 100%;
+              right: auto;
+            }
+          }
+
+          @include breakpoint ($desktop-sm-layout) {
+            font-size: px2rem(22);
+            margin-bottom: 30px;
+          }
+
+          @include breakpoint ($desktop-lg-layout) {
+            font-size: px2rem(24);
+          }
+        }
+
+        .header {
+          text-align: center;
+          h1 {
+            color: $white;
+            width: 90%;
+            margin: 24px auto;
+            display: inline-block;
+            clear: left;
+          }
+        }
+
+        color: $white;
+
+        #gform_widget-3 {
+          background: transparent;
+          margin-top: 40px;
+          // height: 186px;
+          margin: auto;
+          padding-top: 0px;
+
+          .widget-inner{
+            border-left: 10px solid $colour-donate;
+            border-top: none;
+          }
+
+          h2 { color: $grey-dark; }
+        }
+
+        h4 {
+          font-size: px2rem($fz-h6);
+          line-height: 1.5em;
+          @include font-weight($fw-semi-bold);
+
+          .share-wins {
+            font-size: 1.28em;
+            font-weight: $fw-bold;
+          }
+
+          @include breakpoint ($tablet-sm-layout) {
+            font-size: px2rem($fz-h4);
+            line-height: 1.5em;
+          }
+
+          @include breakpoint ($desktop-sm-layout) {
+            font-size: px2rem($fz-xlg);
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

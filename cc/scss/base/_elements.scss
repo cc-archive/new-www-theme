@@ -92,6 +92,8 @@ strong { @include font-weight($fw-bold); }
   }
 }
 
+.no-wrap { white-space: nowrap; }
+
 //
 // Forms
 // ============================================================================

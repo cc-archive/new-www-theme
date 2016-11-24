@@ -110,6 +110,8 @@
     @include content-constrained();
     background: #F3F3F3;
     border-top: 10px solid $colour-donate;
+    margin-left: 0;
+    margin-right: 0;
     padding: 20px;
     position: relative;
   }
@@ -118,18 +120,28 @@
 
   h2 {
     align-items: center;
-    background: url('../images/cc_heart.png') left center no-repeat;
-    background-size: 66px;
-    display: flex;
     font-size: px2rem($fz-base + 1);
     @include font-weight($fw-bold);
     line-height: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     min-height: 60px;
-    padding-left: 80px;
+    text-align: center;
   }
 
-  #field_2_1 > label { display: none; }
+  .share-wins { display: block; }
+
+  .contribute-today {
+    display: block;
+    font-size: 0.8em;
+    font-weight: $fw-normal;
+    margin-top: 0.5em;
+  }
+
+  #field_2_1,
+  #field_10_1 {
+
+    > label { display: none; }
+  }
 
   .gfield_radio {
     display: flex;
@@ -141,8 +153,11 @@
       margin: 0 0 20px 0;
       overflow: visible;
 
+      &.gchoice_10_1_3 { display: none; }
+
       &:last-child {
         @include add-fontello-icon('\E813') {
+          color: $colour-font;
           left: -33px;
           position: absolute;
           top: 50%;
@@ -152,15 +167,21 @@
         border-radius: $border-radius-default;
         border-style: solid;
         border-width: 4px 4px 4px 40px;
+        height: 44px;
         margin-bottom: 0;
         position: relative;
 
-        &.selected { border-color: $colour-donate; }
+        &.selected {
+          border-color: $colour-donate;
+
+          &::before { color: $white; }
+        }
 
         input {
           background: #F3F3F3;
           border: 0 none;
-          font-size: px2rem($fz-md) !important;
+          // font-size: px2rem($fz-md) !important;
+          line-height: 1.6em;
           margin-bottom: 0;
           width: 90%;
         }
@@ -174,6 +195,7 @@
       display: block;
       font-size: px2rem($fz-md) !important;
       margin-left: 0;
+      max-width: none;
       width: 100%;
     }
 
@@ -190,24 +212,28 @@
   }
 
   .gform_footer {
-    bottom: 25px;
-    left: 51%;
-    margin: 0;
+    // bottom: 25px;
+    // left: 51%;
+    // margin: 0;
     padding: 0;
-    position: absolute;
-    width: 40%;
+    // position: absolute;
+    text-align: center;
+    // width: 40%;
   }
 
+  .gform_button[value="Donate Now"],
   .gform_button[value="Next"] {
-    background: url('../images/donate-button-sprite.png') no-repeat right top;
+    background: url('../images/donate-button-bevel-sprite.png') no-repeat right top;
     background-size: auto 94px;
     box-shadow: none;
     border: 0 none;
     color: $white;
     font-size: px2rem($fz-md);
+    line-height: 1em;
     height: 47px;
     margin: 0 10px 0 0px !important;
-    text-transform: none;
+    max-width: 232px;
+    text-transform: none !important;
     width: 100%;
 
     &:hover,
@@ -216,32 +242,41 @@
     }
   }
 
+  @include breakpoint (520px) {
+
+    h2 {
+      font-size: px2rem($fz-lg);
+    }
+
+    .contribute-today { margin-top: 0; }
+  }
+
+  @include breakpoint (620px) {
+
+    h2 {
+      background: url('../images/cc_heart.png') 14% center no-repeat;
+      background-size: 66px;
+      padding-left: 26%;
+      padding-top: 5px;
+      text-align: left;
+    }
+  }
 
   @include breakpoint ($tablet-sm-layout) {
 
-    h2 {
-      font-size: px2rem($fz-xlg);
-    }
-
     .gfield_radio {
-      padding-right: 120px;
+      margin: 20px 0;
 
       > li {
         flex-basis: 15%;
         margin-bottom: 0!important;
 
+        &.gchoice_10_1_3 { display: block; }
+
         &:last-child {
           flex-basis: 25%;
-
-          input { padding: .2em 0; }
         }
       }
-    }
-
-    .gform_footer {
-      left: auto;
-      right: 20px;
-      width: auto;
     }
 
     .gform_button[value="Next"] {
@@ -251,7 +286,25 @@
     }
   }
 
+  @include breakpoint ($tablet-md-layout) {
+
+    h2 { font-size: px2rem($fz-xlg); }
+  }
+
   @include breakpoint ($desktop-sm-layout) {
+
+
+    h2 {
+      background-position: 16% center;
+      font-size: px2rem($fz-h3);
+      padding-top: 10px;
+
+      span:nth-child(2)::after { height: 0; }
+    }
+  }
+
+  @include breakpoint ($desktop-lg-layout) {
+
     form {
       background: url('../images/cc_heart.png') left center no-repeat;
       background-size: 100px;
@@ -260,8 +313,25 @@
 
     h2 {
       background-image: none;
-      font-size: px2rem($fz-h3);
+      font-size: px2rem($fz-big);
+      min-height: auto;
       padding-left: 0;
+
+      .share-wins { display: none; }
+
+      .contribute-today { font-weight: $fw-bold; }
+    }
+
+    .gfield_radio {
+      padding-right: 200px;
+    }
+
+    .gform_footer {
+      bottom: 38px;
+      // left: auto;
+      position: absolute;
+      right: 20px;
+      width: auto;
     }
   }
 }
@@ -1741,7 +1811,7 @@
 		text-transform: uppercase;
 		position: absolute;
     right: 0px;
-		a{
+		a {
 			padding-right:30px;
 			position: relative;
 			font-family: $ff-roboto-condensed;
@@ -1756,4 +1826,185 @@
 		}
 	}
 }
+
+/* 15th Anniversary Ask */
+
+body.home .cc-fifteenth-anniversary-ask-widget,
+.cc-fifteenth-anniversary-ask-widget {
+  background: #158B95 url('/wp-content/themes/cc/images/yearend-takeover/cc_widget_background.png') center top no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  .textwidget {
+    margin: 0 auto;
+    max-width: 90%;
+    @include breakpoint($tablet-sm-layout) {
+      max-width: 80%;
+    }
+    @include breakpoint($desktop-lg-layout){
+      max-width: 1120px;
+    }
+  }
+
+  .yellow-ribbon {
+    background-color: $yellow-lighter;
+    box-shadow: 0px 6px 5px -2px rgba($black, 0.5);
+    color: $black;
+    @include font-weight($fw-semi-bold);
+    height: 62px;
+    line-height: 1.3em;
+    margin: 20px auto 10px auto;
+    padding: 10px 0px;
+    position: relative;
+    width: 80%;
+
+    &::before,
+    &::after {
+      border: 31px solid $yellow-lighter;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    &::before {
+      border-left-color: transparent;
+      left: -35px;
+    }
+
+    &::after {
+      border-right-color: transparent;
+      right: -35px;
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    @include breakpoint (480px) {
+      font-size: px2rem(18);
+      padding: 10px 5%;
+    }
+
+    @include breakpoint (620px) {
+      padding: 18px 0px;
+    }
+
+    @include breakpoint ($tablet-md-layout) {
+      font-size: px2rem(20);
+      padding: 18px 0px;
+
+      &::before {
+        left: auto;
+        right: 100%;
+      }
+
+      &::after {
+        left: 100%;
+        right: auto;
+      }
+    }
+
+    @include breakpoint ($desktop-sm-layout) {
+      font-size: px2rem(22);
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint ($desktop-lg-layout) {
+      font-size: px2rem(24);
+    }
+  }
+
+  // h4 {
+  //   color: $white;
+  //   font-size: px2rem($fz-md);
+  //   line-height: 1.5em;
+  //   letter-spacing: normal;
+  // }
+
+  #gform_widget-3 {
+    background: transparent;
+    padding-top: 0px;
+
+    h2 {
+      color: $grey-dark;
+      margin-bottom: 10px;
+      min-height: auto;
+    }
+
+    .widget-inner{
+      border-left: 10px solid $colour-donate;
+      border-top: none;
+
+      #field_10_1 {
+        /* amount buttons */
+        margin-top: -50px;
+      }
+    }
+
+    #field_14_1 > label,
+    .gchoice_14_1_0,
+    .gchoice_14_1_2,
+    .gchoice_14_1_3,
+    .contribute-today {
+      display: none;
+    }
+
+    .gfield_radio > li { margin-bottom: 10px; }
+
+    .gform_footer { margin-top: 0; }
+  }
+
+  @include breakpoint (620px) {
+
+    #gform_widget-3 {
+
+      h2 {
+        min-height: 60px;
+
+        .contribute-today { display: block; }
+      }
+
+      .gchoice_14_1_0,
+      .gchoice_14_1_2 {
+        display: block;
+      }
+
+      .gfield_radio > li {
+        flex-basis: 23%;
+      }
+    }
+  }
+
+  @include breakpoint ($tablet-sm-layout) {
+
+    #gform_widget-3 {
+
+     .gchoice_14_1_3 {
+        display: block;
+      }
+
+      .gfield_radio > li {
+        flex-basis: 15%;
+
+        &:last-child { flex-basis: 25%; }
+      }
+    }
+  }
+
+  @include breakpoint ($desktop-sm-layout) {
+
+    #gform_widget-3 {
+
+      .gform_button[value="Donate Now"],
+      .gform_button[value="Next"] {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
 

@@ -1086,3 +1086,54 @@ body.error404 {
     }
   }
 }
+
+//
+// Store
+// ===================================
+
+.cc-store {
+
+  h3 :focus{
+    outline: none;
+  }
+
+  ul.list-unstyled-inline {
+    list-style-type: none;
+    padding: 0;
+    li {
+      margin: 0 30px;
+      display: inline;
+    }
+  }
+
+  .store-item {
+    width: 100%;
+    padding: 0 10px;
+    padding-bottom: 50px;
+    @include breakpoint($desktop-sm-layout){
+      width: 50%;
+      float: left;
+
+      .panel-body {
+        min-height: 210px;
+      }
+    }
+
+    .panel-footer {
+      max-height: 50px;
+    }
+
+    .license-image img {
+      max-width: 200px;
+      margin-top: -30px;
+    }
+    .sharedaddy {
+      position: static;
+    }
+  }
+}
+
+
+
+
+
