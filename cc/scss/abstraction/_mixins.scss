@@ -10,10 +10,10 @@
 @mixin font-weight($weight) {
   font-weight: $weight;
 
-  $need_smooth: (600, 'semi-bold', 700, 'bold');
-  @if index($need_smooth, $weight) {
-    @include font-smoothing();
-  }
+  // $need_smooth: (600, 'semi-bold', 700, 'bold');
+  // @if index($need_smooth, $weight) {
+  //   @include font-smoothing();
+  // }
 }
 
 
