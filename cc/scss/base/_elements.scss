@@ -263,6 +263,13 @@ input[type="submit"] {
       &+ label { display: none !important; }
     }
   }
+
+  .description,
+  .gfield_description,
+  .gsection_description,
+  .instruction {
+    font-size: px2rem($fz-xxsm) !important;
+  }
 }
 .gform_button[type="submit"] {
   @include button($style: 'primary');
