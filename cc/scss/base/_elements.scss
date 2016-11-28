@@ -276,6 +276,21 @@ input[type="submit"] {
   @include button($style: 'primary');
 }
 
+// This is a patch for email field, feel free to remove it once Gravity form fixes the issue
+@media only screen and (min-width: 641px) {
+  .gform_wrapper .left_label div.ginput_container_email {
+    width: 70%;
+    margin-left: 29%;
+  }
+  ul.gform_fields:not(.top_label) div.ginput_container_email {
+    width: calc(70% + 15px);
+    margin-left: 29%;
+
+    input { width: calc(50% - 15px); }
+  }
+}
+// End of patch.
+
 //
 // Buttons
 // ============================================================================
