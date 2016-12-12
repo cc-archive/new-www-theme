@@ -73,10 +73,10 @@
 #home-content-below {
 
   > div {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 
     @include breakpoint ($tablet-sm-layout) {
-      margin-bottom: 30px;
+    /*  margin-bottom: 30px; */
     }
   }
 
@@ -1412,90 +1412,8 @@
 /* Stay Tuned to the Commons
  -- Homepage widget
  --------------------------------- */
-#text-10,
-#text-13 {
-  background-image: linear-gradient(180deg, #E1B300, #EFBE00);
-  padding: 40px 0;
 
-  body.home & { margin-top: -30px; }
-
-  h2 {
-    color: $grey-dark;
-    font-size: px2rem($fz-xlg);
-    line-height: 0.85em;
-    font-family: $ff-roboto-condensed;
-    @include font-weight($fw-bold);
-    margin-bottom: 10px;
-    margin-top: 0;
-    text-transform: uppercase;
-  }
-
-  .textwidget {
-    @include content-constrained();
-  }
-
-  .input-group {
-    display: flex;
-    flex-flow: row nowrap;
-    padding-right: 1em;
-  }
-
-  input[type="email"] {
-    background: $white url('../images/grey-envelope.png') no-repeat 15px center;
-    padding-bottom: 0.9em;
-    padding-left: 50px;
-    padding-top: 0.9em;
-    width: inherit;
-  }
-
-  span.input-group-btn {
-    min-width: 110px;
-  }
-
-  .button.primary.arrow {
-    padding-bottom: 0.8em;
-    padding-top: 0.8em;
-    width: 110px;
-    &::after { border-width: 1.4em 0 1.3em 0.8em; }
-  }
-
-  @include breakpoint ($tablet-sm-layout) {
-
-    .textwidget {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 700px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    h2 {
-      float: left;
-      margin-right: $gutter;
-      padding-left: 60px;
-      position: relative;
-
-      &::before {
-        background: url('../images/email_signup.png') no-repeat left center;
-        content: '';
-        display: block;
-        height: 50px;
-        left: 0;
-        position: absolute;
-        top: -4px;
-        width: 50px;
-      }
-
-      span {
-        display: block;
-      }
-    }
-
-    input[type="email"] { min-width: 200px; }
-  }
-}
-
-#gform_widget-6 {
+#text-3 {
   background-image: linear-gradient(180deg, #E1B300, #EFBE00);
   padding: 40px 0;
 
@@ -1520,6 +1438,10 @@
   .gform_wrapper {
     @include content-constrained();
   }
+
+  /* Override some GF changes */
+  li { padding-right: 0; }
+  div.ginput_container { margin-top: 0;}
 
   #input_7_1 {
     background: $white url('../images/grey-envelope.png') no-repeat 15px center;
