@@ -1429,7 +1429,7 @@
   }
 
   form {
-    padding-right: 140px;
+    padding-right: 15%;
     position: relative;
   }
 
@@ -1474,7 +1474,7 @@
     bottom: 0;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: static;
     right: 0px;
     z-index: 2;
   }
