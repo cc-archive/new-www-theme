@@ -780,6 +780,10 @@ body.page-id-48781 {
     > li {
       display: inline-block;
       margin: 0 20px;
+      label {
+        white-space: nowrap;
+        font-size: 1.6rem !important;
+      }
     }
   }
 
