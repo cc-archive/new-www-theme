@@ -27,3 +27,10 @@
     display: none;
   }
 }
+
+/* IE10-11 SVG scaling hack */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%; 
+  }
+}
