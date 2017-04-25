@@ -5,22 +5,21 @@
   "use strict";
 
   $( document ).ready(function() {
-    var other_fields = '#gform_widget-3 .gfield_radio > li:last-child, ' +
-                       '#gform_widget-5 .gfield_radio > li:last-child, ' +
-                       'body.page-id-48781 #input_3_1 > li:last-child, ' +
-                       'body.page-id-48781 #input_3_9 > li:last-child';
+    var other_fields = $('input[value="gf_other_choice"]');
 
     $(other_fields).each(function() {
-      var $txtField = $(this).children('input[type="text"]'),
-          $parent = $(this);
+      var parent = $(this).closest('li');
+      var radioField = $(this);
+      var txtField = $(parent).children('input[type="text"]');
 
-      $txtField
-        .focus(function() {
-          $parent.addClass('selected');
-        })
-        .blur(function() {
-          $parent.removeClass('selected');
-        });
+      txtField.focus(function() {
+        parent.addClass('selected');
+        radioField.click();
+      });
+
+      txtField.blur(function() {
+        parent.removeClass('selected');
+      });
     });
   });
 
