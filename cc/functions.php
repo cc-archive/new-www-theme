@@ -295,4 +295,9 @@ function cc_eat_excluded_types ( $exclude_types ){
 // Allow shortcodes in html widgets.
 add_filter('widget_text','do_shortcode');
 
+function cc_mailchimp_signup($content) {
+    return $content . '';
+}
+add_action('cc_mailchimp_signup', 'to_footer');
+
 ?>
