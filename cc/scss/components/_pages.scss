@@ -631,7 +631,8 @@ body.archive {
 // Donate
 // =================================
 body.page-id-48781,
-body.page-id-53377 {
+body.page-id-53377,
+.page-donate {
 
   .form-title {
     align-items: center;
@@ -661,6 +662,7 @@ body.page-id-53377 {
     margin: 0 auto 35px auto;
     padding: 0;
     width: 220px;
+    text-align: center;
 
     .gf_step {
       margin: 0 5px;
@@ -687,11 +689,12 @@ body.page-id-53377 {
       text-align: center;
       width: 48px;
       font-size: 1.25em;
+      display: block !important;
     }
 
     span.gf_step_label {
       display: block;
-      margin: -10px auto 0 auto;
+      margin: 0 auto 0 auto;
       text-align: center;
       font-size: 1.25em;
     }
@@ -731,7 +734,6 @@ body.page-id-53377 {
         border-radius: $border-radius-default;
         border-style: solid;
         border-width: 4px 4px 4px 40px;
-        margin-bottom: 0;
         position: relative;
 
         &.selected { border-color: $colour-donate; }
@@ -915,7 +917,7 @@ body.page-id-53377 {
 
       > li {
         flex-basis: 100px;
-        margin-bottom: 0!important;
+        /////margin-bottom: 0 !important;
         margin-left: 10px;
         margin-right: 10px;
 
@@ -1141,6 +1143,61 @@ body.error404 {
 }
 
 
+//
+// Floating donations page
+// ===================================
 
+.html-floating {
+    height: 100% !important;
+}
 
+.body-floating {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
 
+.site-header-floating {
+    display: none;
+}
+
+.page-donate-floating {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+}
+
+.donate-cell {
+    flex: 1 1 48%;
+    background: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.content-area-floating {
+    margin: auto !important;
+    width: 100% !important;
+    min-height: 100% !important;
+}
+
+.wrapper-main-floating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-main-floating {
+    margin: 0;
+}
+
+.page-donate-floating footer {
+    margin: auto;
+    color: #999;
+    background-color: rgb(43, 43, 43);
+    margin: 5px;
+    padding: 5px;
+}
+
+.gfield_radio > li {
+    margin-bottom: 20px !important;
+}

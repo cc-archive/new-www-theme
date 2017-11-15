@@ -5,7 +5,7 @@
  * Release serial number - Used to bust the cache. Please update
  *                         any time you change CSS or JS.
  */
-define('CC_CSS_RELEASE_SERIAL_NUMBER', '20170803');
+define('CC_CSS_RELEASE_SERIAL_NUMBER', '20170811');
 
 function twentysixteen_entry_meta() {
 
@@ -53,7 +53,7 @@ function cc_enqueue_scripts() {
   wp_enqueue_style(
     'cc-style',
     get_stylesheet_directory_uri() . '/css/app.css',
-    array( 'parent-style', 'cc-google-fonts', 'cc-fontello' ),
+    array( 'parent-style', 'cc-google-fonts', 'cc-fontello', 'gforms_formsmain_css' ),
     CC_CSS_RELEASE_SERIAL_NUMBER
   );
 
