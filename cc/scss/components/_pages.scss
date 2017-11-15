@@ -631,7 +631,8 @@ body.archive {
 // Donate
 // =================================
 body.page-id-48781,
-body.page-id-53377 {
+body.page-id-53377,
+.page-donate {
 
   .form-title {
     align-items: center;
@@ -1141,6 +1142,56 @@ body.error404 {
 }
 
 
+//
+// Floating donations page
+// ===================================
 
+.html-floating {
+    height: 100% !important;
+}
 
+.body-floating {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
 
+.site-header-floating {
+    display: none;
+}
+
+.page-donate-floating {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+}
+
+.donate-cell {
+    flex: 1 1 48%;
+    background: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.content-area-floating {
+    margin: auto !important;
+    width: 100% !important;
+    min-height: 100% !important;
+}
+
+.wrapper-main-floating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-main-floating {
+    margin: 0;
+}
+
+.page-donate-floating footer {
+    margin: auto;
+    color: #999;
+    background-color: rgb(43, 43, 43);
+    margin: 5px;
+}
