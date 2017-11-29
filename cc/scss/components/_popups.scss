@@ -118,7 +118,7 @@
 
           @include breakpoint ($desktop-sm-layout) {
             font-size: px2rem(21);
-            margin-bottom: 30px;
+            margin-bottom: 12px;
           }
 
           @include breakpoint ($desktop-lg-layout) {
@@ -127,7 +127,7 @@
         }
 
         .centre-box {
-          
+
           margin-left: 150px;
           margin-right: 50px;
           position: relative;

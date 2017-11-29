@@ -7,22 +7,22 @@
   $( document ).ready(function() {
 
     var images = [
-      'creativity_01_200.png',
-      'education_01_200.png',
-      'equality_01_200.png',
-      'research_01_200.png',
-      'conversation_01_200.png',
+      'education_01_100_crop.png',
+      'equality_01_100_crop.png',
+      'research_01_100_crop.png',
+      'conversation_01_100_crop.png',
+      'creativity_01_100_crop.png'
     ];
 
     var mottos = [
-      'creativity and collaboration',
       'open education for all',
       'universal access and equality',
       'open access to research',
-      'the global conversation'
+      'the global conversation',
+      'creativity and collaboration'
     ];
 
-    var image_path_prefix = '/wp-content/themes/cc/images/yearend-takeover/CC_People/CCYE_People_200/';
+    var image_path_prefix = '/wp-content/themes/cc/images/yearend-takeover/CCYE_People_100_cropped/';
 
     var i = 0;
     var totalIterations = 0;
