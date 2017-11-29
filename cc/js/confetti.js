@@ -77,7 +77,7 @@
   // 3. friction
   // 4. wind
   element1 = {value: 300};
-  element2 = {value : .1};
+  element2 = {value : .05};
   element3 = {value : .99};
   element4 = {value : 0};
 

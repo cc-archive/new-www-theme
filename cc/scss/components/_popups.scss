@@ -192,9 +192,15 @@
             h2 { color: $grey-dark; }
 
             form {
+
+              background: url(../images/yearend-takeover/cc_heart_x2.png);
+              background-position: left center;
+              background-repeat: no-repeat;
+              background-size: 116px;
+
               ul.gform_fields {
                 display: flex;
-                justify-content: space-around;
+                justify-content: normal;
 
                 li {
                   display: flex;
@@ -210,6 +216,20 @@
                     label {
                       padding: .6em 1.6em;
                     }
+
+                    input[type="radio"]:checked+label {
+                      background: $colour-donate;
+                      border-color: darken($colour-donate, 5%);
+                      border-right-color: lighten($colour-donate, 5%);
+                      border-top-color: lighten($colour-donate, 20%);
+                      box-shadow: 1px 1px 0px 1px rgba(darken($colour-donate, 20%), 0.6);
+                      color: $white;
+                    }
+
+                    li input+input {
+                      margin-left: 0px;
+                    }
+
                     > li:last-child {
                       flex-basis: 33%;
 
@@ -222,6 +242,11 @@
               }
               .donate-list-item {
                 padding-top: 2px;
+                min-width: 25%;
+
+                .gform_button[value="Donate Now"] {
+                  font-size: 2.3rem;
+                }
               }
             }
           }

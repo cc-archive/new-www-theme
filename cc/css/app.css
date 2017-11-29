@@ -6314,34 +6314,52 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           border-top: none; }
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
           color: #333333; }
-        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-justify-content: space-around;
-              -ms-flex-pack: distribute;
-                  justify-content: space-around; }
-          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li {
+        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form {
+          background: url(../images/yearend-takeover/cc_heart_x2.png);
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: 116px; }
+          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
-            display: flex; }
-            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .ginput_container_radio {
-              margin-top: 0px; }
-            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio {
-              padding-right: 20px;
-              margin-top: 2px; }
-              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio label {
-                padding: .6em 1.6em; }
-              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child {
-                -webkit-flex-basis: 33%;
-                    -ms-flex-preferred-size: 33%;
-                        flex-basis: 33%; }
-                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child input {
-                  width: 100%; }
-        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
-          padding-top: 2px; }
+            display: flex;
+            -webkit-box-pack: normal;
+            -webkit-justify-content: normal;
+                -ms-flex-pack: normal;
+                    justify-content: normal; }
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .ginput_container_radio {
+                margin-top: 0px; }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio {
+                padding-right: 20px;
+                margin-top: 2px; }
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio label {
+                  padding: .6em 1.6em; }
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio input[type="radio"]:checked + label {
+                  background: #01A635;
+                  border-color: #018d2d;
+                  border-right-color: #01bf3d;
+                  border-top-color: #0ffe5a;
+                  box-shadow: 1px 1px 0px 1px rgba(0, 65, 21, 0.6);
+                  color: #fff; }
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio li input + input {
+                  margin-left: 0px; }
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child {
+                  -webkit-flex-basis: 33%;
+                      -ms-flex-preferred-size: 33%;
+                          flex-basis: 33%; }
+                  .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child input {
+                    width: 100%; }
+          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
+            padding-top: 2px;
+            min-width: 25%; }
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+              font-size: 2.3rem; }
       .pum-overlay .pum-container .pum-content .content-container h4 {
         font-size: 1.8rem;
         line-height: 1.5em;
