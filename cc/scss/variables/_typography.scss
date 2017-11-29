@@ -3,6 +3,18 @@
  */
 $ff-roboto-condensed: 'Roboto Condensed', sans-serif;
 $ff-source-sans-pro: 'Source Sans Pro', sans-serif;
+$ff-bebas-neue: 'Bebas Neue', sans-serif;
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("../fonts/bebasneue/BebasNeueRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family:'Bebas Neue';
+    font-weight: bold;
+    src: url("../fonts/bebasneue/BebasNeueBold.otf") format("opentype");
+}
 
 /**
  * Font Sizes

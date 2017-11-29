@@ -6,7 +6,6 @@
   "author": "",
   "license": "GNU",
   "devDependencies": {
-    "bower": "^1.3.1",
     "breakpoint-sass": "^2.7.0",
     "browserify": "^9.0.8",
     "gulp": "^3.9.1",
