@@ -6404,74 +6404,118 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         margin-top: 40px;
         margin: auto;
         padding-top: 0px;
-        border-left: 10px solid #01A635;
+        border-top: 10px solid #01A635;
         padding-left: 24px; }
-        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .widget-inner {
-          border-left: 10px solid #01A635;
-          border-top: none; }
+        @media (min-width: 44.375em) {
+          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 {
+            border-top: none;
+            border-left: 10px solid #01A635; } }
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
-          color: #333333; }
-        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form {
-          background: url(../images/yearend-takeover/cc_heart_x2.png);
-          background-position: left center;
-          background-repeat: no-repeat;
-          background-size: 116px; }
-          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
+          color: #333333;
+          padding-top: 2px;
+          font-size: 4rem;
+          line-height: .8em; }
+          @media (min-width: 44.375em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
+              background-position: 1% center;
+              padding-left: 16%;
+              padding-top: 12px; } }
+          @media (min-width: 48.9375em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
+              background-position: 5% center;
+              font-size: 2.7rem;
+              padding-left: 16%; } }
+          @media (min-width: 56.875em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
+              font-size: 3rem; } }
+          @media (min-width: 61.5625em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
+              font-size: 3.5rem; } }
+          @media (min-width: 75em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
+              font-size: 4.6rem;
+              padding-left: 0; } }
+        @media (min-width: 75em) {
+          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form {
+            background: url(../images/yearend-takeover/cc_heart_x2.png);
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: 116px; } }
+        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form span {
+          font-weight: bold; }
+        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .accelerate-yes img {
+          width: 60%; }
+          @media (min-width: 29.75em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .accelerate-yes img {
+              width: 40%; } }
+          @media (min-width: 44.375em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .accelerate-yes img {
+              width: 34%; } }
+          @media (min-width: 48.9375em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .accelerate-yes img {
+              width: 24%; } }
+        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
+          display: block; }
+          @media (min-width: 56.875em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: normal;
+              -webkit-justify-content: normal;
+                  -ms-flex-pack: normal;
+                      justify-content: normal; } }
+          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: normal;
-            -webkit-justify-content: normal;
-                -ms-flex-pack: normal;
-                    justify-content: normal; }
-            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li {
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex; }
-              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .ginput_container_radio {
-                margin-top: 0px; }
-              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio {
-                padding-right: 20px;
-                margin-top: 2px; }
+            margin-bottom: 20px !important; }
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .ginput_container_radio {
+              margin-top: 0px; }
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio {
+              padding-right: 20px;
+              margin-top: 2px; }
+              @media (min-width: 75em) {
                 .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio label {
-                  padding: .6em 1.6em; }
-                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio input[type="radio"]:checked + label {
-                  background: #01A635;
-                  border-color: #018d2d;
-                  border-right-color: #01bf3d;
-                  border-top-color: #0ffe5a;
-                  box-shadow: 1px 1px 0px 1px rgba(0, 65, 21, 0.6);
-                  color: #fff; }
-                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio li input + input {
-                  margin-left: 0px; }
-                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child {
-                  -webkit-flex-basis: 33%;
-                      -ms-flex-preferred-size: 33%;
-                          flex-basis: 33%; }
-                  .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child input {
-                    width: 100%; }
-          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
-            padding-top: 2px;
-            min-width: 25%; }
-            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
-              font-size: 2.3rem; }
-      .pum-overlay .pum-container .pum-content .content-container h4 {
-        font-size: 1.8rem;
-        line-height: 1.5em;
-        font-weight: 600; }
-        .pum-overlay .pum-container .pum-content .content-container h4 .share-wins {
-          font-size: 1.28em;
-          font-weight: 700; }
-        @media (min-width: 44.375em) {
-          .pum-overlay .pum-container .pum-content .content-container h4 {
-            font-size: 2.2rem;
-            line-height: 1.5em; } }
-        @media (min-width: 56.875em) {
-          .pum-overlay .pum-container .pum-content .content-container h4 {
-            font-size: 2.8rem;
-            line-height: 1.5em; } }
+                  padding: .6em 1.6em; } }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio input[type="radio"]:checked + label {
+                background: #01A635;
+                border-color: #018d2d;
+                border-right-color: #01bf3d;
+                border-top-color: #0ffe5a;
+                box-shadow: 1px 1px 0px 1px rgba(0, 65, 21, 0.6);
+                color: #fff; }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio li {
+                -webkit-flex-basis: 49%;
+                    -ms-flex-preferred-size: 49%;
+                        flex-basis: 49%; }
+                @media (min-width: 56.875em) {
+                  .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio li {
+                    -webkit-flex-basis: 15%;
+                        -ms-flex-preferred-size: 15%;
+                            flex-basis: 15%; } }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio li input + input {
+                margin-left: 0px; }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child {
+                -webkit-flex-basis: 49%;
+                    -ms-flex-preferred-size: 49%;
+                        flex-basis: 49%; }
+                @media (min-width: 56.875em) {
+                  .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child {
+                    -webkit-flex-basis: 33%;
+                        -ms-flex-preferred-size: 33%;
+                            flex-basis: 33%; } }
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields li .gfield_radio > li:last-child input {
+                  width: 100%; }
+        .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
+          padding-top: 2px; }
+          @media (min-width: 56.875em) {
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
+              min-width: 25%; } }
+          .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+            font-size: 2.3rem; }
 
 /*
 @import "colours";
