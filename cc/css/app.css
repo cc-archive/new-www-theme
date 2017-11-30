@@ -6341,8 +6341,10 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             margin-right: 50px; } }
         .pum-overlay .pum-container .pum-content .content-container .centre-box .person-box {
           display: inline-block;
-          width: 48%;
-          vertical-align: bottom; }
+          width: 48%; }
+          @media (min-width: 29.75em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .person-box {
+              width: 56%; } }
           .pum-overlay .pum-container .pum-content .content-container .centre-box .person-box img.person {
             z-index: 2; }
         .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
@@ -6352,11 +6354,14 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           line-height: 1em;
           text-align: left;
           vertical-align: middle;
-          width: 47%;
-          font-size: 2rem; }
+          width: 48%;
+          font-size: 2rem;
+          margin-bottom: 12px; }
           @media (min-width: 29.75em) {
             .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
-              font-size: 2.4rem; } }
+              font-size: 2.4rem;
+              margin-bottom: 40px;
+              width: 40%; } }
           @media (min-width: 44.375em) {
             .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
               font-size: 3rem; } }
@@ -6366,41 +6371,25 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           @media (min-width: 56.875em) {
             .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
               font-size: 4.2rem;
-              margin-left: 12px;
-              margin-top: 10px;
+              margin-left: 4px;
+              margin-bottom: 30px;
               padding-left: 20px; } }
           @media (min-width: 61.5625em) {
             .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
-              font-size: 4.8rem;
-              margin-left: 18px;
-              margin-top: 14px;
+              font-size: 4.6rem;
+              margin-left: 6px;
+              margin-bottom: 50px;
               padding-left: 30px; } }
           @media (min-width: 75em) {
             .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
               font-size: 5.4rem;
               margin-left: 24px;
-              margin-top: 18px;
+              margin-bottom: 70px;
               padding-left: 40px; } }
           .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-            margin-bottom: 16px; }
-            @media (min-width: 29.75em) {
-              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-                background-color: #6799ff; } }
-            @media (min-width: 44.375em) {
-              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-                background-color: magenta; } }
-            @media (min-width: 48.9375em) {
-              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-                background-color: green; } }
-            @media (min-width: 56.875em) {
-              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-                background-color: purple; } }
-            @media (min-width: 61.5625em) {
-              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-                background-color: orange; } }
+            margin-bottom: 0px; }
             @media (min-width: 75em) {
               .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
-                background-color: red;
                 margin-bottom: 32px; } }
       .pum-overlay .pum-container .pum-content .content-container .header {
         text-align: center; }

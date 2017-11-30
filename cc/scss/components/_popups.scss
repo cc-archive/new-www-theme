@@ -208,7 +208,10 @@
           .person-box {
             display: inline-block;
             width: 48%;
-            vertical-align: bottom;
+
+            @include breakpoint($mobile-md-layout){
+              width: 56%;
+            }
 
             img.person {
               z-index: 2;
@@ -222,12 +225,14 @@
             line-height: 1em;
             text-align: left;
             vertical-align: middle;
-            width: 47%;
+            width: 48%;
             font-size: px2rem(20);
-
+            margin-bottom: 12px;
 
             @include breakpoint($mobile-md-layout){
               font-size: px2rem(24);
+              margin-bottom: 40px;
+              width: 40%;
             }
             @include breakpoint($tablet-sm-layout){
               font-size: px2rem(30);
@@ -237,47 +242,29 @@
             }
             @include breakpoint($desktop-sm-layout){
               font-size: px2rem(42);
-              margin-left: 12px;
-              margin-top: 10px;
+              margin-left: 4px;
+              margin-bottom: 30px;
               padding-left: 20px;
             }
             @include breakpoint($desktop-md-layout){
-              font-size: px2rem(48);
-              margin-left: 18px;
-              margin-top: 14px;
+              font-size: px2rem(46);
+              margin-left: 6px;
+              margin-bottom: 50px;
               padding-left: 30px;
             }
             @include breakpoint($desktop-lg-layout){
               font-size: px2rem(54);
               margin-left: 24px;
-              margin-top: 18px;
+              margin-bottom: 70px;
               padding-left: 40px;
             }
 
             .motto-wrapper {
               p {
-                margin-bottom: 16px;
-                @include breakpoint($mobile-md-layout){
-                    background-color: #6799ff;
-                }
-                @include breakpoint($tablet-sm-layout){
-                  background-color: magenta;
-                }
-                @include breakpoint($tablet-md-layout){
-                  background-color: green;
-                }
-                @include breakpoint($desktop-sm-layout){
-                  background-color: purple;
-                }
-                @include breakpoint($desktop-md-layout){
-                  background-color: orange;
-                }
+                margin-bottom: 0px;
                 @include breakpoint($desktop-lg-layout){
-                  background-color: red;
                   margin-bottom: 32px;
                 }
-
-
                 .motto {
                 }
               }
