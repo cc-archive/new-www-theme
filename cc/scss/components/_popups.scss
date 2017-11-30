@@ -44,24 +44,62 @@
 
         .yellow-ribbon {
           background-color: $yellow-lighter;
+
+/*          @include breakpoint($mobile-md-layout){
+              background-color: #6799ff;
+          }
+          @include breakpoint($tablet-sm-layout){
+            background-color: magenta;
+          }
+          @include breakpoint($tablet-md-layout){
+            background-color: green;
+          }
+          @include breakpoint($desktop-sm-layout){
+            background-color: purple;
+          }
+          @include breakpoint($desktop-md-layout){
+            background-color: orange;
+          }
+          @include breakpoint($desktop-lg-layout){
+            background-color: red;
+          }*/
+
+
           box-shadow: 0px 6px 5px -2px rgba($black, 0.4);
           color: $black;
           @include font-weight($fw-semi-bold);
-          height: 94px;
+
+
           margin: 0px auto;
-          padding: 20px 0px;
           position: relative;
           top: 5px;
           width: 74%;
+          height: 42px;
+          padding: 10px 0px;
+
+          @include breakpoint($tablet-sm-layout){
+            height: 72px;
+            padding: 14px 0px;
+          }
+          @include breakpoint($desktop-sm-layout){
+            height: 94px;
+            padding: 20px 0px;
+          }
 
           &::before,
           &::after {
-            border: 47px solid $yellow-lighter;
+            border: 21px solid $yellow-lighter;
             content: '';
             display: block;
             position: absolute;
             top: 0;
             z-index: 1;
+            @include breakpoint($tablet-sm-layout){
+              border: 36px solid $yellow-lighter;
+            }
+            @include breakpoint($desktop-sm-layout){
+              border: 47px solid $yellow-lighter;
+            }
           }
 
           &::before {
@@ -79,25 +117,38 @@
             z-index: 2;
             display: inline-block;
             &.support {
-              font-size: px2rem(60);
               font-family: $ff-bebas-neue;
-              margin-right: 24px;
+              font-size: px2rem(24);
+              margin-top: 2px;
               vertical-align: top;
-              margin-top: 8px;
+
+              @include breakpoint($tablet-sm-layout){
+                font-size: px2rem(40);
+                margin-top: 4px;
+              }
+              @include breakpoint($desktop-sm-layout){
+                font-size: px2rem(60);
+                margin-right: 24px;
+                margin-top: 6px;
+              }
             }
             &.message {
+              display: none;
+              @include breakpoint($desktop-lg-layout){
+                display: inline-block;
+              }
               line-height: .7em;
               font-size: px2rem(22);
               text-align: left;
             }
           }
 
-          @include breakpoint (480px) {
+          @include breakpoint ($mobile-md-layout) {
             font-size: px2rem(21);
             padding: 10px 5%;
           }
 
-          @include breakpoint (620px) {
+          @include breakpoint ($tablet-sm-layout) {
             padding: 18px 0px;
           }
 
@@ -128,33 +179,107 @@
 
         .centre-box {
 
-          margin-left: 150px;
-          margin-right: 50px;
           position: relative;
           z-index: 2;
+
+          @include breakpoint($mobile-md-layout){
+            font-size: px2rem(24);
+          }
+          @include breakpoint($tablet-sm-layout){
+            font-size: px2rem(30);
+          }
+          @include breakpoint($tablet-md-layout){
+            font-size: px2rem(36);
+          }
+          @include breakpoint($desktop-sm-layout){
+            margin-left: 60px;
+            margin-right: 30px;
+          }
+          @include breakpoint($desktop-md-layout){
+            margin-left: 100px;
+            margin-right: 40px;
+          }
+          @include breakpoint($desktop-lg-layout){
+            margin-left: 150px;
+            margin-right: 50px;
+          }
+
 
           .person-box {
             display: inline-block;
             width: 48%;
+            vertical-align: bottom;
+
             img.person {
               z-index: 2;
             }
           }
           .motto-box {
+
+            color: $black;
             display: inline-block;
-            margin-left: 24px;
-            margin-top: 18px;
-            padding-left: 40px;
+            font-weight: bold;
+            line-height: 1em;
             text-align: left;
             vertical-align: middle;
             width: 47%;
+            font-size: px2rem(20);
+
+
+            @include breakpoint($mobile-md-layout){
+              font-size: px2rem(24);
+            }
+            @include breakpoint($tablet-sm-layout){
+              font-size: px2rem(30);
+            }
+            @include breakpoint($tablet-md-layout){
+              font-size: px2rem(36);
+            }
+            @include breakpoint($desktop-sm-layout){
+              font-size: px2rem(42);
+              margin-left: 12px;
+              margin-top: 10px;
+              padding-left: 20px;
+            }
+            @include breakpoint($desktop-md-layout){
+              font-size: px2rem(48);
+              margin-left: 18px;
+              margin-top: 14px;
+              padding-left: 30px;
+            }
+            @include breakpoint($desktop-lg-layout){
+              font-size: px2rem(54);
+              margin-left: 24px;
+              margin-top: 18px;
+              padding-left: 40px;
+            }
 
             .motto-wrapper {
-              .motto {
-                color: $black;
-                font-size: px2rem(54);
-                font-weight: bold;
-                line-height: 1em;
+              p {
+                margin-bottom: 16px;
+                @include breakpoint($mobile-md-layout){
+                    background-color: #6799ff;
+                }
+                @include breakpoint($tablet-sm-layout){
+                  background-color: magenta;
+                }
+                @include breakpoint($tablet-md-layout){
+                  background-color: green;
+                }
+                @include breakpoint($desktop-sm-layout){
+                  background-color: purple;
+                }
+                @include breakpoint($desktop-md-layout){
+                  background-color: orange;
+                }
+                @include breakpoint($desktop-lg-layout){
+                  background-color: red;
+                  margin-bottom: 32px;
+                }
+
+
+                .motto {
+                }
               }
             }
           }

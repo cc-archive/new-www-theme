@@ -6211,22 +6211,54 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           max-width: 1120px; } }
       .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
         background-color: #FEEB32;
+        /*          @include breakpoint($mobile-md-layout){
+              background-color: #6799ff;
+          }
+          @include breakpoint($tablet-sm-layout){
+            background-color: magenta;
+          }
+          @include breakpoint($tablet-md-layout){
+            background-color: green;
+          }
+          @include breakpoint($desktop-sm-layout){
+            background-color: purple;
+          }
+          @include breakpoint($desktop-md-layout){
+            background-color: orange;
+          }
+          @include breakpoint($desktop-lg-layout){
+            background-color: red;
+          }*/
         box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.4);
         color: #000;
         font-weight: 600;
-        height: 94px;
         margin: 0px auto;
-        padding: 20px 0px;
         position: relative;
         top: 5px;
-        width: 74%; }
+        width: 74%;
+        height: 42px;
+        padding: 10px 0px; }
+        @media (min-width: 44.375em) {
+          .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
+            height: 72px;
+            padding: 14px 0px; } }
+        @media (min-width: 56.875em) {
+          .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
+            height: 94px;
+            padding: 20px 0px; } }
         .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::before, .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::after {
-          border: 47px solid #FEEB32;
+          border: 21px solid #FEEB32;
           content: '';
           display: block;
           position: absolute;
           top: 0;
           z-index: 1; }
+          @media (min-width: 44.375em) {
+            .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::before, .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::after {
+              border: 36px solid #FEEB32; } }
+          @media (min-width: 56.875em) {
+            .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::before, .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::after {
+              border: 47px solid #FEEB32; } }
         .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon::before {
           border-left-color: transparent;
           left: -35px; }
@@ -6238,20 +6270,32 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           z-index: 2;
           display: inline-block; }
           .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.support {
-            font-size: 6rem;
             font-family: "Bebas Neue", sans-serif;
-            margin-right: 24px;
-            vertical-align: top;
-            margin-top: 8px; }
+            font-size: 2.4rem;
+            margin-top: 2px;
+            vertical-align: top; }
+            @media (min-width: 44.375em) {
+              .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.support {
+                font-size: 4rem;
+                margin-top: 4px; } }
+            @media (min-width: 56.875em) {
+              .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.support {
+                font-size: 6rem;
+                margin-right: 24px;
+                margin-top: 6px; } }
           .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.message {
+            display: none;
             line-height: .7em;
             font-size: 2.2rem;
             text-align: left; }
-        @media (min-width: 480px) {
+            @media (min-width: 75em) {
+              .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.message {
+                display: inline-block; } }
+        @media (min-width: 29.75em) {
           .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
             font-size: 2.1rem;
             padding: 10px 5%; } }
-        @media (min-width: 620px) {
+        @media (min-width: 44.375em) {
           .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
             padding: 18px 0px; } }
         @media (min-width: 48.9375em) {
@@ -6272,28 +6316,92 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon {
             font-size: 2.1rem; } }
       .pum-overlay .pum-container .pum-content .content-container .centre-box {
-        margin-left: 150px;
-        margin-right: 50px;
         position: relative;
         z-index: 2; }
+        @media (min-width: 29.75em) {
+          .pum-overlay .pum-container .pum-content .content-container .centre-box {
+            font-size: 2.4rem; } }
+        @media (min-width: 44.375em) {
+          .pum-overlay .pum-container .pum-content .content-container .centre-box {
+            font-size: 3rem; } }
+        @media (min-width: 48.9375em) {
+          .pum-overlay .pum-container .pum-content .content-container .centre-box {
+            font-size: 3.6rem; } }
+        @media (min-width: 56.875em) {
+          .pum-overlay .pum-container .pum-content .content-container .centre-box {
+            margin-left: 60px;
+            margin-right: 30px; } }
+        @media (min-width: 61.5625em) {
+          .pum-overlay .pum-container .pum-content .content-container .centre-box {
+            margin-left: 100px;
+            margin-right: 40px; } }
+        @media (min-width: 75em) {
+          .pum-overlay .pum-container .pum-content .content-container .centre-box {
+            margin-left: 150px;
+            margin-right: 50px; } }
         .pum-overlay .pum-container .pum-content .content-container .centre-box .person-box {
           display: inline-block;
-          width: 48%; }
+          width: 48%;
+          vertical-align: bottom; }
           .pum-overlay .pum-container .pum-content .content-container .centre-box .person-box img.person {
             z-index: 2; }
         .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+          color: #000;
           display: inline-block;
-          margin-left: 24px;
-          margin-top: 18px;
-          padding-left: 40px;
+          font-weight: bold;
+          line-height: 1em;
           text-align: left;
           vertical-align: middle;
-          width: 47%; }
-          .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper .motto {
-            color: #000;
-            font-size: 5.4rem;
-            font-weight: bold;
-            line-height: 1em; }
+          width: 47%;
+          font-size: 2rem; }
+          @media (min-width: 29.75em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+              font-size: 2.4rem; } }
+          @media (min-width: 44.375em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+              font-size: 3rem; } }
+          @media (min-width: 48.9375em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+              font-size: 3.6rem; } }
+          @media (min-width: 56.875em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+              font-size: 4.2rem;
+              margin-left: 12px;
+              margin-top: 10px;
+              padding-left: 20px; } }
+          @media (min-width: 61.5625em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+              font-size: 4.8rem;
+              margin-left: 18px;
+              margin-top: 14px;
+              padding-left: 30px; } }
+          @media (min-width: 75em) {
+            .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box {
+              font-size: 5.4rem;
+              margin-left: 24px;
+              margin-top: 18px;
+              padding-left: 40px; } }
+          .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+            margin-bottom: 16px; }
+            @media (min-width: 29.75em) {
+              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+                background-color: #6799ff; } }
+            @media (min-width: 44.375em) {
+              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+                background-color: magenta; } }
+            @media (min-width: 48.9375em) {
+              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+                background-color: green; } }
+            @media (min-width: 56.875em) {
+              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+                background-color: purple; } }
+            @media (min-width: 61.5625em) {
+              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+                background-color: orange; } }
+            @media (min-width: 75em) {
+              .pum-overlay .pum-container .pum-content .content-container .centre-box .motto-box .motto-wrapper p {
+                background-color: red;
+                margin-bottom: 32px; } }
       .pum-overlay .pum-container .pum-content .content-container .header {
         text-align: center; }
         .pum-overlay .pum-container .pum-content .content-container .header h1 {
