@@ -293,6 +293,7 @@
           padding-top: 0px;
           border-top: 10px solid $colour-donate;
           padding-left: 24px;
+          padding-bottom: 0;
 
           @include breakpoint($tablet-sm-layout){
             border-top: none;
@@ -367,9 +368,8 @@
                   justify-content: normal;
                 }
 
-                li {
+                > li {
                   display: flex;
-                  margin-bottom: 20px !important;
 
                   .ginput_container_radio {
                     margin-top: 0px;
@@ -380,6 +380,10 @@
                     margin-top: 2px;
 
                     label {
+                        padding: .5em .7em;
+                      @include breakpoint($mobile-md-layout){
+                        padding: .5em 1em;
+                      }
                       @include breakpoint($desktop-lg-layout){
                         padding: .6em 1.6em;
                       }
@@ -395,6 +399,8 @@
                     }
 
                     li {
+                      margin-bottom: 20px !important;
+
                         flex-basis: 49%;
                       @include breakpoint($desktop-sm-layout){
                         flex-basis: 15%;
@@ -409,7 +415,7 @@
                       flex-basis: 49%;
 
                       @include breakpoint($desktop-sm-layout){
-                      flex-basis: 33%;
+                        flex-basis: 33%;
                       }
 
                       input {
@@ -421,6 +427,8 @@
               }
               .donate-list-item {
                 padding-top: 2px;
+                padding-bottom: 12px;
+
                 @include breakpoint($desktop-sm-layout){
                   min-width: 25%;
                 }

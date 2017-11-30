@@ -99,7 +99,7 @@
     '#FF5722'
   ];
 
-//  generator1 = new particleGenerator(0, 0, W, 0, element1.value);
+  generator1 = new particleGenerator(0, 0, W, 0, element1.value);
 
   function loadImage(url) {
     var img = document.createElement("img");
