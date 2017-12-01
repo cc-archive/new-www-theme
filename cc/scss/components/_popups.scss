@@ -411,6 +411,12 @@
                       margin-left: 0px;
                     }
 
+                    @include breakpoint($tablet-md-layout){
+                      li.gchoice_12_1_2{
+                        display: none;
+                      }
+                    }
+
                     > li:last-child {
                       flex-basis: 49%;
 
@@ -429,19 +435,23 @@
                 padding-top: 2px;
                 padding-bottom: 12px;
 
-                @include breakpoint($desktop-sm-layout){
-                  min-width: 25%;
-                }
-
                 .gform_button[value="Donate Now"] {
                   font-size: 2.3rem;
+                  margin-left: auto !important;
+                  margin-right: auto !important;
+                  margin-top: -12px !important;
+
+                @include breakpoint($tablet-sm-layout){
+                  margin-top: -24px !important;
+                }
+                  @include breakpoint($desktop-sm-layout){
+                    margin: 0 10px 0 0px !important;
+                  }
                 }
               }
             }
           }
         }
-
-        
       }
     }
   }

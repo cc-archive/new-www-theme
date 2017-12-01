@@ -6504,6 +6504,9 @@ body.home .cc-fifteenth-anniversary-ask-widget,
                             flex-basis: 15%; } }
               .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .gfield_radio li input + input {
                 margin-left: 0px; }
+              @media (min-width: 48.9375em) {
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .gfield_radio li.gchoice_12_1_2 {
+                  display: none; } }
               .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .gfield_radio > li:last-child {
                 -webkit-flex-basis: 49%;
                     -ms-flex-preferred-size: 49%;
@@ -6518,11 +6521,17 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
           padding-top: 2px;
           padding-bottom: 12px; }
-          @media (min-width: 56.875em) {
-            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
-              min-width: 25%; } }
           .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
-            font-size: 2.3rem; }
+            font-size: 2.3rem;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: -12px !important; }
+            @media (min-width: 44.375em) {
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+                margin-top: -24px !important; } }
+            @media (min-width: 56.875em) {
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+                margin: 0 10px 0 0px !important; } }
 
 /*
 @import "colours";
