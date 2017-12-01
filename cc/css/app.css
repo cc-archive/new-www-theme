@@ -6327,12 +6327,14 @@ body.home .cc-fifteenth-anniversary-ask-widget,
                 margin-top: 4px; } }
             @media (min-width: 44.375em) {
               .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.support {
-                font-size: 4rem; } }
+                font-size: 4rem;
+                line-height: 40px; } }
             @media (min-width: 56.875em) {
               .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.support {
                 font-size: 6rem;
                 margin-right: 24px;
-                margin-top: 6px; } }
+                margin-top: 6px;
+                line-height: 60px; } }
           .pum-overlay .pum-container .pum-content .content-container .yellow-ribbon span.message {
             display: none; }
             @media (min-width: 75em) {
