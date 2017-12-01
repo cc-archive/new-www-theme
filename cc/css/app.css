@@ -6177,6 +6177,10 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       padding-bottom: 10px;
       padding-top: 10px; } }
 
+.pum-overlay p:first-child {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
 .pum-overlay .pum-close {
   background: rgba(0, 0, 0, 0.2);
   background-image: url(../images/yearend-takeover/white_x.png);
@@ -6222,14 +6226,16 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           margin-bottom: 0;
           max-width: 100%; } }
     .pum-overlay .pum-container .pum-content .content-container {
-      max-width: 90%;
       margin: auto;
-      text-align: center;
+      margin-top: 1rem;
+      max-width: 90%;
       padding-bottom: 48px;
+      text-align: center;
       color: #fff;
       /* Same as .donate-box but using the ID so I can override GF styles */ }
       @media (min-width: 44.375em) {
         .pum-overlay .pum-container .pum-content .content-container {
+          margin-top: 2rem;
           max-width: 80%; } }
       @media (min-width: 75em) {
         .pum-overlay .pum-container .pum-content .content-container {

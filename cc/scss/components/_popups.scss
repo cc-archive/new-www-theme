@@ -1,5 +1,10 @@
 .pum-overlay {
 
+  p:first-child {
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+  }
+
   .pum-close {
     background:rgba(0,0,0,0.2);
     background-image: url(../images/yearend-takeover/white_x.png);
@@ -60,17 +65,22 @@
 
       .content-container {
 
+        margin: auto;
+        margin-top: 1rem;
         max-width: 90%;
+        padding-bottom: 48px;
+        text-align: center;
+
         @include breakpoint($tablet-sm-layout) {
+          margin-top: 2rem;
           max-width: 80%;
         }
         @include breakpoint($desktop-lg-layout){
           max-width: 1120px;
         }
 
-        margin: auto;
-        text-align: center;
-        padding-bottom: 48px;
+
+
 
         .yellow-ribbon {
           background-color: $yellow-lighter;
