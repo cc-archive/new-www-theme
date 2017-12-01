@@ -6177,6 +6177,30 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       padding-bottom: 10px;
       padding-top: 10px; } }
 
+.pum-overlay .pum-close {
+  background: rgba(0, 0, 0, 0.2);
+  background-image: url(../images/yearend-takeover/white_x.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  cursor: pointer;
+  height: 28px !important;
+  width: 28px !important; }
+  .pum-overlay .pum-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+    background-image: url(../images/yearend-takeover/white_x.png);
+    background-size: 12px 12px !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+  @media (min-width: 29.75em) {
+    .pum-overlay .pum-close {
+      background-size: 25px 25px !important;
+      height: 50px !important;
+      width: 50px !important; }
+      .pum-overlay .pum-close:hover {
+        background-size: 25px 25px !important;
+        background-position: 50% 50%; } }
+
 .pum-overlay .pum-container {
   left: 0;
   background: radial-gradient(#FEFEFE, #727A81); }

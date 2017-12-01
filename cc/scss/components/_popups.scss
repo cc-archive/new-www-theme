@@ -1,5 +1,35 @@
 .pum-overlay {
 
+  .pum-close {
+    background:rgba(0,0,0,0.2);
+    background-image: url(../images/yearend-takeover/white_x.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    cursor: pointer;
+    height: 28px !important;
+    width: 28px !important;
+
+    &:hover {
+      background:rgba(0,0,0,0.1);
+      background-image: url(../images/yearend-takeover/white_x.png);
+      background-size: 12px 12px !important;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+
+    @include breakpoint($mobile-md-layout){
+      background-size: 25px 25px !important;
+      height: 50px !important;
+      width: 50px !important;
+    &:hover {
+      background-size: 25px 25px !important;
+      background-position: 50% 50%;
+    }
+
+    }
+  }
+
   .pum-container {
     left: 0;
 
