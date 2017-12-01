@@ -6179,7 +6179,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
 
 .pum-overlay p:first-child {
   -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em; }
+  -webkit-margin-after: 0em;
+  margin-bottom: 0em; }
 
 .pum-overlay .pum-close {
   background: rgba(0, 0, 0, 0.2);
