@@ -411,7 +411,7 @@
                       margin-left: 0px;
                     }
 
-                    @include breakpoint($tablet-md-layout){
+                    @include breakpoint($desktop-sm-layout){
                       li.gchoice_12_1_2{
                         display: none;
                       }
