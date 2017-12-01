@@ -45,7 +45,7 @@
         .yellow-ribbon {
           background-color: $yellow-lighter;
 
-/*          @include breakpoint($mobile-md-layout){
+ /*        @include breakpoint($mobile-md-layout){
               background-color: #6799ff;
           }
           @include breakpoint($tablet-sm-layout){
@@ -69,7 +69,6 @@
           color: $black;
           @include font-weight($fw-semi-bold);
 
-
           margin: 0px auto;
           position: relative;
           top: 5px;
@@ -77,12 +76,33 @@
           height: 42px;
           padding: 10px 0px;
 
-          @include breakpoint($tablet-sm-layout){
+          @include breakpoint($mobile-md-layout){
+            font-size: px2rem(21);
             height: 72px;
-            padding: 14px 0px;
+            padding: 18px 0px;
+          }
+
+          @include breakpoint ($tablet-sm-layout) {
+            padding: 18px 0px;
+          }
+
+          @include breakpoint ($tablet-md-layout) {
+            font-size: px2rem(21);
+            padding: 18px 0px;
+            &::before {
+              left: auto;
+              right: 100%;
+            }
+
+            &::after {
+              left: 100%;
+              right: auto;
+            }
           }
           @include breakpoint($desktop-sm-layout){
+            font-size: px2rem(21);
             height: 94px;
+            margin-bottom: 12px;
             padding: 20px 0px;
           }
 
@@ -94,7 +114,7 @@
             position: absolute;
             top: 0;
             z-index: 1;
-            @include breakpoint($tablet-sm-layout){
+            @include breakpoint($mobile-md-layout){
               border: 36px solid $yellow-lighter;
             }
             @include breakpoint($desktop-sm-layout){
@@ -112,6 +132,16 @@
             right: -35px;
           }
 
+          @include breakpoint($desktop-sm-layout){
+            &::before {
+              left: -48px;
+            }
+
+            &::after {
+              right: -48px;
+            }
+          }
+
           span {
             position: relative;
             z-index: 2;
@@ -122,9 +152,13 @@
               margin-top: 2px;
               vertical-align: top;
 
+              @include breakpoint($mobile-md-layout){
+                font-size: px2rem(34);
+                margin-top: 4px;
+
+              }
               @include breakpoint($tablet-sm-layout){
                 font-size: px2rem(40);
-                margin-top: 4px;
               }
               @include breakpoint($desktop-sm-layout){
                 font-size: px2rem(60);
@@ -136,44 +170,12 @@
               display: none;
               @include breakpoint($desktop-lg-layout){
                 display: inline-block;
+                font-size: px2rem(22);
+                line-height: .7em;
+                margin-top: -4px;
+                text-align: left;
               }
-              line-height: .7em;
-              font-size: px2rem(22);
-              text-align: left;
             }
-          }
-
-          @include breakpoint ($mobile-md-layout) {
-            font-size: px2rem(21);
-            padding: 10px 5%;
-          }
-
-          @include breakpoint ($tablet-sm-layout) {
-            padding: 18px 0px;
-          }
-
-          @include breakpoint ($tablet-md-layout) {
-            font-size: px2rem(21);
-            padding: 18px 0px;
-
-            &::before {
-              left: auto;
-              right: 100%;
-            }
-
-            &::after {
-              left: 100%;
-              right: auto;
-            }
-          }
-
-          @include breakpoint ($desktop-sm-layout) {
-            font-size: px2rem(21);
-            margin-bottom: 12px;
-          }
-
-          @include breakpoint ($desktop-lg-layout) {
-            font-size: px2rem(21);
           }
         }
 
@@ -192,16 +194,15 @@
             font-size: px2rem(36);
           }
           @include breakpoint($desktop-sm-layout){
-            margin-left: 60px;
-            margin-right: 30px;
+            margin-left: 30px;
+            margin-right: 10px;
           }
           @include breakpoint($desktop-md-layout){
-            margin-left: 100px;
-            margin-right: 40px;
+            margin-left: 80px;
+            margin-right: 30px;
           }
           @include breakpoint($desktop-lg-layout){
-            margin-left: 150px;
-            margin-right: 50px;
+            margin-right: 40px;
           }
 
 
@@ -230,7 +231,7 @@
             margin-bottom: 12px;
 
             @include breakpoint($mobile-md-layout){
-              font-size: px2rem(24);
+              font-size: px2rem(32);
               margin-bottom: 40px;
               width: 40%;
             }
@@ -241,22 +242,22 @@
               font-size: px2rem(36);
             }
             @include breakpoint($desktop-sm-layout){
-              font-size: px2rem(42);
+              font-size: px2rem(40);
               margin-left: 4px;
+              margin-bottom: 30px;
+              padding-left: 8px;
+            }
+            @include breakpoint($desktop-md-layout){
+              font-size: px2rem(42);
+              margin-left: 6px;
               margin-bottom: 30px;
               padding-left: 20px;
             }
-            @include breakpoint($desktop-md-layout){
-              font-size: px2rem(46);
-              margin-left: 6px;
-              margin-bottom: 50px;
-              padding-left: 30px;
-            }
             @include breakpoint($desktop-lg-layout){
               font-size: px2rem(54);
-              margin-left: 24px;
-              margin-bottom: 70px;
-              padding-left: 40px;
+              margin-left: 0px;
+              margin-bottom: 20px;
+              padding-left: 0px;
             }
 
             .motto-wrapper {
@@ -286,14 +287,17 @@
 
         color: $white;
 
+        /* Same as .donate-box but using the ID so I can override GF styles */
         #gform_widget-3 {
           background: $white;
+          border-top: 10px solid $colour-donate;
+          box-shadow: 0px -6px 5px -2px rgba($black, 0.4);
           margin-top: 40px;
           margin: auto;
-          padding-top: 0px;
-          border-top: 10px solid $colour-donate;
-          padding-left: 24px;
           padding-bottom: 0;
+          padding-left: 24px;
+          padding-top: 0px;
+          z-index: 3;
 
           @include breakpoint($tablet-sm-layout){
             border-top: none;
