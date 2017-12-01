@@ -89,15 +89,6 @@
           @include breakpoint ($tablet-md-layout) {
             font-size: px2rem(21);
             padding: 18px 0px;
-            &::before {
-              left: auto;
-              right: 100%;
-            }
-
-            &::after {
-              left: 100%;
-              right: auto;
-            }
           }
           @include breakpoint($desktop-sm-layout){
             font-size: px2rem(21);
@@ -199,7 +190,7 @@
           }
           @include breakpoint($desktop-md-layout){
             margin-left: 80px;
-            margin-right: 30px;
+            margin-right: 20px;
           }
           @include breakpoint($desktop-lg-layout){
             margin-right: 40px;
@@ -334,20 +325,6 @@
                 font-size: 4.6rem;
                 padding-left: 0;
               }
-            }
-
-            form {
-                @include breakpoint($desktop-lg-layout){
-                  background: url(../images/yearend-takeover/cc_heart_x2.png);
-                  background-position: left center;
-                  background-repeat: no-repeat;
-                  background-size: 116px;
-                }
-
-              span {
-                font-weight: bold;
-              }
-
               .accelerate-yes {
                 img {
                   width: 60%;
@@ -362,6 +339,19 @@
                   }
                 }
               }
+            }
+
+            form {
+                @include breakpoint($desktop-lg-layout){
+                  background: url(../images/yearend-takeover/cc_heart_x2.png);
+                  background-position: left center;
+                  background-repeat: no-repeat;
+                  background-size: 116px;
+                }
+
+              span {
+                font-weight: bold;
+              }
 
               ul.gform_fields {
 
@@ -370,6 +360,14 @@
                 @include breakpoint($desktop-sm-layout){
                   display: flex;
                   justify-content: normal;
+                  margin-left: 2% !important;
+                  margin-top: 8px !important;
+                }
+                @include breakpoint($desktop-md-layout){
+                  margin-left: 8% !important;
+                }
+                @include breakpoint($desktop-lg-layout){
+                  margin-left: 0 !important;
                 }
 
                 > li {
