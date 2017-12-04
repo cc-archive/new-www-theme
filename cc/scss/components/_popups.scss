@@ -342,7 +342,7 @@
           .gform_wrapper {
 
             h2 {
-              color: $grey-dark;
+              color: $black;
               padding-top: 2px;
               font-size: 4rem;
               line-height: .8em;
@@ -353,8 +353,9 @@
                 padding-top: 12px;
               }
               @include breakpoint($tablet-md-layout){
-                background-position: 5% center;
+                background-position: 5% 7px;
                 font-size: 2.7rem;
+                height: 70px;
                 padding-left: 16%;
 
               }
@@ -400,6 +401,7 @@
               ul.gform_fields {
 
                 display: block;
+                margin-top: 4px !important;
 
                 @include breakpoint($desktop-sm-layout){
                   display: flex;
@@ -412,6 +414,7 @@
                 }
                 @include breakpoint($desktop-lg-layout){
                   margin-left: 0 !important;
+                  margin-top: 12px !important;
                 }
 
                 > li {
@@ -469,9 +472,15 @@
                       @include breakpoint($desktop-sm-layout){
                         flex-basis: 33%;
                       }
+                      @include breakpoint($desktop-lg-layout){
+                        height: 48px;
+                      }
 
                       input {
                         width: 100%;
+                        @include breakpoint($desktop-lg-layout){
+                          height: 40px;
+                        }
                       }
                     }
                   }
@@ -483,6 +492,7 @@
 
                 .gform_button[value="Donate Now"] {
                   font-size: 2.3rem;
+                  letter-spacing: normal;
                   margin-left: auto !important;
                   margin-right: auto !important;
                   margin-top: -12px !important;

@@ -6442,7 +6442,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             border-top: none;
             border-left: 10px solid #01A635; } }
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
-          color: #333333;
+          color: #000;
           padding-top: 2px;
           font-size: 4rem;
           line-height: .8em; }
@@ -6453,8 +6453,9 @@ body.home .cc-fifteenth-anniversary-ask-widget,
               padding-top: 12px; } }
           @media (min-width: 48.9375em) {
             .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
-              background-position: 5% center;
+              background-position: 5% 7px;
               font-size: 2.7rem;
+              height: 70px;
               padding-left: 16%; } }
           @media (min-width: 56.875em) {
             .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper h2 {
@@ -6486,7 +6487,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form span {
           font-weight: bold; }
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
-          display: block; }
+          display: block;
+          margin-top: 4px !important; }
           @media (min-width: 56.875em) {
             .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
               display: -webkit-box;
@@ -6504,7 +6506,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
               margin-left: 8% !important; } }
           @media (min-width: 75em) {
             .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
-              margin-left: 0 !important; } }
+              margin-left: 0 !important;
+              margin-top: 12px !important; } }
           .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li {
             display: -webkit-box;
             display: -webkit-flex;
@@ -6554,13 +6557,20 @@ body.home .cc-fifteenth-anniversary-ask-widget,
                     -webkit-flex-basis: 33%;
                         -ms-flex-preferred-size: 33%;
                             flex-basis: 33%; } }
+                @media (min-width: 75em) {
+                  .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .gfield_radio > li:last-child {
+                    height: 48px; } }
                 .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .gfield_radio > li:last-child input {
                   width: 100%; }
+                  @media (min-width: 75em) {
+                    .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .gfield_radio > li:last-child input {
+                      height: 40px; } }
         .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
           padding-top: 2px;
           padding-bottom: 12px; }
           .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
             font-size: 2.3rem;
+            letter-spacing: normal;
             margin-left: auto !important;
             margin-right: auto !important;
             margin-top: -12px !important; }

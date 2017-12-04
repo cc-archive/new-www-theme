@@ -51,7 +51,7 @@
 
     var i = 0;
     var totalIterations = 0;
-    var delay = 5000;
+    var delay = 3000;
 
     replaceCenterBoxImage();
 
