@@ -57,21 +57,11 @@
 
     function replaceCenterBoxImage(){
      // console.log(totalIterations + ':' + i + ':' + delay);
-      $('img.person', '.centre-box').delay(delay).hide(0, function(){
+      $('img.person', '.pum-overlay .centre-box').delay(delay).hide(0, function(){
         $(this).attr("src", image_path_prefix + images[i]);
         $(this).show();
-        $('.motto', '.centre-box').html(mottos[i]);
+        $('.motto', '.pum-overlay .centre-box').html(mottos[i]);
         i = (i + 1) % 5;
-        // totalIterations++;
-        // if (totalIterations < 60){
-        //   if (delay > 200){
-        //     delay -= 180;
-        //   }
-        // } else {
-        //   if (delay < 2000){
-        //     delay += 50;
-        //   }
-        // }
         replaceCenterBoxImage();
       });
     }

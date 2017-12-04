@@ -1,0 +1,481 @@
+.cc-eoy-2017-donation-box-widget {
+
+  background: radial-gradient(#FEFEFE, #727A81);
+    position: relative;
+
+  img.cc-logo {
+    display: block;
+    left: -25%;
+    margin: 0 auto -5% auto;
+    max-width: 150%;
+    position: relative;
+    top: -10%;
+
+    @include breakpoint($desktop-sm-layout){
+      left: 0;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+  }
+
+  .content-container {
+
+    margin: auto;
+    max-width: 90%;
+    padding-bottom: 24px;
+    padding-top: 1rem;
+    text-align: center;
+
+    @include breakpoint($tablet-sm-layout) {
+      padding-top: 3rem;
+      max-width: 80%;
+    }
+    @include breakpoint($desktop-lg-layout){
+      max-width: 1120px;
+    }
+
+    .yellow-ribbon {
+      background-color: $yellow-lighter;
+
+      box-shadow: 0px 6px 5px -2px rgba($black, 0.4);
+      color: $black;
+      @include font-weight($fw-semi-bold);
+
+      margin: 0px auto;
+      position: relative;
+      top: 5px;
+      width: 70%;
+      height: 42px;
+      padding: 10px 0px;
+
+      @include breakpoint($mobile-md-layout){
+        font-size: px2rem(21);
+        height: 72px;
+        padding: 18px 0px;
+      }
+
+      @include breakpoint ($tablet-sm-layout) {
+        padding: 18px 0px;
+      }
+
+      @include breakpoint ($tablet-md-layout) {
+        font-size: px2rem(21);
+        padding: 18px 0px;
+      }
+      @include breakpoint($desktop-sm-layout){
+        font-size: px2rem(21);
+        height: 80px;
+        margin-bottom: 12px;
+        padding: 20px 0px;
+      }
+
+      @include breakpoint($desktop-lg-layout){
+        margin-bottom: 36px;
+        margin-left: 25%;
+        margin-right: 0;
+      }
+
+      &::before,
+      &::after {
+        border: 21px solid $yellow-lighter;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        @include breakpoint($mobile-md-layout){
+          border: 36px solid $yellow-lighter;
+        }
+        @include breakpoint($desktop-sm-layout){
+          border: 40px solid $yellow-lighter;
+        }
+      }
+
+      &::before {
+        border-left-color: transparent;
+        left: -35px;
+      }
+
+      &::after {
+        border-right-color: transparent;
+        right: -35px;
+      }
+
+      @include breakpoint($desktop-sm-layout){
+        &::before {
+          left: -48px;
+        }
+
+        &::after {
+          right: -48px;
+        }
+      }
+
+      span {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        &.support {
+          font-family: $ff-bebas-neue;
+          font-size: px2rem(24);
+          margin-top: 2px;
+          vertical-align: top;
+
+          @include breakpoint($mobile-md-layout){
+            font-size: px2rem(34);
+            margin-top: 4px;
+
+          }
+          @include breakpoint($tablet-sm-layout){
+            font-size: px2rem(40);
+            line-height: 40px;
+          }
+          @include breakpoint($desktop-sm-layout){
+            font-size: px2rem(32);
+            margin-right: 24px;
+            margin-top: 6px;
+            line-height: 32px;
+          }
+        }
+
+        &.message {
+          display: none;
+          @include breakpoint($desktop-lg-layout){
+            display: inline-block;
+            font-size: px2rem(24);
+            line-height: .7em;
+            text-align: left;
+            img {
+              width: 124px;
+            }
+          }
+        }
+      }
+    }
+
+    .centre-box {
+
+      position: relative;
+      z-index: 2;
+
+      @include breakpoint($mobile-md-layout){
+        font-size: px2rem(24);
+      }
+      @include breakpoint($tablet-sm-layout){
+        font-size: px2rem(30);
+      }
+      @include breakpoint($tablet-md-layout){
+        font-size: px2rem(36);
+      }
+      @include breakpoint($desktop-sm-layout){
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+      @include breakpoint($desktop-md-layout){
+        margin-left: 80px;
+        margin-right: 20px;
+      }
+      @include breakpoint($desktop-lg-layout){
+        bottom: 0;
+        left: 2%;
+        position: absolute;
+        z-index: 5;
+      }
+
+      .person-box {
+        display: inline-block;
+        width: 48%;
+
+        @include breakpoint($mobile-md-layout){
+          width: 56%;
+        }
+
+        @include breakpoint($desktop-lg-layout){
+          width: 60%;
+        }
+
+        img.person {
+          z-index: 2;
+        }
+      }
+      .motto-box {
+
+        color: $black;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 1em;
+        text-align: left;
+        vertical-align: middle;
+        width: 48%;
+        font-size: px2rem(20);
+        margin-bottom: 12px;
+
+        @include breakpoint($mobile-md-layout){
+          font-size: px2rem(32);
+          margin-bottom: 40px;
+          width: 40%;
+        }
+        @include breakpoint($tablet-sm-layout){
+          font-size: px2rem(30);
+        }
+        @include breakpoint($tablet-md-layout){
+          font-size: px2rem(36);
+        }
+        @include breakpoint($desktop-sm-layout){
+          font-size: px2rem(40);
+          margin-left: 4px;
+          margin-bottom: 30px;
+          padding-left: 8px;
+        }
+        @include breakpoint($desktop-md-layout){
+          font-size: px2rem(42);
+          margin-left: 6px;
+          margin-bottom: 30px;
+          padding-left: 20px;
+        }
+        @include breakpoint($desktop-lg-layout){
+          display: none;
+        }
+
+        .motto-wrapper {
+          p {
+            margin-bottom: 0px;
+            @include breakpoint($desktop-lg-layout){
+              margin-bottom: 32px;
+            }
+            .motto {
+            }
+          }
+        }
+      }
+    }
+
+
+    .header {
+      text-align: center;
+      h1 {
+        color: $white;
+        width: 90%;
+        margin: 24px auto;
+        display: inline-block;
+        clear: left;
+      }
+    }
+
+    color: $white;
+
+    /* Same as .donate-box but using the ID so I can override GF styles */
+    #gform_widget-3 {
+      background: $white;
+      border-top: 10px solid $colour-donate;
+      box-shadow: 0px 6px 5px -2px rgba($black, 0.4);
+      margin-top: 30px;
+      margin: auto;
+      padding-bottom: 0;
+      padding-left: 24px;
+      padding-top: 0px;
+      z-index: 3;
+
+      @include breakpoint($tablet-sm-layout){
+        border-top: none;
+        border-left: 10px solid $colour-donate;
+      }
+
+      .gform_wrapper {
+
+        h2 {
+          color: $black;
+          padding-top: 2px;
+          font-size: 4rem;
+          line-height: .8em;
+
+          @include breakpoint($tablet-sm-layout){
+            background-position: 1% center;
+            padding-left: 16%;
+            padding-top: 12px;
+          }
+          @include breakpoint($tablet-md-layout){
+            background-position: 5% 7px;
+            font-size: 2.7rem;
+            height: 70px;
+            padding-left: 16%;
+
+          }
+          @include breakpoint($desktop-sm-layout){
+            font-size: 3rem;
+
+          }
+          @include breakpoint($desktop-md-layout){
+            font-size: 3.5rem;
+          }
+          @include breakpoint($desktop-lg-layout){
+            font-size: 3.2rem;
+            padding-left: 0;
+          }
+          .accelerate-yes {
+            img {
+              width: 60%;
+              @include breakpoint($mobile-md-layout){
+                width: 40%;
+              }
+              @include breakpoint($tablet-sm-layout){
+                width: 34%;
+              }
+              @include breakpoint($tablet-md-layout){
+                width: 20%;
+              }
+            }
+          }
+          @include breakpoint($desktop-lg-layout){
+            .message {
+              display: none;
+            }
+          }
+
+        }
+
+        form {
+            @include breakpoint($desktop-lg-layout){
+              background-image: none;
+              padding-left: 20%;
+            }
+
+          span {
+            font-weight: bold;
+          }
+
+          ul.gform_fields {
+
+            display: block;
+            margin-top: 4px !important;
+
+            @include breakpoint($desktop-sm-layout){
+              display: flex;
+              justify-content: normal;
+              margin-left: 2% !important;
+              margin-top: 8px !important;
+            }
+            @include breakpoint($desktop-md-layout){
+              margin-left: 8% !important;
+            }
+            @include breakpoint($desktop-lg-layout){
+              margin-left: 0 !important;
+              margin-top: 12px !important;
+              margin-bottom: 0px;
+            }
+
+            > li {
+
+              list-style: none;
+              list-style-image: none;
+
+              &:first-child {
+                width: 92%;
+                @include breakpoint($desktop-sm-layout){
+                  width: 75%;
+                }
+              }
+
+              .ginput_container_radio {
+                margin-top: 0px;
+              }
+
+              ul.gfield_radio {
+
+                list-style: none;
+                list-style-image: none;
+
+                @include breakpoint($desktop-sm-layout){
+                  padding-right: 20px;
+                }
+                margin-top: 2px;
+                width: 100%;
+
+                label {
+                    padding: .5em .7em;
+                  @include breakpoint($mobile-md-layout){
+                    padding: .5em 1em;
+                  }
+                  @include breakpoint($desktop-lg-layout){
+                    padding: .6em 1.6em;
+                  }
+                }
+
+                input[type="radio"]:checked+label {
+                  background: $colour-donate;
+                  border-color: darken($colour-donate, 5%);
+                  border-right-color: lighten($colour-donate, 5%);
+                  border-top-color: lighten($colour-donate, 20%);
+                  box-shadow: 1px 1px 0px 1px rgba(darken($colour-donate, 20%), 0.6);
+                  color: $white;
+                }
+
+                li {
+                  list-style: none;
+                  list-style-image: none;
+                  margin-bottom: 20px !important;
+
+                  flex-basis: auto;
+                  width: 49%;
+
+                  @include breakpoint($desktop-sm-layout){
+                    width: 28%;
+                  }
+                }
+
+                li input+input {
+                  margin-left: 0px;
+                }
+
+                @include breakpoint($desktop-sm-layout){
+                  li.gchoice_12_1_2{
+                    display: none;
+                  }
+                }
+
+                > li:last-child {
+                  flex-basis: 49%;
+
+                  @include breakpoint($desktop-sm-layout){
+                    flex-basis: 33%;
+                  }
+                  @include breakpoint($desktop-lg-layout){
+                    height: 48px;
+                  }
+
+                  input {
+                    width: 100%;
+                    height: 36px;
+                    @include breakpoint($desktop-lg-layout){
+                      height: 40px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .donate-list-item {
+            padding-top: 2px;
+            padding-bottom: 12px;
+
+            .gform_button[value="Donate Now"] {
+              font-size: 2.3rem;
+              letter-spacing: normal;
+              margin-left: auto !important;
+              margin-right: auto !important;
+              margin-top: -12px !important;
+
+            @include breakpoint($tablet-sm-layout){
+              padding: 0 24px;
+              margin-top: -24px !important;
+            }
+              @include breakpoint($desktop-sm-layout){
+                margin: 0 10px 0 0px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
