@@ -62,7 +62,7 @@
       @include breakpoint($desktop-sm-layout){
         font-size: px2rem(21);
         height: 60px;
-        margin-bottom: 12px;
+        margin-bottom: 24px;
         padding: 20px 0px;
       }
 
@@ -280,7 +280,7 @@
       div {
         float: left;
         width: 45%;
-
+        position: relative;
 
         .amount-input {
           border-color: #d4d4d4;
@@ -295,13 +295,14 @@
             &::before { color: $white; }
           }
         }
-        .amount-input+span {
+        span {
           @include add-fontello-icon('\E813') {
             color: $colour-font;
-            left: -33px;
+            left: 10px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            z-index: 5;
           }
         }
 

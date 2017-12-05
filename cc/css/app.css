@@ -6230,7 +6230,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
           font-size: 2.1rem;
           height: 60px;
-          margin-bottom: 12px;
+          margin-bottom: 24px;
           padding: 20px 0px; } }
       @media (min-width: 75em) {
         .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
@@ -6396,7 +6396,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       text-align: left; }
       .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div {
         float: left;
-        width: 45%; }
+        width: 45%;
+        position: relative; }
         .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input {
           border-color: #d4d4d4;
           border-radius: 3px;
@@ -6409,7 +6410,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             border-color: #01A635; }
             .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input.selected::before {
               color: #fff; }
-        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input + span::before {
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div span::before {
           content: "";
           font-family: "cc-fontello";
           font-style: normal;
@@ -6437,12 +6438,13 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           /* Uncomment for 3D effect */
           /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
           color: #464646;
-          left: -33px;
+          left: 10px;
           position: absolute;
           top: 50%;
           -webkit-transform: translateY(-50%);
               -ms-transform: translateY(-50%);
-                  transform: translateY(-50%); }
+                  transform: translateY(-50%);
+          z-index: 5; }
         .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div input {
           background: #F3F3F3;
           border: 0 none;
