@@ -1,7 +1,6 @@
 .cc-eoy-2017-donation-box-widget {
 
   background: radial-gradient(#FEFEFE, #727A81);
-    position: relative;
 
   img.cc-logo {
     display: block;
@@ -24,14 +23,16 @@
     max-width: 90%;
     padding-bottom: 24px;
     padding-top: 1rem;
+    position: relative;
     text-align: center;
 
     @include breakpoint($tablet-sm-layout) {
-      padding-top: 3rem;
+      padding-top: 1rem;
       max-width: 80%;
     }
     @include breakpoint($desktop-lg-layout){
       max-width: 1120px;
+      padding-top: 3rem;
     }
 
     .yellow-ribbon {
@@ -64,12 +65,13 @@
       }
       @include breakpoint($desktop-sm-layout){
         font-size: px2rem(21);
-        height: 80px;
+        height: 60px;
         margin-bottom: 12px;
         padding: 20px 0px;
       }
 
       @include breakpoint($desktop-lg-layout){
+        height: 80px;
         margin-bottom: 36px;
         margin-left: 25%;
         margin-right: 0;
@@ -87,6 +89,9 @@
           border: 36px solid $yellow-lighter;
         }
         @include breakpoint($desktop-sm-layout){
+          border: 30px solid $yellow-lighter;
+        }
+        @include breakpoint($desktop-lg-layout){
           border: 40px solid $yellow-lighter;
         }
       }
@@ -132,6 +137,9 @@
           }
           @include breakpoint($desktop-sm-layout){
             font-size: px2rem(32);
+            line-height: 20px;
+          }
+          @include breakpoint($desktop-lg-layout){
             margin-right: 24px;
             margin-top: 6px;
             line-height: 32px;
@@ -157,6 +165,7 @@
 
       position: relative;
       z-index: 2;
+      margin-top: -7px;
 
       @include breakpoint($mobile-md-layout){
         font-size: px2rem(24);
@@ -172,26 +181,36 @@
         margin-right: 10px;
       }
       @include breakpoint($desktop-md-layout){
-        margin-left: 80px;
-        margin-right: 20px;
+        bottom: 0;
+        left: -6%;
+        margin-left: 0;
+        margin-right: 0;
+        position: absolute;
+        width: 250px;
+        z-index: 5;
       }
       @include breakpoint($desktop-lg-layout){
         bottom: 0;
-        left: 2%;
+        left: -4%;
+        margin-left: 0;
+        margin-right: 0;
         position: absolute;
+        width: 300px;
         z-index: 5;
       }
 
       .person-box {
         display: inline-block;
         width: 48%;
+        max-width: 200px;
 
-        @include breakpoint($mobile-md-layout){
-          width: 56%;
+        @include breakpoint($desktop-md-layout){
+          width: 100%;
+          max-width: none;
         }
 
         @include breakpoint($desktop-lg-layout){
-          width: 60%;
+          width: 100%;
         }
 
         img.person {
@@ -210,30 +229,11 @@
         font-size: px2rem(20);
         margin-bottom: 12px;
 
-        @include breakpoint($mobile-md-layout){
-          font-size: px2rem(32);
-          margin-bottom: 40px;
-          width: 40%;
-        }
-        @include breakpoint($tablet-sm-layout){
-          font-size: px2rem(30);
-        }
-        @include breakpoint($tablet-md-layout){
-          font-size: px2rem(36);
-        }
         @include breakpoint($desktop-sm-layout){
-          font-size: px2rem(40);
           margin-left: 4px;
-          margin-bottom: 30px;
           padding-left: 8px;
         }
         @include breakpoint($desktop-md-layout){
-          font-size: px2rem(42);
-          margin-left: 6px;
-          margin-bottom: 30px;
-          padding-left: 20px;
-        }
-        @include breakpoint($desktop-lg-layout){
           display: none;
         }
 
@@ -288,56 +288,58 @@
           padding-top: 2px;
           font-size: 4rem;
           line-height: .8em;
+          background-image: none;
+          display: none;
 
           @include breakpoint($tablet-sm-layout){
-            background-position: 1% center;
-            padding-left: 16%;
             padding-top: 12px;
           }
           @include breakpoint($tablet-md-layout){
-            background-position: 5% 7px;
             font-size: 2.7rem;
             height: 70px;
             padding-left: 16%;
-
           }
           @include breakpoint($desktop-sm-layout){
             font-size: 3rem;
-
           }
           @include breakpoint($desktop-md-layout){
-            font-size: 3.5rem;
+            display: block;
+            font-size: 3rem;
+            padding-left: 20%;
+            img {
+              width: 154px;
+            }
           }
           @include breakpoint($desktop-lg-layout){
             font-size: 3.2rem;
             padding-left: 0;
           }
+
           .accelerate-yes {
-            img {
-              width: 60%;
-              @include breakpoint($mobile-md-layout){
-                width: 40%;
-              }
-              @include breakpoint($tablet-sm-layout){
-                width: 34%;
-              }
-              @include breakpoint($tablet-md-layout){
-                width: 20%;
-              }
+            display: none;
+            @include breakpoint($desktop-lg-layout){
+              display: inline;
             }
-          }
-          @include breakpoint($desktop-lg-layout){
-            .message {
-              display: none;
+            img {
+              width: 20%;
             }
           }
 
+          .message {
+            display: none;
+            @include breakpoint($desktop-md-layout){
+              display: inline;
+            }
+            @include breakpoint($desktop-lg-layout){
+              display: none;
+            }
+          }
         }
 
         form {
             @include breakpoint($desktop-lg-layout){
               background-image: none;
-              padding-left: 20%;
+              padding-left: 24%;
             }
 
           span {
@@ -356,7 +358,7 @@
               margin-top: 8px !important;
             }
             @include breakpoint($desktop-md-layout){
-              margin-left: 8% !important;
+              margin-left: 20% !important;
             }
             @include breakpoint($desktop-lg-layout){
               margin-left: 0 !important;
@@ -394,7 +396,7 @@
                 label {
                     padding: .5em .7em;
                   @include breakpoint($mobile-md-layout){
-                    padding: .5em 1em;
+                    padding: .5em .2em;
                   }
                   @include breakpoint($desktop-lg-layout){
                     padding: .6em 1.6em;
@@ -418,6 +420,11 @@
                   flex-basis: auto;
                   width: 49%;
 
+                  display: none;
+                  @include breakpoint($tablet-sm-layout){
+                    display: list-item;
+                  }
+
                   @include breakpoint($desktop-sm-layout){
                     width: 28%;
                   }
@@ -435,6 +442,7 @@
 
                 > li:last-child {
                   flex-basis: 49%;
+                    display: list-item;
 
                   @include breakpoint($desktop-sm-layout){
                     flex-basis: 33%;
