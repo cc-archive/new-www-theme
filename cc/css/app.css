@@ -6198,7 +6198,6 @@ body.home .cc-fifteenth-anniversary-ask-widget,
     padding-top: 1rem;
     position: relative;
     text-align: center;
-    color: #fff;
     /* Same as .donate-box but using the ID so I can override GF styles */ }
     @media (min-width: 75em) {
       .cc-eoy-2017-donation-box-widget .content-container {
@@ -6384,6 +6383,94 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         margin: 24px auto;
         display: inline-block;
         clear: left; }
+    .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box {
+      background-color: #fff;
+      border-top: 10px solid #01A635;
+      box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.4);
+      height: 90px;
+      margin-top: 30px;
+      margin: auto;
+      padding-bottom: 0;
+      padding-left: 10%;
+      padding-top: 12px;
+      text-align: left; }
+      .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div {
+        float: left;
+        width: 45%; }
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input {
+          border-color: #d4d4d4;
+          border-radius: 3px;
+          border-style: solid;
+          border-width: 4px 4px 4px 40px;
+          height: 44px;
+          margin-bottom: 0;
+          position: relative; }
+          .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input.selected {
+            border-color: #01A635; }
+            .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input.selected::before {
+              color: #fff; }
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input + span::before {
+          content: "";
+          font-family: "cc-fontello";
+          font-style: normal;
+          font-weight: normal;
+          speak: none;
+          display: inline-block;
+          text-decoration: inherit;
+          width: 1em;
+          margin-right: .2em;
+          text-align: center;
+          /* opacity: .8; */
+          /* For safety - reset parent styles, that can break glyph codes*/
+          font-variant: normal;
+          text-transform: none;
+          /* fix buttons height, for twitter bootstrap */
+          line-height: 1em;
+          /* Animation center compensation - margins should be symmetric */
+          /* remove if not needed */
+          margin-left: .2em;
+          /* you can be more comfortable with increased icons size */
+          /* font-size: 120%; */
+          /* Font smoothing. That was taken from TWBS */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          /* Uncomment for 3D effect */
+          /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+          color: #464646;
+          left: -33px;
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div input {
+          background: #F3F3F3;
+          border: 0 none;
+          line-height: 1.6em;
+          margin-bottom: 0;
+          width: 90%; }
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .donate-button {
+          letter-spacing: normal;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          margin-top: -12px !important;
+          background: url("../images/donate-button-bevel-sprite.png") no-repeat right top;
+          background-size: auto 94px;
+          box-shadow: none;
+          border: 0 none;
+          color: #fff;
+          font-size: 2rem;
+          line-height: 1em;
+          height: 47px;
+          margin: 0 10px 0 0px !important;
+          max-width: 232px;
+          text-transform: none !important;
+          width: 100%; }
+          .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .donate-button:hover, .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .donate-button:focus {
+            background-position: right bottom; }
+      @media (min-width: 56.875em) {
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box {
+          display: none; } }
     .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
       background: #fff;
       border-top: 10px solid #01A635;
@@ -6393,13 +6480,15 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       padding-bottom: 0;
       padding-left: 4px;
       padding-top: 12px;
-      z-index: 3; }
+      z-index: 3;
+      display: none; }
       @media (min-width: 44.375em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
           border-top: none;
           border-left: 10px solid #01A635; } }
       @media (min-width: 56.875em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
+          display: block;
           padding-left: 24px; } }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
         color: #000;
