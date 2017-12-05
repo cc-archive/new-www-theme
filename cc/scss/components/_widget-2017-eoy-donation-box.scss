@@ -161,7 +161,7 @@
 
       position: relative;
       z-index: 2;
-      margin-top: -7px;
+      margin-top: -14px;
 
       @include breakpoint($mobile-md-layout){
         font-size: px2rem(24);
@@ -175,12 +175,14 @@
       @include breakpoint($desktop-sm-layout){
         margin-left: 30px;
         margin-right: 10px;
+        margin-top: -28px;
       }
       @include breakpoint($desktop-md-layout){
         bottom: 0;
         left: -4%;
         margin-left: 0;
         margin-right: 0;
+        margin-top: -16px;
         position: absolute;
         width: 250px;
         z-index: 5;
@@ -239,13 +241,13 @@
             @include breakpoint($desktop-lg-layout){
               margin-bottom: 32px;
             }
-            .accelerate {
-              img {
-                max-width: 240px;
-              }
+          }
+          .accelerate {
+            img {
+              max-width: 240px;
             }
-            .motto {
-            }
+          }
+          .motto {
           }
         }
       }

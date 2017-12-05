@@ -6305,7 +6305,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
     .cc-eoy-2017-donation-box-widget .content-container .centre-box {
       position: relative;
       z-index: 2;
-      margin-top: -7px; }
+      margin-top: -14px; }
       @media (min-width: 29.75em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           font-size: 2.4rem; } }
@@ -6318,13 +6318,15 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       @media (min-width: 56.875em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           margin-left: 30px;
-          margin-right: 10px; } }
+          margin-right: 10px;
+          margin-top: -28px; } }
       @media (min-width: 61.5625em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           bottom: 0;
           left: -4%;
           margin-left: 0;
           margin-right: 0;
+          margin-top: -16px;
           position: absolute;
           width: 250px;
           z-index: 5; } }
@@ -6372,8 +6374,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           @media (min-width: 75em) {
             .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p {
               margin-bottom: 32px; } }
-          .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p .accelerate img {
-            max-width: 240px; }
+        .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper .accelerate img {
+          max-width: 240px; }
     .cc-eoy-2017-donation-box-widget .content-container .header {
       text-align: center; }
       .cc-eoy-2017-donation-box-widget .content-container .header h1 {
