@@ -6391,13 +6391,16 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       margin-top: 30px;
       margin: auto;
       padding-bottom: 0;
-      padding-left: 24px;
+      padding-left: 4px;
       padding-top: 12px;
       z-index: 3; }
       @media (min-width: 44.375em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
           border-top: none;
           border-left: 10px solid #01A635; } }
+      @media (min-width: 56.875em) {
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
+          padding-left: 24px; } }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
         color: #000;
         padding-top: 2px;
@@ -6450,7 +6453,11 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         font-weight: bold; }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
         display: block;
-        margin-bottom: 0 !important; }
+        margin-bottom: 0 !important;
+        margin-left: 0 !important; }
+        @media (min-width: 44.375em) {
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
+            margin-left: 24px !important; } }
         @media (min-width: 56.875em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
             display: -webkit-box;
