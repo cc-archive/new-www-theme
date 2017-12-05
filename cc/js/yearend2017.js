@@ -29,6 +29,16 @@
       }
     });
 
+    // Mobile donate button
+
+    $('#eoy-mobile-donate-box .donate-button').on('click', function(e){
+      e.preventDefault();
+
+        $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#eoy-2017-donate-amount').val()));
+    });
+
+
+
     // Image rotator
 
     var images = [
