@@ -6200,10 +6200,6 @@ body.home .cc-fifteenth-anniversary-ask-widget,
     text-align: center;
     color: #fff;
     /* Same as .donate-box but using the ID so I can override GF styles */ }
-    @media (min-width: 44.375em) {
-      .cc-eoy-2017-donation-box-widget .content-container {
-        padding-top: 1rem;
-        max-width: 80%; } }
     @media (min-width: 75em) {
       .cc-eoy-2017-donation-box-widget .content-container {
         max-width: 1120px;
@@ -6326,7 +6322,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       @media (min-width: 61.5625em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           bottom: 0;
-          left: -6%;
+          left: -4%;
           margin-left: 0;
           margin-right: 0;
           position: absolute;
@@ -6335,7 +6331,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       @media (min-width: 75em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           bottom: 0;
-          left: -4%;
+          left: 0%;
           margin-left: 0;
           margin-right: 0;
           position: absolute;
@@ -6376,6 +6372,8 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           @media (min-width: 75em) {
             .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p {
               margin-bottom: 32px; } }
+          .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p .accelerate img {
+            max-width: 240px; }
     .cc-eoy-2017-donation-box-widget .content-container .header {
       text-align: center; }
       .cc-eoy-2017-donation-box-widget .content-container .header h1 {
@@ -6392,7 +6390,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       margin: auto;
       padding-bottom: 0;
       padding-left: 24px;
-      padding-top: 0px;
+      padding-top: 12px;
       z-index: 3; }
       @media (min-width: 44.375em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
@@ -6445,12 +6443,12 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       @media (min-width: 75em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form {
           background-image: none;
-          padding-left: 24%; } }
+          padding-left: 25%; } }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form span {
         font-weight: bold; }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
         display: block;
-        margin-top: 4px !important; }
+        margin-bottom: 0 !important; }
         @media (min-width: 56.875em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
             display: -webkit-box;
@@ -6462,14 +6460,14 @@ body.home .cc-fifteenth-anniversary-ask-widget,
                 -ms-flex-pack: normal;
                     justify-content: normal;
             margin-left: 2% !important;
-            margin-top: 8px !important; } }
+            margin-top: 0 !important; } }
         @media (min-width: 61.5625em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
             margin-left: 20% !important; } }
         @media (min-width: 75em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
             margin-left: 0 !important;
-            margin-top: 12px !important;
+            margin-top: 8px !important;
             margin-bottom: 0px; } }
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li {
           list-style: none;

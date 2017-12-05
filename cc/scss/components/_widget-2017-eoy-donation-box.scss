@@ -26,10 +26,6 @@
     position: relative;
     text-align: center;
 
-    @include breakpoint($tablet-sm-layout) {
-      padding-top: 1rem;
-      max-width: 80%;
-    }
     @include breakpoint($desktop-lg-layout){
       max-width: 1120px;
       padding-top: 3rem;
@@ -182,7 +178,7 @@
       }
       @include breakpoint($desktop-md-layout){
         bottom: 0;
-        left: -6%;
+        left: -4%;
         margin-left: 0;
         margin-right: 0;
         position: absolute;
@@ -191,7 +187,7 @@
       }
       @include breakpoint($desktop-lg-layout){
         bottom: 0;
-        left: -4%;
+        left: 0%;
         margin-left: 0;
         margin-right: 0;
         position: absolute;
@@ -243,6 +239,11 @@
             @include breakpoint($desktop-lg-layout){
               margin-bottom: 32px;
             }
+            .accelerate {
+              img {
+                max-width: 240px;
+              }
+            }
             .motto {
             }
           }
@@ -273,7 +274,7 @@
       margin: auto;
       padding-bottom: 0;
       padding-left: 24px;
-      padding-top: 0px;
+      padding-top: 12px;
       z-index: 3;
 
       @include breakpoint($tablet-sm-layout){
@@ -339,7 +340,7 @@
         form {
             @include breakpoint($desktop-lg-layout){
               background-image: none;
-              padding-left: 24%;
+              padding-left: 25%;
             }
 
           span {
@@ -349,20 +350,20 @@
           ul.gform_fields {
 
             display: block;
-            margin-top: 4px !important;
+            margin-bottom: 0 !important;
 
             @include breakpoint($desktop-sm-layout){
               display: flex;
               justify-content: normal;
               margin-left: 2% !important;
-              margin-top: 8px !important;
+              margin-top: 0 !important;
             }
             @include breakpoint($desktop-md-layout){
               margin-left: 20% !important;
             }
             @include breakpoint($desktop-lg-layout){
               margin-left: 0 !important;
-              margin-top: 12px !important;
+              margin-top: 8px !important;
               margin-bottom: 0px;
             }
 
