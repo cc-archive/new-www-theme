@@ -19,7 +19,7 @@
           $(location).attr('href','/donate/?type=Monthly&mamount=$5');
           break;
         case 'choice_12_1_2':
-          $(location).attr('href','/donate/?type=Monthly&mamount=$15');
+          $(location).attr('href','/donate/?type=One+Time&mamount=$100');
           break;
         case 'choice_12_1_4':
           $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val()));
