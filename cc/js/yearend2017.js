@@ -38,6 +38,29 @@
     });
 
 
+    // Deed donation buttons
+
+    $('.cc-eoy-2017-donation-box-widget #gform_submit_button_2').on('click', function(e){
+      e.preventDefault();
+
+      switch($('#gform_12 input[type="radio"]:checked').attr('id')){
+        case 'choice_12_1_0':
+          $(location).attr('href','/donate/?type=One+Time&amount=$75');
+          break;
+        case 'choice_12_1_1':
+          $(location).attr('href','/donate/?type=Monthly&mamount=$5');
+          break;
+        case 'choice_12_1_2':
+          $(location).attr('href','/donate/?type=Monthly&mamount=$15');
+          break;
+        case 'choice_12_1_4':
+          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val()));
+          break;
+        default:
+          $(location).attr('href','/donate/');
+      }
+    });
+
 
     // Image rotator
 
