@@ -128,6 +128,10 @@
     text-align: center;
   }
 
+  ul { margin: 0; }
+
+  li { list-style: none outside none; }
+
   .share-wins { display: block; }
 
   .contribute-today {

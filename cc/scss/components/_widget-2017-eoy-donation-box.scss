@@ -18,78 +18,39 @@
   }
 
   .content-container {
-
     margin: auto;
-    max-width: 90%;
-    padding-bottom: 24px;
-    padding-top: 1rem;
+    padding: 10px;
     position: relative;
     text-align: center;
 
+    @include breakpoint($desktop-sm-layout){
+      padding: 30px 20px 20px;
+    }
+
     @include breakpoint($desktop-lg-layout){
       max-width: 1120px;
-      padding-top: 3rem;
     }
 
     .yellow-ribbon {
       background-color: $yellow-lighter;
-
       box-shadow: 0px 6px 5px -2px rgba($black, 0.4);
       color: $black;
       @include font-weight($fw-semi-bold);
-
       margin: 0px auto;
       position: relative;
       top: 5px;
       width: 70%;
-      height: 42px;
+      height: 40px;
       padding: 10px 0px;
-
-      @include breakpoint($mobile-md-layout){
-        font-size: px2rem(21);
-        height: 72px;
-        padding: 18px 0px;
-      }
-
-      @include breakpoint ($tablet-sm-layout) {
-        padding: 18px 0px;
-      }
-
-      @include breakpoint ($tablet-md-layout) {
-        font-size: px2rem(21);
-        padding: 18px 0px;
-      }
-      @include breakpoint($desktop-sm-layout){
-        font-size: px2rem(21);
-        height: 60px;
-        margin-bottom: 24px;
-        padding: 20px 0px;
-      }
-
-      @include breakpoint($desktop-lg-layout){
-        height: 80px;
-        margin-bottom: 36px;
-        margin-left: 25%;
-        margin-right: 0;
-      }
 
       &::before,
       &::after {
-        border: 21px solid $yellow-lighter;
+        border: 20px solid $yellow-lighter;
         content: '';
         display: block;
         position: absolute;
         top: 0;
         z-index: 1;
-        @include breakpoint($mobile-md-layout){
-          border: 36px solid $yellow-lighter;
-        }
-        @include breakpoint($desktop-sm-layout){
-          border: 30px solid $yellow-lighter;
-        }
-        @include breakpoint($desktop-lg-layout){
-          border: 40px solid $yellow-lighter;
-        }
       }
 
       &::before {
@@ -102,66 +63,114 @@
         right: -35px;
       }
 
-      @include breakpoint($desktop-sm-layout){
-        &::before {
-          left: -48px;
-        }
-
-        &::after {
-          right: -48px;
-        }
-      }
-
       span {
+        display: inline-block;
         position: relative;
         z-index: 2;
-        display: inline-block;
-        &.support {
-          font-family: $ff-bebas-neue;
-          font-size: px2rem(24);
-          margin-top: 2px;
-          vertical-align: top;
+      }
 
-          @include breakpoint($mobile-md-layout){
-            font-size: px2rem(34);
-            margin-top: 4px;
+      .support {
+        font-family: $ff-bebas-neue;
+        font-size: px2rem(22);
+        line-height: 1;
+      }
 
-          }
-          @include breakpoint($tablet-sm-layout){
-            font-size: px2rem(40);
-            line-height: 40px;
-          }
-          @include breakpoint($desktop-sm-layout){
-            font-size: px2rem(32);
-            line-height: 20px;
-          }
-          @include breakpoint($desktop-lg-layout){
-            margin-right: 24px;
-            margin-top: 6px;
-            line-height: 32px;
-          }
+      .message { display: none; }
+
+      @include breakpoint($mobile-md-layout){
+        height: 50px;
+
+        &::before,
+        &::after {
+          border-width: 25px;
         }
 
-        &.message {
-          display: none;
-          @include breakpoint($desktop-lg-layout){
-            display: inline-block;
-            font-size: px2rem(24);
-            line-height: .7em;
-            text-align: left;
-            img {
-              width: 124px;
-            }
+        &::before { left: -40px; }
+        &::after { right: -40px; }
+
+        .support { font-size: px2rem(34); }
+      }
+
+      @include breakpoint ($tablet-sm-layout) {
+        height: 56px;
+
+        &::before,
+        &::after {
+          border-width: 28px;
+        }
+
+        &::before { left: -43px; }
+        &::after { right: -43px; }
+
+        .support { font-size: px2rem(40); }
+      }
+
+      @include breakpoint($desktop-sm-layout){
+        height: 60px;
+        margin-bottom: 20px;
+
+        &::before,
+        &::after {
+          border-width: 30px;
+        }
+
+        &::before { left: -45px; }
+        &::after { right: -45px; }
+
+        .support { font-size: px2rem(48); }
+      }
+
+      @include breakpoint($desktop-md-layout){
+        height: 80px;
+        left: 14%;
+        width: 60%;
+
+        &::before,
+        &::after {
+          border-width: 40px;
+        }
+
+        .support {
+          display: block;
+          font-size: px2rem(25);
+        }
+
+        .message {
+          display: block;
+          font-size: px2rem(24);
+          line-height: .7em;
+          text-align: center;
+          img {
+            width: 124px;
           }
+        }
+     }
+
+      @include breakpoint($desktop-lg-layout){
+        height: 80px;
+        margin-left: 16%;
+        padding: 20px 0;
+        width: 65%;
+
+        .support {
+          display: inline-block;
+          font-size: px2rem(30);
+          margin-right: 0.3em;
+          top: 0.5rem;
+        }
+
+        .message {
+          display: inline-block;
+          font-size: px2rem(20);
+          text-align: left;
         }
       }
     }
 
     .centre-box {
-
       position: relative;
       z-index: 2;
-      margin-top: -14px;
+      margin: -8px auto 0;
 
       @include breakpoint($mobile-md-layout){
         font-size: px2rem(24);
@@ -173,27 +182,14 @@
         font-size: px2rem(36);
       }
       @include breakpoint($desktop-sm-layout){
-        margin-left: 30px;
-        margin-right: 10px;
-        margin-top: -28px;
+        margin: -28px 10px 0 30px;
       }
       @include breakpoint($desktop-md-layout){
         bottom: 0;
-        left: -4%;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: -16px;
+        left: 40px;
+        margin: 0;
         position: absolute;
-        width: 250px;
-        z-index: 5;
-      }
-      @include breakpoint($desktop-lg-layout){
-        bottom: 0;
-        left: 0%;
-        margin-left: 0;
-        margin-right: 0;
-        position: absolute;
-        width: 300px;
+        width: 270px;
         z-index: 5;
       }
 
@@ -212,11 +208,12 @@
         }
 
         img.person {
+          max-height: 263px;
           z-index: 2;
         }
       }
-      .motto-box {
 
+      .motto-box {
         color: $black;
         display: inline-block;
         font-weight: bold;
@@ -224,8 +221,31 @@
         text-align: left;
         vertical-align: middle;
         width: 48%;
-        font-size: px2rem(20);
-        margin-bottom: 12px;
+        font-size: px2rem(14);
+        line-height: 1.2;
+        margin: 0;
+
+        .motto-wrapper {
+
+          p { margin-bottom: 0px; }
+
+          .accelerate img {
+            margin-bottom: 10px;
+            max-width: 240px;
+          }
+        }
+
+        @include breakpoint($mobile-md-layout){
+          font-size: px2rem(20);
+
+          .motto-wrapper { padding: 0 10px; }
+        }
+
+        @include breakpoint($tablet-sm-layout){
+          font-size: px2rem(22);
+
+          .motto-wrapper { padding: 0 20px; }
+        }
 
         @include breakpoint($desktop-sm-layout){
           margin-left: 4px;
@@ -233,22 +253,6 @@
         }
         @include breakpoint($desktop-md-layout){
           display: none;
-        }
-
-        .motto-wrapper {
-          p {
-            margin-bottom: 0px;
-            @include breakpoint($desktop-lg-layout){
-              margin-bottom: 32px;
-            }
-          }
-          .accelerate {
-            img {
-              max-width: 240px;
-            }
-          }
-          .motto {
-          }
         }
       }
     }
@@ -266,28 +270,37 @@
     }
 
     .mobile-donate-box {
-
+      @include clearfix;
       background-color: $white;
       border-left: 10px solid $colour-donate;
       box-shadow: 0px 6px 5px -2px rgba($black, 0.4);
-      height: 90px;
-      margin-top: 30px;
-      margin: auto;
-      padding-bottom: 0;
-      padding-left: 10%;
-      padding-top: 24px;
+      margin: -15px auto 0;
+      padding: 10px;
+      position: relative;
       text-align: left;
+      z-index: 3;
+
       div {
-        float: left;
-        width: 45%;
         position: relative;
+
+        &.amount-input-wrapper {
+          float: left;
+          min-width: 100px;
+          width: 40%;
+        }
+
+        &:last-child {
+          float: left;
+          width: 60%;
+        }
 
         .amount-input {
           border-color: #d4d4d4;
           border-radius: $border-radius-default;
           border-style: solid;
-          border-width: 4px 4px 4px 40px;
-          height: 44px;
+          border-width: 4px 4px 4px 26px;
+          font-size: px2rem(14);
+          height: 36px;
           margin-bottom: 0;
           position: relative;
           &.selected {
@@ -295,10 +308,11 @@
             &::before { color: $white; }
           }
         }
+
         span {
           @include add-fontello-icon('\E813') {
             color: $colour-font;
-            left: 10px;
+            left: 4px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -318,29 +332,34 @@
 
         .donate-button {
           letter-spacing: normal;
-          margin-left: auto !important;
-          margin-right: auto !important;
-          margin-top: -12px !important;
-
           background: url('../images/donate-button-bevel-sprite.png') no-repeat right top;
-          background-size: auto 94px;
+          background-size: 200% 200%;
           box-shadow: none;
           border: 0 none;
           color: $white;
           font-size: px2rem($fz-md);
           line-height: 1em;
-          height: 47px;
-          margin: 0 10px 0 0px !important;
-          max-width: 232px;
-          text-transform: none !important;
+          height: 36px;
+          margin: 0;
+          max-width: none;
+          padding: 5px 10px;
+          text-transform: none;
           width: 100%;
           &:hover,
           &:focus {
             background-position: right bottom;
           }
         }
-
       }
+
+      @include breakpoint($mobile-md-layout){
+        width: 90%;
+
+        form {
+          margin: 0 auto;
+          width: 90%;
+        }
+     }
 
       @include breakpoint($desktop-sm-layout){
         display: none;
@@ -350,50 +369,40 @@
     /* Same as .donate-box but using the ID so I can override GF styles */
     #gform_widget-3 {
       background: $white;
-      border-top: 10px solid $colour-donate;
+      border-top: 0 none;
+      border-left: 10px solid $colour-donate;
       box-shadow: 0px 6px 5px -2px rgba($black, 0.4);
-      margin-top: 30px;
-      margin: auto;
-      padding-bottom: 0;
-      padding-left: 4px;
-      padding-top: 12px;
-      z-index: 3;
       display: none;
+      padding: 20px 10px 20px 24px;
+      z-index: 3;
 
-      @include breakpoint($tablet-sm-layout){
-        border-top: none;
-        border-left: 10px solid $colour-donate;
-      }
       @include breakpoint($desktop-sm-layout){
         display: block;
-        padding-left: 24px;
+      }
+
+      @include breakpoint($desktop-md-layout){
+        margin: 30px auto 0 !important;
+        padding-left: 280px;
+        padding-bottom: 30px;
+      }
+
+      @include breakpoint($desktop-lg-layout){
+        padding-left: 310px;
       }
 
       .gform_wrapper {
 
         h2 {
-          color: $black;
-          padding-top: 2px;
-          font-size: 4rem;
-          line-height: .8em;
           background-image: none;
+          color: $black;
           display: none;
+          padding: 0;
 
-          @include breakpoint($tablet-sm-layout){
-            padding-top: 12px;
-          }
-          @include breakpoint($tablet-md-layout){
-            font-size: 2.7rem;
-            height: 70px;
-            padding-left: 16%;
-          }
-          @include breakpoint($desktop-sm-layout){
-            font-size: 3rem;
-          }
           @include breakpoint($desktop-md-layout){
             display: block;
-            font-size: 3rem;
-            padding-left: 20%;
+            font-size: px2rem(27);
+            line-height: 1;
+
             img {
               width: 154px;
             }
@@ -403,11 +412,12 @@
             padding-left: 0;
           }
 
-          .accelerate-yes {
-            display: none;
-            @include breakpoint($desktop-lg-layout){
-              display: inline;
-            }
+          .contribute-today {
+            // display: none;
+            // @include breakpoint($desktop-lg-layout){
+            //   display: inline;
+            // }
+            font-size: inherit; // undo inherited style
             img {
               width: 20%;
             }
@@ -415,19 +425,19 @@
 
           .message {
             display: none;
-            @include breakpoint($desktop-md-layout){
-              display: inline;
-            }
-            @include breakpoint($desktop-lg-layout){
-              display: none;
-            }
+            // @include breakpoint($desktop-md-layout){
+            //   display: inline;
+            // }
+            // @include breakpoint($desktop-lg-layout){
+            //   display: none;
+            // }
           }
         }
 
         form {
             @include breakpoint($desktop-lg-layout){
               background-image: none;
-              padding-left: 25%;
+              padding-left: 0;
             }
 
           span {
@@ -449,18 +459,15 @@
               margin-top: 0 !important;
             }
             @include breakpoint($desktop-md-layout){
-              margin-left: 20% !important;
+              margin-left: 0% !important;
             }
             @include breakpoint($desktop-lg-layout){
               margin-left: 0 !important;
-              margin-top: 8px !important;
+              margin-top: 12px !important;
               margin-bottom: 0px;
             }
 
             > li {
-
-              list-style: none;
-              list-style-image: none;
 
               &:first-child {
                 width: 92%;
@@ -474,9 +481,7 @@
               }
 
               ul.gfield_radio {
-
-                list-style: none;
-                list-style-image: none;
+                margin: 0;
 
                 @include breakpoint($desktop-sm-layout){
                   padding-right: 20px;
@@ -490,7 +495,7 @@
                     padding: .5em .2em;
                   }
                   @include breakpoint($desktop-lg-layout){
-                    padding: .6em 1.6em;
+                    padding: .6em 0.6em;
                   }
                 }
 
@@ -504,10 +509,6 @@
                 }
 
                 li {
-                  list-style: none;
-                  list-style-image: none;
-                  margin-bottom: 20px !important;
-
                   flex-basis: auto;
                   width: 49%;
 
@@ -525,11 +526,11 @@
                   margin-left: 0px;
                 }
 
-                @include breakpoint($desktop-sm-layout){
-                  li.gchoice_12_1_2{
-                    display: none;
-                  }
-                }
+                // @include breakpoint($desktop-sm-layout){
+                //   li.gchoice_12_1_2{
+                //     display: none;
+                //   }
+                // }
 
                 > li:last-child {
                     flex-basis: 49%;
@@ -554,8 +555,6 @@
             }
           }
           .donate-list-item {
-            padding-top: 2px;
-            padding-bottom: 12px;
 
             .gform_button[value="Donate Now"] {
               font-size: 2.3rem;

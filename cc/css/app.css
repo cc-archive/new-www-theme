@@ -4301,6 +4301,12 @@ blockquote.cc-short-block {
     margin-bottom: 0px;
     min-height: 60px;
     text-align: center; }
+  #gform_widget-3 ul,
+  #gform_widget-5 ul {
+    margin: 0; }
+  #gform_widget-3 li,
+  #gform_widget-5 li {
+    list-style: none outside none; }
   #gform_widget-3 .share-wins,
   #gform_widget-5 .share-wins {
     display: block; }
@@ -6193,16 +6199,16 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         max-width: 100%; } }
   .cc-eoy-2017-donation-box-widget .content-container {
     margin: auto;
-    max-width: 90%;
-    padding-bottom: 24px;
-    padding-top: 1rem;
+    padding: 10px;
     position: relative;
     text-align: center;
     /* Same as .donate-box but using the ID so I can override GF styles */ }
+    @media (min-width: 56.875em) {
+      .cc-eoy-2017-donation-box-widget .content-container {
+        padding: 30px 20px 20px; } }
     @media (min-width: 75em) {
       .cc-eoy-2017-donation-box-widget .content-container {
-        max-width: 1120px;
-        padding-top: 3rem; } }
+        max-width: 1120px; } }
     .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
       background-color: #FEEB32;
       box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.4);
@@ -6212,99 +6218,101 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       position: relative;
       top: 5px;
       width: 70%;
-      height: 42px;
+      height: 40px;
       padding: 10px 0px; }
-      @media (min-width: 29.75em) {
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
-          font-size: 2.1rem;
-          height: 72px;
-          padding: 18px 0px; } }
-      @media (min-width: 44.375em) {
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
-          padding: 18px 0px; } }
-      @media (min-width: 48.9375em) {
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
-          font-size: 2.1rem;
-          padding: 18px 0px; } }
-      @media (min-width: 56.875em) {
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
-          font-size: 2.1rem;
-          height: 60px;
-          margin-bottom: 24px;
-          padding: 20px 0px; } }
-      @media (min-width: 75em) {
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
-          height: 80px;
-          margin-bottom: 36px;
-          margin-left: 25%;
-          margin-right: 0; } }
       .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
-        border: 21px solid #FEEB32;
+        border: 20px solid #FEEB32;
         content: '';
         display: block;
         position: absolute;
         top: 0;
         z-index: 1; }
-        @media (min-width: 29.75em) {
-          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
-            border: 36px solid #FEEB32; } }
-        @media (min-width: 56.875em) {
-          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
-            border: 30px solid #FEEB32; } }
-        @media (min-width: 75em) {
-          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
-            border: 40px solid #FEEB32; } }
       .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before {
         border-left-color: transparent;
         left: -35px; }
       .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
         border-right-color: transparent;
         right: -35px; }
-      @media (min-width: 56.875em) {
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before {
-          left: -48px; }
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
-          right: -48px; } }
       .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span {
+        display: inline-block;
         position: relative;
-        z-index: 2;
-        display: inline-block; }
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.support {
-          font-family: "Bebas Neue", sans-serif;
-          font-size: 2.4rem;
-          margin-top: 2px;
-          vertical-align: top; }
-          @media (min-width: 29.75em) {
-            .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.support {
-              font-size: 3.4rem;
-              margin-top: 4px; } }
-          @media (min-width: 44.375em) {
-            .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.support {
-              font-size: 4rem;
-              line-height: 40px; } }
-          @media (min-width: 56.875em) {
-            .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.support {
-              font-size: 3.2rem;
-              line-height: 20px; } }
-          @media (min-width: 75em) {
-            .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.support {
-              margin-right: 24px;
-              margin-top: 6px;
-              line-height: 32px; } }
-        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.message {
-          display: none; }
-          @media (min-width: 75em) {
-            .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.message {
-              display: inline-block;
-              font-size: 2.4rem;
-              line-height: .7em;
-              text-align: left; }
-              .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon span.message img {
-                width: 124px; } }
+        z-index: 2; }
+      .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .support {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2.2rem;
+        line-height: 1; }
+      .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .message {
+        display: none; }
+      @media (min-width: 29.75em) {
+        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
+          height: 50px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            border-width: 25px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before {
+            left: -40px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            right: -40px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .support {
+            font-size: 3.4rem; } }
+      @media (min-width: 44.375em) {
+        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
+          height: 56px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            border-width: 28px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before {
+            left: -43px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            right: -43px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .support {
+            font-size: 4rem; } }
+      @media (min-width: 56.875em) {
+        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
+          height: 60px;
+          margin-bottom: 20px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            border-width: 30px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before {
+            left: -45px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            right: -45px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .support {
+            font-size: 4.8rem; } }
+      @media (min-width: 61.5625em) {
+        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
+          height: 80px;
+          left: 14%;
+          width: 60%; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::before, .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon::after {
+            border-width: 40px; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .support {
+            display: block;
+            font-size: 2.5rem; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .message {
+            display: block;
+            font-size: 2.4rem;
+            line-height: .7em;
+            text-align: center; }
+            .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .message img {
+              width: 124px; } }
+      @media (min-width: 75em) {
+        .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon {
+          height: 80px;
+          margin-left: 16%;
+          padding: 20px 0;
+          width: 65%; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .support {
+            display: inline-block;
+            font-size: 3rem;
+            margin-right: 0.3em;
+            top: 0.5rem; }
+          .cc-eoy-2017-donation-box-widget .content-container .yellow-ribbon .message {
+            display: inline-block;
+            font-size: 2rem;
+            text-align: left; } }
     .cc-eoy-2017-donation-box-widget .content-container .centre-box {
       position: relative;
       z-index: 2;
-      margin-top: -14px; }
+      margin: -8px auto 0; }
       @media (min-width: 29.75em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           font-size: 2.4rem; } }
@@ -6316,27 +6324,14 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           font-size: 3.6rem; } }
       @media (min-width: 56.875em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
-          margin-left: 30px;
-          margin-right: 10px;
-          margin-top: -28px; } }
+          margin: -28px 10px 0 30px; } }
       @media (min-width: 61.5625em) {
         .cc-eoy-2017-donation-box-widget .content-container .centre-box {
           bottom: 0;
-          left: -4%;
-          margin-left: 0;
-          margin-right: 0;
-          margin-top: -16px;
+          left: 40px;
+          margin: 0;
           position: absolute;
-          width: 250px;
-          z-index: 5; } }
-      @media (min-width: 75em) {
-        .cc-eoy-2017-donation-box-widget .content-container .centre-box {
-          bottom: 0;
-          left: 0%;
-          margin-left: 0;
-          margin-right: 0;
-          position: absolute;
-          width: 300px;
+          width: 270px;
           z-index: 5; } }
       .cc-eoy-2017-donation-box-widget .content-container .centre-box .person-box {
         display: inline-block;
@@ -6350,6 +6345,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           .cc-eoy-2017-donation-box-widget .content-container .centre-box .person-box {
             width: 100%; } }
         .cc-eoy-2017-donation-box-widget .content-container .centre-box .person-box img.person {
+          max-height: 263px;
           z-index: 2; }
       .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box {
         color: #000;
@@ -6359,8 +6355,24 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         text-align: left;
         vertical-align: middle;
         width: 48%;
-        font-size: 2rem;
-        margin-bottom: 12px; }
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin: 0; }
+        .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p {
+          margin-bottom: 0px; }
+        .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper .accelerate img {
+          margin-bottom: 10px;
+          max-width: 240px; }
+        @media (min-width: 29.75em) {
+          .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box {
+            font-size: 2rem; }
+            .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper {
+              padding: 0 10px; } }
+        @media (min-width: 44.375em) {
+          .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box {
+            font-size: 2.2rem; }
+            .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper {
+              padding: 0 20px; } }
         @media (min-width: 56.875em) {
           .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box {
             margin-left: 4px;
@@ -6368,13 +6380,6 @@ body.home .cc-fifteenth-anniversary-ask-widget,
         @media (min-width: 61.5625em) {
           .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box {
             display: none; } }
-        .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p {
-          margin-bottom: 0px; }
-          @media (min-width: 75em) {
-            .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper p {
-              margin-bottom: 32px; } }
-        .cc-eoy-2017-donation-box-widget .content-container .centre-box .motto-box .motto-wrapper .accelerate img {
-          max-width: 240px; }
     .cc-eoy-2017-donation-box-widget .content-container .header {
       text-align: center; }
       .cc-eoy-2017-donation-box-widget .content-container .header h1 {
@@ -6387,23 +6392,31 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       background-color: #fff;
       border-left: 10px solid #01A635;
       box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.4);
-      height: 90px;
-      margin-top: 30px;
-      margin: auto;
-      padding-bottom: 0;
-      padding-left: 10%;
-      padding-top: 24px;
-      text-align: left; }
+      margin: -15px auto 0;
+      padding: 10px;
+      position: relative;
+      text-align: left;
+      z-index: 3; }
+      .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box:after {
+        content: "";
+        display: table;
+        clear: both; }
       .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div {
-        float: left;
-        width: 45%;
         position: relative; }
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div.amount-input-wrapper {
+          float: left;
+          min-width: 100px;
+          width: 40%; }
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div:last-child {
+          float: left;
+          width: 60%; }
         .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input {
           border-color: #d4d4d4;
           border-radius: 3px;
           border-style: solid;
-          border-width: 4px 4px 4px 40px;
-          height: 44px;
+          border-width: 4px 4px 4px 26px;
+          font-size: 1.4rem;
+          height: 36px;
           margin-bottom: 0;
           position: relative; }
           .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .amount-input.selected {
@@ -6438,7 +6451,7 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           /* Uncomment for 3D effect */
           /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
           color: #464646;
-          left: 10px;
+          left: 4px;
           position: absolute;
           top: 50%;
           -webkit-transform: translateY(-50%);
@@ -6453,93 +6466,75 @@ body.home .cc-fifteenth-anniversary-ask-widget,
           width: 90%; }
         .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .donate-button {
           letter-spacing: normal;
-          margin-left: auto !important;
-          margin-right: auto !important;
-          margin-top: -12px !important;
           background: url("../images/donate-button-bevel-sprite.png") no-repeat right top;
-          background-size: auto 94px;
+          background-size: 200% 200%;
           box-shadow: none;
           border: 0 none;
           color: #fff;
           font-size: 2rem;
           line-height: 1em;
-          height: 47px;
-          margin: 0 10px 0 0px !important;
-          max-width: 232px;
-          text-transform: none !important;
+          height: 36px;
+          margin: 0;
+          max-width: none;
+          padding: 5px 10px;
+          text-transform: none;
           width: 100%; }
           .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .donate-button:hover, .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box div .donate-button:focus {
             background-position: right bottom; }
+      @media (min-width: 29.75em) {
+        .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box {
+          width: 90%; }
+          .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box form {
+            margin: 0 auto;
+            width: 90%; } }
       @media (min-width: 56.875em) {
         .cc-eoy-2017-donation-box-widget .content-container .mobile-donate-box {
           display: none; } }
     .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
       background: #fff;
-      border-top: 10px solid #01A635;
+      border-top: 0 none;
+      border-left: 10px solid #01A635;
       box-shadow: 0px 6px 5px -2px rgba(0, 0, 0, 0.4);
-      margin-top: 30px;
-      margin: auto;
-      padding-bottom: 0;
-      padding-left: 4px;
-      padding-top: 12px;
-      z-index: 3;
-      display: none; }
-      @media (min-width: 44.375em) {
-        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
-          border-top: none;
-          border-left: 10px solid #01A635; } }
+      display: none;
+      padding: 20px 10px 20px 24px;
+      z-index: 3; }
       @media (min-width: 56.875em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
-          display: block;
-          padding-left: 24px; } }
+          display: block; } }
+      @media (min-width: 61.5625em) {
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
+          margin: 30px auto 0 !important;
+          padding-left: 280px;
+          padding-bottom: 30px; } }
+      @media (min-width: 75em) {
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 {
+          padding-left: 310px; } }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
-        color: #000;
-        padding-top: 2px;
-        font-size: 4rem;
-        line-height: .8em;
         background-image: none;
-        display: none; }
-        @media (min-width: 44.375em) {
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
-            padding-top: 12px; } }
-        @media (min-width: 48.9375em) {
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
-            font-size: 2.7rem;
-            height: 70px;
-            padding-left: 16%; } }
-        @media (min-width: 56.875em) {
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
-            font-size: 3rem; } }
+        color: #000;
+        display: none;
+        padding: 0; }
         @media (min-width: 61.5625em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
             display: block;
-            font-size: 3rem;
-            padding-left: 20%; }
+            font-size: 2.7rem;
+            line-height: 1; }
             .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 img {
               width: 154px; } }
         @media (min-width: 75em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 {
             font-size: 3.2rem;
             padding-left: 0; } }
-        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .accelerate-yes {
-          display: none; }
-          @media (min-width: 75em) {
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .accelerate-yes {
-              display: inline; } }
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .accelerate-yes img {
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .contribute-today {
+          font-size: inherit; }
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .contribute-today img {
             width: 20%; }
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .message {
           display: none; }
-          @media (min-width: 61.5625em) {
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .message {
-              display: inline; } }
-          @media (min-width: 75em) {
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper h2 .message {
-              display: none; } }
       @media (min-width: 75em) {
         .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form {
           background-image: none;
-          padding-left: 25%; } }
+          padding-left: 0; } }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form span {
         font-weight: bold; }
       .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
@@ -6563,100 +6558,87 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             margin-top: 0 !important; } }
         @media (min-width: 61.5625em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
-            margin-left: 20% !important; } }
+            margin-left: 0% !important; } }
         @media (min-width: 75em) {
           .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields {
             margin-left: 0 !important;
-            margin-top: 8px !important;
+            margin-top: 12px !important;
             margin-bottom: 0px; } }
-        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li {
-          list-style: none;
-          list-style-image: none; }
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li:first-child {
-            width: 92%; }
-            @media (min-width: 56.875em) {
-              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li:first-child {
-                width: 75%; } }
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .ginput_container_radio {
-            margin-top: 0px; }
-          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio {
-            list-style: none;
-            list-style-image: none;
-            margin-top: 2px;
-            width: 100%; }
-            @media (min-width: 56.875em) {
-              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio {
-                padding-right: 20px; } }
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
-              padding: .5em .7em; }
-              @media (min-width: 29.75em) {
-                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
-                  padding: .5em .2em; } }
-              @media (min-width: 75em) {
-                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
-                  padding: .6em 1.6em; } }
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio input[type="radio"]:checked + label {
-              background: #01A635;
-              border-color: #018d2d;
-              border-right-color: #01bf3d;
-              border-top-color: #0ffe5a;
-              box-shadow: 1px 1px 0px 1px rgba(0, 65, 21, 0.6);
-              color: #fff; }
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li {
-              list-style: none;
-              list-style-image: none;
-              margin-bottom: 20px !important;
-              -webkit-flex-basis: auto;
-                  -ms-flex-preferred-size: auto;
-                      flex-basis: auto;
-              width: 49%;
-              display: none; }
-              @media (min-width: 44.375em) {
-                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li {
-                  display: list-item; } }
-              @media (min-width: 56.875em) {
-                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li {
-                  width: 28%; } }
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li input + input {
-              margin-left: 0px; }
-            @media (min-width: 56.875em) {
-              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li.gchoice_12_1_2 {
-                display: none; } }
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
-              -webkit-flex-basis: 49%;
-                  -ms-flex-preferred-size: 49%;
-                      flex-basis: 49%;
-              display: list-item; }
-              @media (min-width: 56.875em) {
-                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
-                  -webkit-flex-basis: 33%;
-                      -ms-flex-preferred-size: 33%;
-                          flex-basis: 33%; } }
-              @media (min-width: 75em) {
-                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
-                  height: 48px; } }
-              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child input {
-                width: 100%;
-                height: 36px; }
-                @media (min-width: 75em) {
-                  .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child input {
-                    height: 40px; } }
-      .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item {
-        padding-top: 2px;
-        padding-bottom: 12px; }
-        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
-          font-size: 2.3rem;
-          letter-spacing: normal;
-          margin-left: auto !important;
-          margin-right: auto !important;
-          margin-top: -12px !important; }
-          @media (min-width: 44.375em) {
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
-              padding: 0 24px;
-              margin-top: -24px !important; } }
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li:first-child {
+          width: 92%; }
           @media (min-width: 56.875em) {
-            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
-              margin: 0 10px 0 0px !important; } }
+            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li:first-child {
+              width: 75%; } }
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li .ginput_container_radio {
+          margin-top: 0px; }
+        .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio {
+          margin: 0;
+          margin-top: 2px;
+          width: 100%; }
+          @media (min-width: 56.875em) {
+            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio {
+              padding-right: 20px; } }
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
+            padding: .5em .7em; }
+            @media (min-width: 29.75em) {
+              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
+                padding: .5em .2em; } }
+            @media (min-width: 75em) {
+              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
+                padding: .6em 0.6em; } }
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio input[type="radio"]:checked + label {
+            background: #01A635;
+            border-color: #018d2d;
+            border-right-color: #01bf3d;
+            border-top-color: #0ffe5a;
+            box-shadow: 1px 1px 0px 1px rgba(0, 65, 21, 0.6);
+            color: #fff; }
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li {
+            -webkit-flex-basis: auto;
+                -ms-flex-preferred-size: auto;
+                    flex-basis: auto;
+            width: 49%;
+            display: none; }
+            @media (min-width: 44.375em) {
+              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li {
+                display: list-item; } }
+            @media (min-width: 56.875em) {
+              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li {
+                width: 28%; } }
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li input + input {
+            margin-left: 0px; }
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
+            -webkit-flex-basis: 49%;
+                -ms-flex-preferred-size: 49%;
+                    flex-basis: 49%;
+            display: list-item; }
+            @media (min-width: 56.875em) {
+              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
+                -webkit-flex-basis: 33%;
+                    -ms-flex-preferred-size: 33%;
+                        flex-basis: 33%; } }
+            @media (min-width: 75em) {
+              .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
+                height: 48px; } }
+            .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child input {
+              width: 100%;
+              height: 36px; }
+              @media (min-width: 75em) {
+                .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child input {
+                  height: 40px; } }
+      .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+        font-size: 2.3rem;
+        letter-spacing: normal;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: -12px !important; }
+        @media (min-width: 44.375em) {
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+            padding: 0 24px;
+            margin-top: -24px !important; } }
+        @media (min-width: 56.875em) {
+          .cc-eoy-2017-donation-box-widget .content-container #gform_widget-3 .gform_wrapper form .donate-list-item .gform_button[value="Donate Now"] {
+            margin: 0 10px 0 0px !important; } }
 
 .pum-overlay p:first-child {
   -webkit-margin-before: 0em;
