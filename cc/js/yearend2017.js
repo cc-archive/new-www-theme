@@ -8,24 +8,27 @@
 
     // Donation button
 
+    var overlay_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=2017EOY&utm_content=eoy2017_overlay';
+
+
     $('.pum-overlay #gform_submit_button_2').on('click', function(e){
       e.preventDefault();
 
       switch($('.pum-overlay #gform_12 input[type="radio"]:checked').attr('id')){
         case 'choice_12_1_0':
-          $(location).attr('href','/donate/?type=One+Time&amount=$75');
+          $(location).attr('href','/donate/?type=One+Time&amount=$75&' + overlay_ga);
           break;
         case 'choice_12_1_1':
-          $(location).attr('href','/donate/?type=Monthly&mamount=$5');
+          $(location).attr('href','/donate/?type=Monthly&mamount=$5&' + overlay_ga);
           break;
         case 'choice_12_1_2':
-          $(location).attr('href','/donate/?type=One+Time&mamount=$100');
+          $(location).attr('href','/donate/?type=One+Time&mamount=$100&' + overlay_ga);
           break;
         case 'choice_12_1_4':
-          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val()));
+          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val())) + '&' + overlay_ga;
           break;
         default:
-          $(location).attr('href','/donate/');
+          $(location).attr('href','/donate/?' + overlay_ga);
       }
     });
 
