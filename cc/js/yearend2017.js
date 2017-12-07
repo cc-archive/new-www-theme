@@ -6,9 +6,9 @@
 
   $( document ).ready(function() {
 
-    // Donation button
+    // Overlay
 
-    var overlay_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=2017EOY&utm_content=eoy2017_overlay';
+    var overlay_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=overlay';
 
 
     $('.pum-overlay #gform_submit_button_2').on('click', function(e){
@@ -25,39 +25,38 @@
           $(location).attr('href','/donate/?type=One+Time&mamount=$100&' + overlay_ga);
           break;
         case 'choice_12_1_4':
-          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val())) + '&' + overlay_ga;
+          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val()) + '&' + overlay_ga);
           break;
         default:
           $(location).attr('href','/donate/?' + overlay_ga);
       }
     });
 
-    // Mobile donate button
+
+
+
+    // Widget
+    var banner_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=banner';
 
     $('#eoy-mobile-donate-box .donate-button').on('click', function(e){
       e.preventDefault();
 
-        $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#eoy-2017-donate-amount').val()));
+        $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#eoy-2017-donate-amount').val()) + banner_ga);
     });
 
-
-    // Deed donation buttons
 
     $('.cc-eoy-2017-donation-box-widget #gform_submit_button_2').on('click', function(e){
       e.preventDefault();
 
       switch($('#gform_12 input[type="radio"]:checked').attr('id')){
-        case 'choice_12_1_0':
-          $(location).attr('href','/donate/?type=One+Time&amount=$75');
+        case 'choice_0':
+          $(location).attr('href','/donate/?type=One+Time&amount=$75&' + banner_ga);
           break;
-        case 'choice_12_1_1':
-          $(location).attr('href','/donate/?type=Monthly&mamount=$5');
+        case 'choice_1':
+          $(location).attr('href','/donate/?type=Monthly&mamount=$5&' + banner_ga);
           break;
-        case 'choice_12_1_2':
-          $(location).attr('href','/donate/?type=Monthly&mamount=$15');
-          break;
-        case 'choice_12_1_4':
-          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_12_1_other').val()));
+        case 'choice_4':
+          $(location).attr('href','/donate/?type=One+Time&amount=' + parseInt($('#input_other').val()) + '&' + banner_ga);
           break;
         default:
           $(location).attr('href','/donate/');
