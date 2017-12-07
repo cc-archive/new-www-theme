@@ -6184,7 +6184,9 @@ body.home .cc-fifteenth-anniversary-ask-widget,
       padding-top: 10px; } }
 
 .cc-eoy-2017-donation-box-widget {
-  background: radial-gradient(#FEFEFE, #727A81); }
+  background: radial-gradient(#FEFEFE, #727A81);
+  background-image: url(../images/yearend-takeover/confetti.png);
+  background-image: url(../images/yearend-takeover/confetti.png), radial-gradient(#FEFEFE, #727A81); }
   .cc-eoy-2017-donation-box-widget img.cc-logo {
     display: block;
     left: -25%;
