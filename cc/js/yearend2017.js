@@ -8,7 +8,7 @@
 
     // Overlay
 
-    var overlay_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=overlay';
+    var overlay_ga = 'utm_source=EOY_overlay&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=homepage_overlay';
 
 
     $('.pum-overlay #gform_submit_button_2').on('click', function(e){
@@ -36,10 +36,10 @@
 
 
     // Widget
-    var banner_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=banner';
+    var banner_ga = 'utm_source=EOY_top&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=top_banner';
 
     if ($('.deed-donate-box').length == 1){
-      banner_ga = 'utm_source=web&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=deed_2017';
+      banner_ga = 'utm_source=deed&utm_medium=ccwebsiteorblog&utm_campaign=YE2017&utm_content=deed_2017';
     }
 
     $('#eoy-mobile-donate-box .donate-button').on('click', function(e){
