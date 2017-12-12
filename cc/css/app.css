@@ -6966,12 +6966,16 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             margin-top: 0px; }
           .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio {
             margin-top: 2px;
-            width: 100%; }
+            width: 100%;
+            /* Tweak the $ on mobile. */ }
             @media (min-width: 56.875em) {
               .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio {
                 padding-right: 20px; } }
             .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
-              padding: .5em .7em; }
+              padding: .5em .2em; }
+              @media (min-width: 29.75em) {
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
+                  padding: .5em .7em; } }
               @media (min-width: 29.75em) {
                 .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio label {
                   padding: .5em 1em; } }
@@ -6999,6 +7003,15 @@ body.home .cc-fifteenth-anniversary-ask-widget,
             @media (min-width: 56.875em) {
               .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li.gchoice_12_1_2 {
                 display: none; } }
+            .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li.gchoice_12_1_4 {
+              border-left-width: 30px; }
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li.gchoice_12_1_4::before {
+                margin-left: .6em; }
+            @media (min-width: 29.75em) {
+              .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li.gchoice_12_1_4 {
+                border-left-width: 40px; }
+                .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio li.gchoice_12_1_4::before {
+                  margin-left: .2em; } }
             .pum-overlay .pum-container .pum-content .content-container #gform_widget-3 .gform_wrapper form ul.gform_fields > li ul.gfield_radio > li:last-child {
               -webkit-flex-basis: 49%;
                   -ms-flex-preferred-size: 49%;

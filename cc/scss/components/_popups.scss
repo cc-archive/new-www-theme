@@ -421,7 +421,12 @@
                     width: 100%;
 
                     label {
+                      padding: .5em .2em;
+
+                      @include breakpoint($mobile-md-layout){
                         padding: .5em .7em;
+                      }
+
                       @include breakpoint($mobile-md-layout){
                         padding: .5em 1em;
                       }
@@ -453,11 +458,32 @@
                       margin-left: 0px;
                     }
 
+
                     @include breakpoint($desktop-sm-layout){
                       li.gchoice_12_1_2{
                         display: none;
                       }
                     }
+
+                    /* Tweak the $ on mobile. */
+                    li.gchoice_12_1_4 {
+                      border-left-width: 30px;
+
+                      &::before {
+                        margin-left: .6em;
+                      }
+                    }
+
+                    @include breakpoint($mobile-md-layout){
+                      li.gchoice_12_1_4 {
+                        border-left-width: 40px;
+
+                        &::before {
+                          margin-left: .2em;
+                        }
+                      }
+                    }
+
 
                     > li:last-child {
                       flex-basis: 49%;
