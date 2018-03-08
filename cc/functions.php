@@ -295,4 +295,7 @@ function cc_eat_excluded_types ( $exclude_types ){
 // Allow shortcodes in html widgets.
 add_filter('widget_text','do_shortcode');
 
+// Security: Force login to download GravityForms uploads files - RobM.
+add_filter( 'gform_require_login_pre_download', '__return_true' );
+
 ?>
