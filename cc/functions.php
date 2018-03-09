@@ -298,4 +298,7 @@ add_filter('widget_text','do_shortcode');
 // Security: Force login to download GravityForms uploads files - RobM.
 add_filter( 'gform_require_login_pre_download', '__return_true' );
 
+// Akismet is too eager to mark these as spam - RobM
+add_filter( 'gform_akismet_enabled_17' , '__return_false' );
+
 ?>
