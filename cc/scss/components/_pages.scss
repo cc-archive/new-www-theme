@@ -493,7 +493,13 @@ body.search {
 
   .site-main > article {
     margin-bottom: 40px;
-
+    display: flex;
+    .teaser-post-image {
+      min-width: 17rem;
+    }
+    .entry-content {
+      padding-left: 1rem;
+    }
     @include breakpoint ($tablet-sm-layout) { margin-bottom: 60px; }
     @include breakpoint ($desktop-sm-layout) { margin-bottom: 80px; }
   }
