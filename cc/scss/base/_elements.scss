@@ -347,29 +347,30 @@ ul {
     li { list-style: none outside none; }
   }
 }
-ol {
-  list-style: none;
-  counter-reset: custom-order-counter;
-  li {
-    counter-increment: custom-order-counter;
-    &:before {
-      content: counter(custom-order-counter) ".- ";
-      color: $colour-secondary;
-    }
-    ul {
-      li {
-        &:before {
-          content: '';
-        }
-      }
-    }
-  }
-}
-
 ul {
   li {
     margin-bottom: 0.5em;
     list-style-image:url('../images/bulletin.png');
+  }
+}
+.single, .page {
+  ol {
+    list-style: none;
+    counter-reset: custom-order-counter;
+    li {
+      counter-increment: custom-order-counter;
+      &:before {
+        content: counter(custom-order-counter) ".- ";
+        color: $colour-secondary;
+      }
+      ul {
+        li {
+          &:before {
+            content: '';
+          }
+        }
+      }
+    }
   }
 }
 
