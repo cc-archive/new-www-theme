@@ -493,3 +493,14 @@ blockquote {
     }
   }
 }
+
+// Image fix for FF38 (faq)
+.page-static {
+  .static-page {
+    div#main {
+      .img-responsive {
+        width: 100%;
+      }      
+    }
+  }
+}
