@@ -42,7 +42,7 @@ function cc_enqueue_scripts() {
 
   wp_enqueue_style(
     'cc-google-fonts',
-    '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Roboto+Condensed'
+    get_stylesheet_directory_uri() . '/css/fonts.css'
   );
 
   wp_enqueue_style(
