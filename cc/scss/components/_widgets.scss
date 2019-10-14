@@ -906,7 +906,7 @@
         align-items: stretch;
         display: flex;
         flex-flow: row nowrap;
-        height: 320px;
+        //height: 320px;
       }
 
       .thumbnail {
@@ -933,6 +933,7 @@
       }
 
       .teaser {
+        padding-bottom: 5rem;
         flex-basis: 50%;
         position: relative;
       }
