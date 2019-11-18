@@ -12,6 +12,7 @@
   } else {
     $co_authors = array();
   }
+  
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -27,7 +28,11 @@
 	    $author_bio_avatar_size = apply_filters( 'twentysixteen_author_bio_avatar_size', 50 );
       if (count($co_authors)){
         foreach ($co_authors as $an_author){
-          echo '<a href="' . get_author_posts_url(get_the_author_meta( 'ID', $an_author->ID ), get_the_author_meta( 'user_nicename', $an_author->ID )) . '">' . get_avatar( get_the_author_meta( 'user_email', $an_author->ID ), $author_bio_avatar_size ) . '</a>';
+			if ($an_author->type == 'guest-author') {
+				echo get_avatar( get_the_author_meta( 'user_email', $an_author->ID ), $author_bio_avatar_size );
+			} else {
+          		echo '<a href="' . get_author_posts_url(get_the_author_meta( 'ID', $an_author->ID ), get_the_author_meta( 'user_nicename', $an_author->ID )) . '">' . get_avatar( get_the_author_meta( 'user_email', $an_author->ID ), $author_bio_avatar_size ) . '</a>';
+			}
         }
       } else {
   	    echo '<a href="' . get_author_posts_url(get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' )) . '">' . get_avatar( get_the_author_meta( 'user_email' ), $author_bio_avatar_size ) . '</a>';
@@ -38,7 +43,18 @@
         <div class="author-name"><h4>
         <?php
         if ( function_exists( 'coauthors_posts_links' ) ) {
-            coauthors_posts_links();
+			if (count($co_authors)){
+				$x = 1;
+				foreach ($co_authors as $an_author){
+					if ($an_author->type == 'guest-author') {
+						echo $an_author->display_name;
+					} else {
+						echo '<a href="' . get_author_posts_url($an_author->ID, $an_author->user_nicename) . '">' . $an_author->display_name . '</a>';
+					}
+					if ($x != count($co_authors)) { echo ' and '; }
+					$x++;
+				}
+			}
         } else {
             the_author_posts_link();
         }
