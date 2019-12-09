@@ -235,7 +235,10 @@ body.admin-bar .site-header.sticky {
 }
 
 .site-content { padding: 0; }
-
+.entry-date {
+  display: block;
+  font-size: 1.3rem;
+}
 .content-area {
   float: none;
   margin-right: 0;
