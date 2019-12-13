@@ -1058,6 +1058,7 @@ body.page-id-53377,
   .post {
     h1.entry-title {
       margin-bottom: 20px !important;
+      hyphens: manual;
     }
     .single.group-blog  {
       @include visually-hidden();
