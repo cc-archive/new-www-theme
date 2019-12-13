@@ -16,7 +16,7 @@
 	<div class="entry-content" >
     <?php print the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
     <?php if (is_home()): ?>
-      <?php echo '<span class="entry-date">'.mysql2date( 'F d, Y', get_the_date() ).'</span>'; ?>
+      <?php echo '<span class="entry-date">'.mysql2date( 'F j, Y', get_the_date() ).'</span>'; ?>
     <?php endif; ?>
 		<?php print the_excerpt(); ?>
     <?php
