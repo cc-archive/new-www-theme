@@ -19,9 +19,9 @@
 get_header();
 
 global $wp_query;
-if (!empty($wp_query->query['author_name'])){
-  $author = get_user_by('slug', $wp_query->query['author_name']);
-}
+$author = get_queried_object();
+$group = get_user_meta( $author->ID, 'cc_group', true );
+$is_guest = ( empty( $group ) ) ? true : false;
 ?>
 
 <!-- header-below -->
@@ -31,7 +31,15 @@ if (!empty($wp_query->query['author_name'])){
     <div id="wrapper-main" class="wrapper-main">
       <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
         <?php if(function_exists('bcn_display')){
-          bcn_display();
+          if ( $is_guest ) {
+            echo '<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">';
+              echo '<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Creative Commons." href="'.get_bloginfo( 'url' ).'" class="home"><span property="name">Creative Commons</span></a><meta property="position" content="1"></span>  &gt; ';
+              echo '<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to blog." href="'.site_url( 'blog' ).'" class="about"><span property="name">Blog</span></a><meta property="position" content="2"></span>  &gt; ';
+              echo '<span property="itemListElement" typeof="ListItem"><span property="name">Articles by: '.$author->display_name.'</span><meta property="position" content="3"></span>';
+            echo '</div>';
+          } else {
+            bcn_display();
+          }
         }?>
       </div>
 
@@ -42,31 +50,33 @@ if (!empty($wp_query->query['author_name'])){
 	          <div class="author-image">
 	            <?php print get_avatar($author->ID, '300'); ?>
 	          </div>
-	          <div class="author-intro">
-							<h1><?php print $author->first_name . ' ' . $author->last_name; ?></h1>
-	    				<div class="name"><?php print $author->first_name . ' ' . $author->last_name; ?></div>
-	            <div class="position"><?php print $author->cc_position; ?></div>
-	            <div class="description"><?php print $author->description; ?></div>
-							<?php
-							if ( is_user_logged_in() ) {
-							    print '<div class="edit-user-profile"><a href="' . get_edit_user_link($author->ID) .'">Edit profile</a></div>';
-							}
-							?>
-	            <div class="social-links">
-	              <?php if ($author->twitter): ?>
-	                <a href="https://twitter.com/<?php print $author->twitter; ?>"><span class="genericon genericon-twitter"></span></a>
-	              <?php endif; ?>
-	              <?php if (filter_var($author->cc_linkedin, FILTER_VALIDATE_URL)): ?>
-	                <a href="<?php print $author->cc_linkedin; ?>"><span class="genericon genericon-linkedin"></span></a>
-	              <?php endif; ?>
-                <?php if (filter_var($author->facebook, FILTER_VALIDATE_URL)): ?>
-                  <a href="<?php print $author->facebook; ?>"><span class="genericon genericon-facebook"></span></a>
-                <?php endif; ?>
-	              <?php /* if (filter_var($author->user_email, FILTER_VALIDATE_EMAIL)): ?>
-	                <a href="mailto:<?php print $author->user_email; ?>"><span class="genericon genericon-mail"></span></a>
-	              <?php endif; */ ?>
-	            </div>
-	          </div>
+            <?php if ( !$is_guest ): ?>
+              <div class="author-intro">
+                <h1><?php print $author->first_name . ' ' . $author->last_name; ?></h1>
+                <div class="name"><?php print $author->first_name . ' ' . $author->last_name; ?></div>
+                <div class="position"><?php print $author->cc_position; ?></div>
+                <div class="description"><?php print $author->description; ?></div>
+                <?php
+                if ( is_user_logged_in() ) {
+                    print '<div class="edit-user-profile"><a href="' . get_edit_user_link($author->ID) .'">Edit profile</a></div>';
+                }
+                ?>
+                <div class="social-links">
+                  <?php if ($author->twitter): ?>
+                    <a href="https://twitter.com/<?php print $author->twitter; ?>"><span class="genericon genericon-twitter"></span></a>
+                  <?php endif; ?>
+                  <?php if (filter_var($author->cc_linkedin, FILTER_VALIDATE_URL)): ?>
+                    <a href="<?php print $author->cc_linkedin; ?>"><span class="genericon genericon-linkedin"></span></a>
+                  <?php endif; ?>
+                  <?php if (filter_var($author->facebook, FILTER_VALIDATE_URL)): ?>
+                    <a href="<?php print $author->facebook; ?>"><span class="genericon genericon-facebook"></span></a>
+                  <?php endif; ?>
+                  <?php /* if (filter_var($author->user_email, FILTER_VALIDATE_EMAIL)): ?>
+                    <a href="mailto:<?php print $author->user_email; ?>"><span class="genericon genericon-mail"></span></a>
+                  <?php endif; */ ?>
+                </div>
+              </div>
+            <?php endif; ?>
 					</div>
   			</header><!-- .page-header -->
 
