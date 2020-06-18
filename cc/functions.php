@@ -303,6 +303,7 @@ add_filter( 'gform_require_login_pre_download', '__return_true' );
 add_filter( 'gform_akismet_enabled_17' , '__return_false' );
 
 class CC_Org_Filters {
+
   public static function get_main_menu() {
     if ( false === ( $global_menu_items = get_transient( 'global_menu_items' ) ) ) {
       $menu_locations = get_nav_menu_locations();
@@ -314,12 +315,14 @@ class CC_Org_Filters {
     }
     return $global_menu_items;
   }
+
   public static function set_custom_menu_endpoint() {
     register_rest_route( 'ccglobal', '/menu', array(
       'methods' => 'GET',
       'callback' => array('CC_Org_Filters','get_main_menu'),
-	  ));
+    ));
   }
+  
   /**
    * Remove Global menu transient
    *
@@ -333,3 +336,15 @@ class CC_Org_Filters {
 
 add_action( 'wp_update_nav_menu', array( 'CC_Org_Filters', 'remove_global_menu_transient' ) );
 add_action( 'rest_api_init', array( 'CC_Org_Filters', 'set_custom_menu_endpoint') );
+/**
+ * Use * for origin
+ */
+add_action( 'rest_api_init', function() {
+	remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
+	add_filter( 'rest_pre_serve_request', function( $value ) {
+		header( 'Access-Control-Allow-Origin: *' );
+		header( 'Access-Control-Allow-Methods: GET' );
+		header( 'Access-Control-Allow-Credentials: true' );
+		return $value;
+	});
+}, 15 );
