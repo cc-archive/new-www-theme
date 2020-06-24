@@ -120,6 +120,7 @@ function cc_register_menu() {
     'mobile' => __( 'Mobile Menu' ),
     'secondary' => __( 'Secondary Menu' ),
     'footer-links'  => __( 'Footer Links' ),
+    'global-menu'  => __( 'Global Menu' ),
   ) );
 }
 add_action('init', 'cc_register_menu');
@@ -301,32 +302,36 @@ add_filter( 'gform_require_login_pre_download', '__return_true' );
 // Akismet is too eager to mark these as spam - RobM
 add_filter( 'gform_akismet_enabled_17' , '__return_false' );
 
-add_action( 'wp_footer', 'cc_add_google_marketing_script' );
+class CC_Org_Filters {
 
-function cc_add_google_marketing_script() {
-  ?>
-  <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+  public static function get_main_menu() {
+    if ( false === ( $global_menu_items = get_transient( 'global_menu_items' ) ) ) {
+      $menu_locations = get_nav_menu_locations();
+      $global_menu = wp_get_nav_menu_object($menu_locations['global-menu']);
+      if ( !empty( $global_menu ) ) {
+        $global_menu_items = wp_get_nav_menu_items($global_menu);
+        set_transient( 'global_menu_items', $global_menu_items, 1 * HOUR_IN_SECONDS );
+      }
+    }
+    return $global_menu_items;
+  }
 
-      __gaTracker('create', 'UA-2010376-1', 'auto');
-      __gaTracker('set', 'forceSSL', true);
-      __gaTracker('send','pageview');
-  </script>
-  <!-- Google Tag Manager -->
-  <script type="text/javascript">
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KP4CRCM');
-  </script>
-  <!-- End Google Tag Manager -->
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KP4CRCM"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <?php
+  public static function set_custom_menu_endpoint() {
+    register_rest_route( 'ccglobal', '/menu', array(
+      'methods' => 'GET',
+      'callback' => array('CC_Org_Filters','get_main_menu'),
+    ));
+  }
+  
+  /**
+   * Remove Global menu transient
+   *
+   * @param int $nav_menu_selected_id
+   * @return void
+   */
+  function remove_global_menu_transient($nav_menu_selected_id) {
+    delete_transient( 'global_menu_items' );
+  }
 }
+add_action( 'wp_update_nav_menu', array( 'CC_Org_Filters', 'remove_global_menu_transient' ) );
+add_action( 'rest_api_init', array( 'CC_Org_Filters', 'set_custom_menu_endpoint') );
