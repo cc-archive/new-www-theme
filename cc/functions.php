@@ -330,5 +330,3 @@ function cc_add_google_marketing_script() {
   <!-- End Google Tag Manager (noscript) -->
   <?php
 }
-
-?>
