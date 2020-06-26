@@ -333,7 +333,6 @@ class CC_Org_Filters {
     delete_transient( 'global_menu_items' );
   }
 }
-
 add_action( 'wp_update_nav_menu', array( 'CC_Org_Filters', 'remove_global_menu_transient' ) );
 add_action( 'rest_api_init', array( 'CC_Org_Filters', 'set_custom_menu_endpoint') );
 
