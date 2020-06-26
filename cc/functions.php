@@ -336,15 +336,11 @@ class CC_Org_Filters {
 
 add_action( 'wp_update_nav_menu', array( 'CC_Org_Filters', 'remove_global_menu_transient' ) );
 add_action( 'rest_api_init', array( 'CC_Org_Filters', 'set_custom_menu_endpoint') );
-/**
- * Use * for origin
- */
-add_action( 'rest_api_init', function() {
-	remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
-	add_filter( 'rest_pre_serve_request', function( $value ) {
-		header( 'Access-Control-Allow-Origin: *' );
-		header( 'Access-Control-Allow-Methods: GET' );
-		header( 'Access-Control-Allow-Credentials: true' );
-		return $value;
-	});
-}, 15 );
+
+function get_web_monetization_tags() {
+  global $post;
+  $page_ids = array( 7488, 48571, 48585 );
+  if ( in_array( $post->ID, $page_ids ) ) {
+    echo '<meta name="monetization" content="$ilp.uphold.com/edR8erBDbRyq">';
+  }
+}
