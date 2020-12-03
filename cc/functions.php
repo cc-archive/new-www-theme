@@ -363,4 +363,15 @@ function cc_add_google_marketing_script_footer() {
   <!-- End Google Tag Manager (noscript) -->
   <?php
 }
-
+/**
+ * Gforms does not process the 'shebang' so it returns a malformed url to classy
+ * because of this, classy does not recognize custom amounts
+ * this filter force the URL to send the parameters in the right way
+ */
+add_filter( 'gform_confirmation_2', 'cc_donation_banner_custom_confirmation', 10, 4 );
+function cc_donation_banner_custom_confirmation($confirmation, $form, $entry, $is_ajax) {
+  $amount = ( !empty($entry['1']) ) ? $entry['1'] : '25';
+  $url = 'https://www.classy.org/give/313412/#!/donation/checkout?amount='.$amount.'&c_src=website&c_src2=donate-mid-page';
+  wp_redirect($url);
+  exit();
+}
