@@ -13,6 +13,6 @@
 
 creativecommons.org theme, to make it look lovely
 
-See [creativecommons/new-creativecommons.org][neworg].
+See [cc-archive/new-creativecommons.org][neworg].
 
-[neworg]:https://github.com/creativecommons/new-creativecommons.org
+[neworg]:https://github.com/cc-archive/new-creativecommons.org
